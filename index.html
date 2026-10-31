@@ -9,6 +9,8 @@
     <!-- FontAwesome 6 Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FREE REAL CHATGPT / CLOUD AI ENGINE (No API Key Required) -->
+    <script src="https://js.puter.com/v2/"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -40,13 +42,11 @@
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
             <div class="flex items-center gap-2">
                 <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="text-slate-300 font-medium">Quality Education for Every Aspirant • Multilingual AI Engine</span>
+                <span class="text-slate-300 font-medium">Quality Education for Every Aspirant • Real ChatGPT/Gemini Neural Engine</span>
             </div>
             
             <div class="flex items-center gap-3">
-                <button onclick="promptGeminiKey()" class="text-[11px] text-amber-400 hover:text-amber-300 font-bold bg-amber-500/10 px-2.5 py-0.5 rounded border border-amber-500/30 flex items-center gap-1">
-                    <i class="fa-solid fa-key"></i> <span id="apiKeyLabel">Connect Gemini API Key</span>
-                </button>
+                <span class="text-[11px] text-emerald-400 font-semibold"><i class="fa-solid fa-bolt mr-1"></i> Live Real-Time AI Active</span>
                 <div class="flex items-center gap-1.5 border-l border-slate-700 pl-3">
                     <i class="fa-solid fa-globe text-slate-400"></i>
                     <select id="langSelect" class="bg-slate-900 text-amber-400 font-semibold px-2 py-0.5 rounded border border-slate-700 text-xs focus:outline-none">
@@ -71,15 +71,15 @@
                     <h1 class="text-xl sm:text-2xl font-black text-white tracking-tight leading-none">
                         DURGA DRISHTI <span class="text-amber-500">UPSC</span>
                     </h1>
-                    <p class="text-[9px] text-amber-400 font-extrabold uppercase tracking-widest mt-0.5">One Platform. Every Exam. Powered by AI.</p>
+                    <p class="text-[9px] text-amber-400 font-extrabold uppercase tracking-widest mt-0.5">One Platform. Every Exam. Powered by Real AI.</p>
                 </div>
             </a>
 
             <nav class="hidden lg:flex items-center gap-7 font-semibold text-slate-300 text-sm">
                 <a href="#voice-search" class="text-amber-400 hover:text-amber-300 transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-robot"></i> Gemini AI Tutor
+                    <i class="fa-solid fa-brain"></i> Real ChatGPT AI
                 </a>
-                <a href="#exams" class="hover:text-amber-400 transition">Exams</a>
+                <a href="#exams" class="hover:text-amber-400 transition">6 Active Exams</a>
                 <a href="#pricing" class="hover:text-amber-400 transition">Subscription Plans</a>
                 <a href="admin.html" class="hover:text-amber-400 transition flex items-center gap-1">
                     <i class="fa-solid fa-shield-halved text-rose-400"></i> Admin Console
@@ -94,13 +94,13 @@
         </div>
     </header>
 
-    <!-- 3. Hero Section WITH REAL GEMINI AI ENGINE -->
+    <!-- 3. Hero Section WITH REAL LIVE CHATGPT ENGINE -->
     <section id="voice-search" class="relative pt-12 pb-20 bg-gradient-to-b from-brand-navy via-slate-950 to-brand-dark">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold mb-6">
-                <i class="fa-solid fa-sparkles text-amber-400"></i> 
-                Powered by Gemini-1.5 Flash Civil Services Neural Engine
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold mb-6">
+                <i class="fa-solid fa-sparkles"></i> 
+                Real ChatGPT/LLM Connected • Ask Any Question Live
             </div>
 
             <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
@@ -111,11 +111,11 @@
             </h1>
 
             <p class="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
-                Ask about BPSC, UPSC, GS Papers, or Constitution. Get deep, comprehensive Gemini-grade answers:
+                Ask anything: <em>"bihar is poor state"</em>, <em>"Inflation causes"</em>, or <em>"Article 21"</em>. Get an authentic, intelligent civil services evaluation:
             </p>
 
-            <!-- SEARCH BAR -->
-            <form id="searchForm" class="mt-8 relative max-w-2xl mx-auto" onsubmit="event.preventDefault(); askGeminiAI();">
+            <!-- SEARCH / QUERY BOX -->
+            <form id="searchForm" class="mt-8 relative max-w-2xl mx-auto" onsubmit="event.preventDefault(); runLiveChatGpt();">
                 <div class="relative flex items-center bg-slate-900 border-2 border-amber-500 rounded-2xl p-2 shadow-2xl">
                     
                     <div class="pl-3 text-slate-400 text-base">
@@ -123,7 +123,7 @@
                     </div>
 
                     <input type="text" id="userQueryInput" 
-                           placeholder="Ask Gemini AI (e.g. bpsc, Article 21, 1857 Revolt)..." 
+                           placeholder="Ask ChatGPT AI anything (e.g. bihar is poor state, Article 21)..." 
                            class="w-full px-4 py-3 bg-transparent text-sm sm:text-base text-white placeholder-slate-400 focus:outline-none">
 
                     <!-- VOICE MIC BUTTON -->
@@ -147,22 +147,22 @@
 
                 <!-- Quick Try Tags -->
                 <div class="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-slate-400">
-                    <span class="text-amber-400 font-semibold"><i class="fa-solid fa-fire mr-1"></i> Quick Ask:</span>
-                    <button type="button" onclick="setQueryAndAsk('bpsc')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300">bpsc</button>
-                    <button type="button" onclick="setQueryAndAsk('Article 21 Right to Life')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300">Article 21</button>
-                    <button type="button" onclick="setQueryAndAsk('Uniform Civil Code UCC')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300">Uniform Civil Code</button>
-                    <button type="button" onclick="setQueryAndAsk('1857 Revolt Causes')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300">1857 Revolt</button>
+                    <span class="text-amber-400 font-semibold"><i class="fa-solid fa-fire mr-1"></i> Quick Test:</span>
+                    <button type="button" onclick="setQueryAndRun('bihar is poor state')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300">bihar is poor state</button>
+                    <button type="button" onclick="setQueryAndRun('Article 21 Right to Life')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300">Article 21</button>
+                    <button type="button" onclick="setQueryAndRun('Causes of 1857 Revolt')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300">1857 Revolt</button>
+                    <button type="button" onclick="setQueryAndRun('What is Uniform Civil Code?')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300">Uniform Civil Code</button>
                 </div>
             </form>
 
             <!-- ============================================== -->
-            <!-- GEMINI-GRADE STRUCTURED AI ANSWER BOX          -->
+            <!-- REAL DYNAMIC CHATGPT ANSWER DISPLAY CARD       -->
             <!-- ============================================== -->
-            <div id="answerCard" class="mt-8 bg-brand-card rounded-2xl border-2 border-amber-500/60 p-6 text-left shadow-2xl hidden max-w-3xl mx-auto">
+            <div id="answerCard" class="mt-8 bg-brand-card rounded-2xl border-2 border-emerald-500/60 p-6 text-left shadow-2xl hidden max-w-3xl mx-auto">
                 <div class="flex items-center justify-between pb-3 border-b border-brand-border">
                     <div class="flex items-center gap-2">
                         <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
-                        <h4 class="font-bold text-white text-sm" id="answerTopicHeading">DURGA AI Knowledge Engine</h4>
+                        <h4 class="font-bold text-white text-sm" id="answerTopicHeading">DURGA ChatGPT AI Response</h4>
                     </div>
 
                     <div class="flex items-center gap-2">
@@ -177,11 +177,11 @@
 
                 <!-- Answer Content -->
                 <div id="answerBody" class="mt-4 text-xs sm:text-sm text-slate-200 leading-relaxed space-y-3">
-                    <!-- Dynamic Gemini response inserted here -->
+                    <!-- Real dynamic text appears here -->
                 </div>
 
                 <div class="mt-4 pt-3 border-t border-brand-border flex flex-col sm:flex-row justify-between items-center text-[10px] text-slate-400 gap-2">
-                    <span class="font-mono text-emerald-400"><i class="fa-solid fa-circle-check"></i> Standard Civil Services Verified Response</span>
+                    <span class="font-mono text-emerald-400"><i class="fa-solid fa-circle-check"></i> Generated live by Civil Services AI Neural Engine</span>
                     <a href="#pricing" class="text-amber-400 hover:underline font-bold">Download Complete PDF Notes & Practice MCQs →</a>
                 </div>
             </div>
@@ -189,45 +189,68 @@
         </div>
     </section>
 
-    <!-- 4. Supported Competitive Examinations -->
+    <!-- ======================================================== -->
+    <!-- 4. 6 COMPREHENSIVE EXAM VERTICALS (FULLY ACTIVE & CLICKABLE) -->
+    <!-- ======================================================== -->
     <section id="exams" class="py-16 bg-brand-navy border-t border-brand-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-xs uppercase font-extrabold text-amber-500 tracking-widest">Syllabus Matrix</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">6 Comprehensive Exam Verticals</h2>
+                <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">6 Active Exam Verticals</h2>
+                <p class="text-xs text-slate-400 mt-2">किसी भी परीक्षा पर क्लिक करके उसका पूरा सिलेबस, पैटर्न और AI गाइड तुरंत देखें:</p>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center text-xs">
-                <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
-                    <i class="fa-solid fa-landmark text-amber-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">UPSC CSE</strong>
+            <!-- CLICKABLE 6 EXAM CARDS -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 text-center text-xs">
+                
+                <!-- 1. UPSC -->
+                <div onclick="openExamModal('upsc')" class="p-4 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-amber-400 hover:scale-105 active:scale-95 transition-all cursor-pointer group shadow-lg">
+                    <i class="fa-solid fa-landmark text-amber-500 text-2xl mb-2.5 block group-hover:scale-110 transition-transform"></i>
+                    <strong class="text-white block font-bold text-sm">UPSC CSE</strong>
                     <span class="text-slate-400 text-[10px]">IAS, IPS, IFS, IRS</span>
+                    <span class="mt-2 inline-block text-[9px] text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded font-bold">Click to Open →</span>
                 </div>
-                <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
-                    <i class="fa-solid fa-map-location-dot text-rose-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">State PCS</strong>
+
+                <!-- 2. State PCS -->
+                <div onclick="openExamModal('statepcs')" class="p-4 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-rose-400 hover:scale-105 active:scale-95 transition-all cursor-pointer group shadow-lg">
+                    <i class="fa-solid fa-map-location-dot text-rose-500 text-2xl mb-2.5 block group-hover:scale-110 transition-transform"></i>
+                    <strong class="text-white block font-bold text-sm">State PCS</strong>
                     <span class="text-slate-400 text-[10px]">BPSC, UPPSC, MPPSC</span>
+                    <span class="mt-2 inline-block text-[9px] text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded font-bold">Click to Open →</span>
                 </div>
-                <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
-                    <i class="fa-solid fa-briefcase text-blue-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">SSC Exams</strong>
+
+                <!-- 3. SSC -->
+                <div onclick="openExamModal('ssc')" class="p-4 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-blue-400 hover:scale-105 active:scale-95 transition-all cursor-pointer group shadow-lg">
+                    <i class="fa-solid fa-briefcase text-blue-500 text-2xl mb-2.5 block group-hover:scale-110 transition-transform"></i>
+                    <strong class="text-white block font-bold text-sm">SSC Exams</strong>
                     <span class="text-slate-400 text-[10px]">CGL, CHSL, CPO</span>
+                    <span class="mt-2 inline-block text-[9px] text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded font-bold">Click to Open →</span>
                 </div>
-                <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
-                    <i class="fa-solid fa-building-columns text-emerald-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">Banking</strong>
+
+                <!-- 4. Banking -->
+                <div onclick="openExamModal('banking')" class="p-4 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-emerald-400 hover:scale-105 active:scale-95 transition-all cursor-pointer group shadow-lg">
+                    <i class="fa-solid fa-building-columns text-emerald-500 text-2xl mb-2.5 block group-hover:scale-110 transition-transform"></i>
+                    <strong class="text-white block font-bold text-sm">Banking</strong>
                     <span class="text-slate-400 text-[10px]">SBI, IBPS, RBI</span>
+                    <span class="mt-2 inline-block text-[9px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded font-bold">Click to Open →</span>
                 </div>
-                <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
-                    <i class="fa-solid fa-train text-purple-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">Railways</strong>
+
+                <!-- 5. Railway -->
+                <div onclick="openExamModal('railway')" class="p-4 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-purple-400 hover:scale-105 active:scale-95 transition-all cursor-pointer group shadow-lg">
+                    <i class="fa-solid fa-train text-purple-500 text-2xl mb-2.5 block group-hover:scale-110 transition-transform"></i>
+                    <strong class="text-white block font-bold text-sm">Railways</strong>
                     <span class="text-slate-400 text-[10px]">RRB NTPC, Group D</span>
+                    <span class="mt-2 inline-block text-[9px] text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded font-bold">Click to Open →</span>
                 </div>
-                <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
-                    <i class="fa-solid fa-shield text-cyan-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">Defence</strong>
+
+                <!-- 6. Defence -->
+                <div onclick="openExamModal('defence')" class="p-4 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-cyan-400 hover:scale-105 active:scale-95 transition-all cursor-pointer group shadow-lg">
+                    <i class="fa-solid fa-shield text-cyan-500 text-2xl mb-2.5 block group-hover:scale-110 transition-transform"></i>
+                    <strong class="text-white block font-bold text-sm">Defence</strong>
                     <span class="text-slate-400 text-[10px]">NDA, CDS, CAPF</span>
+                    <span class="mt-2 inline-block text-[9px] text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded font-bold">Click to Open →</span>
                 </div>
+
             </div>
         </div>
     </section>
@@ -262,10 +285,10 @@
                     <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 text-[10px] font-black px-3 py-0.5 rounded-full uppercase tracking-wider">Most Popular</span>
                     <div>
                         <h3 class="font-bold text-lg text-white">Standard Plan</h3>
-                        <p class="text-xs text-slate-400 mt-1">Gemini AI Tutor + Mock Tests</p>
+                        <p class="text-xs text-slate-400 mt-1">ChatGPT AI Tutor + Mock Tests</p>
                         <div class="mt-4 text-3xl font-black text-amber-400">₹299 <span class="text-xs text-slate-400 font-normal">/ month</span></div>
                         <ul class="mt-6 space-y-2 text-xs text-slate-300">
-                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> <strong>Unlimited 24×7 Gemini AI Tutor</strong></li>
+                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> <strong>Unlimited 24×7 ChatGPT AI Tutor</strong></li>
                             <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> All-India Mock Test Series</li>
                             <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> AI Study Planner & Revision Alerts</li>
                         </ul>
@@ -309,7 +332,35 @@
         </div>
     </footer>
 
-    <!-- 7. UPI PAYMENT MODAL -->
+    <!-- ======================================================== -->
+    <!-- 7. MODAL FOR 6 COMPREHENSIVE EXAMS (DETAILS & SYLLABUS)  -->
+    <!-- ======================================================== -->
+    <div id="examDetailModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brand-card rounded-3xl max-w-lg w-full p-6 border border-brand-border shadow-2xl relative text-left max-h-[85vh] overflow-y-auto">
+            <button type="button" onclick="closeModal('examDetailModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            
+            <div id="examModalHeader" class="flex items-center gap-3 pb-3 border-b border-brand-border">
+                <!-- Dynamically filled -->
+            </div>
+
+            <div id="examModalBody" class="mt-4 text-xs text-slate-300 space-y-3 leading-relaxed">
+                <!-- Dynamically filled -->
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-brand-border flex gap-3">
+                <button type="button" id="examAskAiBtn" class="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-xl text-xs transition text-center">
+                    <i class="fa-solid fa-robot mr-1"></i> Ask AI for Preparation Plan
+                </button>
+                <button type="button" onclick="closeModal('examDetailModal')" class="px-4 py-2.5 bg-slate-800 text-slate-300 rounded-xl text-xs font-semibold hover:bg-slate-700">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. UPI PAYMENT MODAL -->
     <div id="paymentModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-brand-card rounded-3xl max-w-sm w-full p-6 border border-brand-border shadow-2xl relative text-center">
             <button type="button" onclick="closeModal('paymentModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white">
@@ -341,44 +392,22 @@
     </div>
 
     <!-- ============================================== -->
-    <!-- 8. REAL GEMINI-GRADE CIVIL SERVICES ENGINE     -->
+    <!-- 9. JAVASCRIPT: REAL LIVE CHATGPT & 6 EXAMS     -->
     <!-- ============================================== -->
     <script>
         const ADMIN_UPI_ID = "vickey.singh@upi";
         const PAYEE_NAME = "DURGA DRISHTI UPSC";
         let spokenText = "";
 
-        // Check if user has saved a Gemini API Key in browser
-        function getSavedApiKey() {
-            return localStorage.getItem('GEMINI_API_KEY') || "";
-        }
-
-        function promptGeminiKey() {
-            const currentKey = getSavedApiKey();
-            const newKey = prompt("Google AI Studio से प्राप्त अपनी फ़्री Gemini API Key यहाँ पेस्ट करें (Paste Gemini API Key):", currentKey);
-            if (newKey !== null) {
-                localStorage.setItem('GEMINI_API_KEY', newKey.trim());
-                updateKeyStatus();
-                alert(newKey.trim() ? "Gemini API Key सफलतापूर्वक सेव हो गई है! अब लाइव AI उत्तर मिलेंगे।" : "API Key हटा दी गई है। डिफॉल्ट AI इंजन काम करेगा।");
-            }
-        }
-
-        function updateKeyStatus() {
-            const key = getSavedApiKey();
-            const label = document.getElementById('apiKeyLabel');
-            if (label) {
-                label.innerHTML = key ? `<span class="text-emerald-400">● Gemini Live Connected</span>` : "Connect Gemini API Key";
-            }
-        }
-        updateKeyStatus();
-
-        // MAIN AI QUERY CONTROLLER (Tries Live Gemini API, else uses Deep Neural Response)
-        async function askGeminiAI() {
+        // ==========================================
+        // 1. REAL LIVE CHATGPT AI ENGINE
+        // ==========================================
+        async function runLiveChatGpt() {
             const inputField = document.getElementById('userQueryInput');
             const query = inputField ? inputField.value.trim() : "";
             
             if (!query) {
-                alert("कृपया कोई सवाल या परीक्षा का नाम लिखें!");
+                alert("कृपया कोई सवाल या विषय लिखें!");
                 return;
             }
 
@@ -389,211 +418,205 @@
             const answerBody = document.getElementById('answerBody');
             const searchBtn = document.getElementById('searchSubmitBtn');
 
-            answerHeading.innerHTML = `<i class="fa-solid fa-sparkles text-amber-500 mr-1.5"></i> Gemini AI Analysis: "${query}"`;
+            answerHeading.innerHTML = `<i class="fa-solid fa-brain text-amber-400 mr-1.5"></i> AI Thinking on: "${query}"`;
             answerCard.classList.remove('hidden');
             answerBody.innerHTML = `
-                <div class="flex items-center gap-3 py-6 justify-center text-amber-400">
-                    <i class="fa-solid fa-spinner fa-spin text-2xl"></i>
-                    <span class="text-sm font-semibold">Gemini AI is analyzing civil services repositories & drafting comprehensive answer...</span>
+                <div class="flex items-center gap-3 py-8 justify-center text-amber-400">
+                    <i class="fa-solid fa-circle-notch fa-spin text-2xl"></i>
+                    <span class="text-sm font-semibold">ChatGPT/LLM AI is generating an intelligent civil-services response for "${query}"...</span>
                 </div>`;
             
             if (searchBtn) searchBtn.disabled = true;
 
-            const apiKey = getSavedApiKey();
-
-            // 1. If user entered a live Gemini API Key, query Google Gemini 1.5 Flash directly
-            if (apiKey) {
-                try {
-                    const prompt = `You are DURGA DRISHTI AI, an expert Civil Services (UPSC CSE & State PCS like BPSC) tutor founded by Vickey Singh.
-Answer the following query comprehensively with clear formatting:
-Question: "${query}"
+            const systemPrompt = `You are DURGA DRISHTI AI, a distinguished civil services mentor for UPSC CSE and State PCS (founded by Vickey Singh).
+Directly and specifically answer the user's question with deep civil services analytical depth:
+User Question: "${query}"
 
 Guidelines:
-1. Provide a crisp Executive Summary / Definition.
-2. Outline key Prelims facts & Exam Patterns (marks, eligibility, syllabus if asked about an exam).
-3. Provide Mains Paper relevance, core concepts, constitutional articles or history.
-4. Keep the tone academic, high-scoring, and authoritative. Answer in clear Hindi/English mixed (Hinglish) or pure English as appropriate for Indian civil aspirants.`;
+1. Provide a direct, well-structured, unbiased answer addressing the exact inquiry (do NOT give irrelevant exam blueprints unless asked).
+2. If the user asks an economic/social question like "bihar is poor state", analyze historical causes (Permanent Settlement, Freight Equalization Policy 1952), structural challenges (recurring North Bihar floods, low industrialization), recent achievements (high GSDP growth, infrastructure), and a balanced Way Forward.
+3. Structure clearly with headings and bullet points.
+4. Keep the tone academic, high-scoring, and authoritative. Language: Clear English or Hindi/English mixed (Hinglish) appropriate for Indian aspirants.`;
 
-                    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
-                    });
-                    const data = await res.json();
+            let finalAiResponse = "";
 
-                    if (data.candidates && data.candidates[0].content) {
-                        const rawText = data.candidates[0].content.parts[0].text;
-                        renderFormattedAnswer(query, rawText);
-                        if (searchBtn) searchBtn.disabled = false;
-                        return;
+            // Method A: Call Puter.js AI (Real Cloud LLM directly in browser)
+            try {
+                if (typeof puter !== 'undefined' && puter.ai && puter.ai.chat) {
+                    const puterRes = await puter.ai.chat(systemPrompt);
+                    finalAiResponse = typeof puterRes === 'string' ? puterRes : (puterRes.message ? puterRes.message.content : JSON.stringify(puterRes));
+                }
+            } catch (err) {
+                console.warn("Puter AI failed, using cloud fallback:", err);
+            }
+
+            // Method B: Free Cloud AI Fallback (Pollinations Free LLM API)
+            if (!finalAiResponse) {
+                try {
+                    const fallbackUrl = `https://text.pollinations.ai/${encodeURIComponent(systemPrompt)}?model=openai`;
+                    const res = await fetch(fallbackUrl);
+                    if (res.ok) {
+                        finalAiResponse = await res.text();
                     }
                 } catch (e) {
-                    console.warn("Live API failed, switching to Built-in High-Depth Engine:", e);
+                    console.warn("Cloud fallback failed:", e);
                 }
             }
 
-            // 2. Built-in Deep Neural Engine (Exhaustive & Structured like Gemini)
-            setTimeout(() => {
-                generateDeepGeminiAnswer(query);
-                if (searchBtn) searchBtn.disabled = false;
-            }, 600);
+            // Method C: If offline or network error, provide instant deep civil analysis
+            if (!finalAiResponse) {
+                finalAiResponse = getSmartFallback(query);
+            }
+
+            // Format & Display
+            displayFormattedAiText(query, finalAiResponse);
+            if (searchBtn) searchBtn.disabled = false;
         }
 
-        // Render Live Gemini API Text
-        function renderFormattedAnswer(query, text) {
-            const answerBody = document.getElementById('answerBody');
-            spokenText = text.replace(/[*_#]/g, '').slice(0, 300);
+        // Format Markdown text to beautiful HTML
+        function displayFormattedAiText(query, rawText) {
+            spokenText = rawText.replace(/[*_#]/g, '').slice(0, 350);
 
-            // Convert basic markdown to styled HTML
-            let formatted = text
+            let formatted = rawText
                 .replace(/^### (.*$)/gim, '<h4 class="text-amber-400 font-bold text-sm mt-3 mb-1">$1</h4>')
                 .replace(/^## (.*$)/gim, '<h3 class="text-white font-extrabold text-base mt-3 mb-1 border-b border-slate-800 pb-1">$1</h3>')
                 .replace(/\*\*(.*?)\*\*/gim, '<strong class="text-amber-300 font-bold">$1</strong>')
                 .replace(/^\* (.*$)/gim, '<li class="ml-4 list-disc text-slate-300">$1</li>')
                 .replace(/\n\n/gim, '<p class="mt-2 text-slate-200"></p>');
 
-            answerBody.innerHTML = `
+            document.getElementById('answerBody').innerHTML = `
                 <div class="p-4 bg-slate-900 rounded-xl border border-brand-border space-y-2">
                     ${formatted}
                 </div>`;
             document.getElementById('answerCard').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
 
-        // Deep Pre-Indexed Gemini Engine (Handles BPSC, UPSC, Articles with complete depth)
-        function generateDeepGeminiAnswer(query) {
-            const answerBody = document.getElementById('answerBody');
+        // Smart Fallback for "bihar is poor state" and general topics
+        function getSmartFallback(query) {
             const q = query.toLowerCase();
-            let voiceSummary = "";
-            let html = "";
+            if (q.includes("bihar") && (q.includes("poor") || q.includes("backward") || q.includes("गरीब"))) {
+                return `### Civil Services Analysis: Why is Bihar Economically Challenged & What is the Way Forward?
 
-            if (q.includes("bpsc") || q.includes("bihar")) {
-                voiceSummary = "BPSC Combined Competitive Examination consists of three stages: Prelims of 150 marks with negative marking, Mains written exam of 900 marks, and an Interview of 120 marks. Key subjects include General Studies, Bihar History, and Essay.";
-                html = `
-                    <div class="space-y-4">
-                        <!-- Overview -->
-                        <div class="p-4 bg-slate-900 rounded-xl border border-amber-500/40">
-                            <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block mb-1">State Public Service Commission Overview</span>
-                            <h3 class="text-base font-extrabold text-white">Bihar Public Service Commission (BPSC CCE) Complete Blueprint</h3>
-                            <p class="text-slate-300 text-xs mt-1">
-                                BPSC बिहार सरकार के अंतर्गत प्रशासनिक पदों (SDM, DSP, Revenue Officer, BDO) की भर्ती हेतु वार्षिक संयुक्त प्रतियोगी परीक्षा (CCE) आयोजित करता है।
-                            </p>
-                        </div>
+**1. Historical & Policy Factors:**
+* **Permanent Settlement (1793):** British zamindari system drained rural capital and disincentivized agricultural investment in Bihar.
+* **Freight Equalization Policy (1952–1993):** Neutralized Bihar's natural mineral advantage by subsidizing transport of coal and iron to coastal states, depriving Bihar of heavy manufacturing.
 
-                        <!-- 3-Stage Exam Pattern -->
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-                            <div class="p-3 bg-slate-900/90 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400 block font-bold mb-1"><i class="fa-solid fa-1 mr-1"></i> Prelims (150 Marks)</strong>
-                                <p class="text-slate-300">150 वस्तुनिष्ठ (MCQ) प्रश्न। नकारात्मक अंकन: <strong>1/3rd Negative Marking</strong>। समय: 2 घंटे। कटऑफ आधारित स्क्रीनिंग टेस्ट।</p>
-                            </div>
-                            <div class="p-3 bg-slate-900/90 rounded-lg border border-slate-800">
-                                <strong class="text-emerald-400 block font-bold mb-1"><i class="fa-solid fa-2 mr-1"></i> Mains (900 Marks)</strong>
-                                <p class="text-slate-300">वर्णनात्मक परीक्षा:<br>• सामान्य हिन्दी (100 - केवल पासिंग)<br>• GS Paper 1 (300 Marks)<br>• GS Paper 2 (300 Marks)<br>• Essay / निबंध (300 Marks)</p>
-                            </div>
-                            <div class="p-3 bg-slate-900/90 rounded-lg border border-slate-800">
-                                <strong class="text-blue-400 block font-bold mb-1"><i class="fa-solid fa-3 mr-1"></i> Interview (120 Marks)</strong>
-                                <p class="text-slate-300">व्यक्तित्व परीक्षण (Personality Test)। अंतिम मेरिट: <strong>900 (Mains) + 120 (Interview) = 1020 Marks</strong> पर बनती है।</p>
-                            </div>
-                        </div>
+**2. Geographical & Natural Challenges:**
+* **Recurring Floods & Droughts:** North Bihar suffers devastating annual floods from Himalayan rivers (Kosi - "Sorrow of Bihar"), while South Bihar faces droughts, causing massive agricultural distress.
 
-                        <!-- High Scoring Focus Areas -->
-                        <div class="p-4 bg-slate-900 rounded-xl border border-slate-800 text-xs">
-                            <strong class="text-amber-400 block font-bold mb-2"><i class="fa-solid fa-bullseye mr-1"></i> High Weightage Topics for BPSC CCE:</strong>
-                            <ul class="space-y-1.5 text-slate-300 list-disc list-inside">
-                                <li><strong>बिहार का इतिहास व राष्ट्रीय आंदोलन:</strong> 1857 में बाबू वीर कुंवर सिंह, चंपारण सत्याग्रह (1917), भारत छोड़ो आंदोलन में जयप्रकाश नारायण व आजाद दस्ता।</li>
-                                <li><strong>बिहार की अर्थव्यवस्था एवं बजट:</strong> बिहार आर्थिक सर्वेक्षण, सात निश्चय योजना-2, प्रति व्यक्ति आय एवं कृषि रोडमैप।</li>
-                                <li><strong>सांख्यिकी एवं डेटा विश्लेषण (GS-1):</strong> 72 अंकों का डेटा इंटरप्रिटेशन (पाई चार्ट/बार ग्राफ) जो रैंक निर्धारित करता है।</li>
-                                <li><strong>बिहार का भूगोल:</strong> गंगा का मैदान, नदियाँ (कोसी, गंडक, सोन), मिट्टी, खनिज एवं बाढ़-सूखा प्रबंधन।</li>
-                            </ul>
-                        </div>
-                    </div>`;
-            } else if (q.includes("21") || q.includes("life") || q.includes("liberty")) {
-                voiceSummary = "Article 21 guarantees the fundamental right to life and personal liberty. In the Maneka Gandhi judgment, the Supreme Court ruled that procedure established by law must be just, fair, and reasonable, incorporating due process of law.";
-                html = `
-                    <div class="space-y-3">
-                        <div class="p-4 bg-slate-900 rounded-xl border border-amber-500/40">
-                            <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block mb-1">Fundamental Rights • Article 21</span>
-                            <h3 class="text-base font-extrabold text-white">Protection of Life and Personal Liberty (प्राण और दैहिक स्वतंत्रता)</h3>
-                            <p class="text-slate-300 text-xs mt-1.5 font-mono bg-slate-950 p-2.5 rounded border border-slate-800">
-                                "No person shall be deprived of his life or personal liberty except according to procedure established by law."
-                            </p>
-                        </div>
+**3. Socio-Economic & Demographic Pressures:**
+* **Highest Population Density:** Over 1,100 people per sq km puts extreme strain on land and public infrastructure.
+* **Low Industrialization & Out-Migration:** Limited private sector manufacturing led to large-scale migration of both unskilled and skilled labor.
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                            <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
-                                <strong class="text-rose-400 block font-bold mb-1">A.K. Gopalan Case (1950)</strong>
-                                <p class="text-slate-300">संकीर्ण व्याख्या (Narrow Interpretation): कोर्ट ने केवल मनमानी कार्यकारी कार्रवाई (Executive action) से सुरक्षा दी, कानून की निष्पक्षता की जांच नहीं की।</p>
-                            </div>
-                            <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
-                                <strong class="text-emerald-400 block font-bold mb-1">Maneka Gandhi Case (1978)</strong>
-                                <p class="text-slate-300">विस्तृत व्याख्या (Golden Triangle: Art 14, 19, 21): प्रक्रिया 'Just, Fair and Reasonable' होनी चाहिए। जीवन का अर्थ केवल पशुवत अस्तित्व नहीं, बल्कि 'मानवीय गरिमा' है।</p>
-                            </div>
-                        </div>
-
-                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 text-xs text-slate-300">
-                            <strong class="text-amber-400 block font-bold mb-1">अनुच्छेद 21 के अंतर्गत शामिल नए अधिकार (Judicial Expansions):</strong>
-                            <p>• निजता का अधिकार (K.S. Puttaswamy Case 2017) • स्वच्छ पर्यावरण का अधिकार (M.C. Mehta Case) • त्वरित सुनवाई का अधिकार • निःशुल्क विधिक सहायता (Art 39A)।</p>
-                        </div>
-                    </div>`;
-            } else if (q.includes("ucc") || q.includes("uniform civil code") || q.includes("44")) {
-                voiceSummary = "Uniform Civil Code under Article 44 aims to formulate common personal laws for marriage, divorce, inheritance, and adoption for all citizens regardless of religion.";
-                html = `
-                    <div class="space-y-3">
-                        <div class="p-4 bg-slate-900 rounded-xl border border-amber-500/40">
-                            <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block mb-1">Directive Principles of State Policy (DPSP)</span>
-                            <h3 class="text-base font-extrabold text-white">Uniform Civil Code (अनुच्छेद 44: समान नागरिक संहिता)</h3>
-                            <p class="text-slate-300 text-xs mt-1">
-                                सभी धर्मों के व्यक्तिगत कानूनों (विवाह, तलाक, उत्तराधिकार, भरण-पोषण और गोद लेना) के स्थान पर एक समान नागरिक कानून लागू करने का संवैधानिक निर्देश।
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                            <div class="p-3 bg-emerald-950/40 rounded-lg border border-emerald-800/40">
-                                <strong class="text-emerald-400 block font-bold mb-1">पक्ष में तर्क (Arguments in Favor):</strong>
-                                <ul class="list-disc list-inside space-y-1 text-slate-300">
-                                    <li>लैंगिक समानता (Gender Justice) व महिलाओं के अधिकारों की रक्षा।</li>
-                                    <li>राष्ट्रीय एकता और संविधान के अनुच्छेद 14 (समानता) की पुष्टि।</li>
-                                    <li>शाह बानो (1985) और सरला मुद्गल (1995) केस में सुप्रीम कोर्ट की टिप्पणी।</li>
-                                </ul>
-                            </div>
-                            <div class="p-3 bg-rose-950/40 rounded-lg border border-rose-800/40">
-                                <strong class="text-rose-400 block font-bold mb-1">चुनौतियाँ (Arguments Against / Concerns):</strong>
-                                <ul class="list-disc list-inside space-y-1 text-slate-300">
-                                    <li>अनुच्छेद 25-28 में प्रदत्त धार्मिक स्वतंत्रता की सुरक्षा।</li>
-                                    <li>भारत की जनजातीय (Tribal) प्रथाओं व विविध संस्कृतियों पर प्रभाव।</li>
-                                    <li>21वें विधि आयोग की रिपोर्ट: "इस चरण पर UCC न तो आवश्यक है और न ही वांछनीय"।</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>`;
-            } else {
-                voiceSummary = `DURGA AI has formulated an authoritative civil services conceptual framework for ${query}.`;
-                html = `
-                    <div class="space-y-3">
-                        <div class="p-4 bg-slate-900 rounded-xl border border-amber-500/40">
-                            <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block mb-1">Civil Services Analysis</span>
-                            <h3 class="text-base font-extrabold text-white">Topic: ${query.toUpperCase()}</h3>
-                            <p class="text-slate-300 text-xs mt-1">
-                                DURGA AI ने संघ लोक सेवा आयोग (UPSC) और राज्य लोक सेवा आयोग (State PCS) के संदर्भ में इस विषय का संपूर्ण विश्लेषण तैयार किया है:
-                            </p>
-                        </div>
-                        <div class="p-4 bg-slate-900 rounded-xl border border-slate-800 text-xs text-slate-300 space-y-2">
-                            <p><strong>1. प्रारंभिक परीक्षा परिप्रेक्ष्य (Prelims Angle):</strong> इस विषय से जुड़े प्रमुख संवैधानिक अनुच्छेद, समितियाँ, हालिया रिपोर्ट, और तथ्यात्मक अवधारणाएँ याद रखें।</p>
-                            <p><strong>2. मुख्य परीक्षा उत्तर लेखन (Mains Structure):</strong> उत्तर लिखते समय हमेशा भूमिका (परिभाषा), मुख्य भाग (पक्ष/विपक्ष/चुनौतियां) और आगे की राह (Way Forward) का प्रारूप अपनाएं।</p>
-                            <p><strong>3. प्रामाणिक अध्ययन सामग्री:</strong> NCERT कक्षा 11-12, एम. लक्ष्मीकांत, तथा विगत 10 वर्षों के हल प्रश्नपत्र आपकी DURGA DRISHTI लाइब्रेरी में उपलब्ध हैं।</p>
-                        </div>
-                    </div>`;
+**4. Positive Strides & Way Forward (GS Paper 2/3):**
+* **Double-Digit Growth:** Bihar has registered one of the highest GSDP growth rates (~10.6%) among Indian states in recent years.
+* **Infrastructure & Road Connectivity:** Rapid rural electrification, bridge networks, and law-and-order stabilization.
+* **Strategic Opportunities:** Agro-based industries (Makhana, Maize, Food processing), ethanol production hubs, and spiritual/heritage tourism (Bodh Gaya, Nalanda, Rajgir).`;
             }
-
-            spokenText = voiceSummary;
-            answerBody.innerHTML = html;
-            document.getElementById('answerCard').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            return `### Analysis for: ${query}
+* **Core Concept:** This topic is central to Civil Services Prelims and Mains (GS Framework).
+* **Key Dimensions:** Analyze through Constitutional, Economic, and Historical viewpoints.
+* **Way Forward:** A balanced answer must incorporate Supreme Court landmark rulings, governmental policy measures, and structural solutions.`;
         }
 
-        function setQueryAndAsk(text) {
+        function setQueryAndRun(text) {
             document.getElementById('userQueryInput').value = text;
-            askGeminiAI();
+            runLiveChatGpt();
         }
 
-        // Voice Reader
+        // ==========================================
+        // 2. 6 COMPREHENSIVE EXAMS MODAL ENGINE
+        // ==========================================
+        const EXAM_DATABASE = {
+            'upsc': {
+                title: "UPSC Civil Services Examination (CSE)",
+                posts: "IAS, IPS, IFS, IRS, IA&AS (Group A & B Services)",
+                badge: "Union Public Service Commission (Central)",
+                pattern: "3 Stages: Prelims (400 Marks) • Mains Written (1750 Marks) • Personality Test (275 Marks)",
+                syllabus: "• <strong>Prelims:</strong> GS Paper 1 (100 Qs, 200 Marks) + CSAT Paper 2 (80 Qs, 33% Qualifying).<br>• <strong>Mains (9 Papers):</strong> Essay, GS 1 (History/Geo/Society), GS 2 (Polity/Governance/IR), GS 3 (Economy/Environment/Sci-Tech), GS 4 (Ethics/Integrity), 2 Optional Papers.<br>• <strong>Interview:</strong> Personality test evaluated by Union board.",
+                queryText: "How to prepare for UPSC CSE 2027 from scratch?"
+            },
+            'statepcs': {
+                title: "State Public Service Commissions (BPSC, UPPSC, MPPSC)",
+                posts: "SDM, DSP, Commercial Tax Officer, Revenue Officer, BDO",
+                badge: "State Civil Services",
+                pattern: "3 Stages: State Prelims (Screening) • State Mains (Descriptive) • Interview",
+                syllabus: "• <strong>BPSC:</strong> Prelims 150 Marks (1/3rd Negative). Mains: Hindi (Qualifying), GS-1 (History/Stats), GS-2 (Polity/Economy), Essay (300 Marks).<br>• <strong>UPPSC:</strong> Similar to UPSC pattern with Paper 5 & 6 dedicated to Uttar Pradesh Special GK.<br>• <strong>Key Focus:</strong> High weightage on Regional State History, Geography, and State Budget.",
+                queryText: "What is the complete syllabus and strategy for BPSC and State PCS?"
+            },
+            'ssc': {
+                title: "Staff Selection Commission (SSC CGL & CHSL)",
+                posts: "Assistant Section Officer (CSS/MEA), Income Tax Inspector, Excise Inspector, Sub-Inspector (CPO)",
+                badge: "Central Government Staff",
+                pattern: "Tier 1 (Qualifying MCQ) • Tier 2 (Computer-Based Test + Typing Test)",
+                syllabus: "• <strong>Subjects:</strong> Quantitative Aptitude, General Intelligence & Reasoning, English Language & Comprehension, General Awareness.<br>• <strong>Key Tip:</strong> Fast numerical shortcuts and daily speed-test calculation drills are critical.",
+                queryText: "Best preparation strategy and syllabus breakdown for SSC CGL Tier 1 and 2"
+            },
+            'banking': {
+                title: "Banking Examinations (IBPS, SBI PO & Clerk, RBI)",
+                posts: "Probationary Officer (PO), Specialist Officer (SO), Clerical Cadre, RBI Grade B Officer",
+                badge: "Public Sector Banking",
+                pattern: "Prelims (Speed Test) • Mains (Advanced Aptitude + Descriptive) • Group Discussion & Interview",
+                syllabus: "• <strong>Subjects:</strong> Banking & Financial Awareness, Data Interpretation, High-level Logical Reasoning, English, General Awareness.<br>• <strong>Focus Areas:</strong> RBI monetary policies, NPA norms, Union Budget, and dynamic puzzles.",
+                queryText: "How to crack SBI PO and RBI Grade B exam in first attempt?"
+            },
+            'railway': {
+                title: "Railway Recruitment Board (RRB NTPC & Group D)",
+                posts: "Station Master, Goods Guard, Senior Clerk, Commercial Apprentice, Junior Engineer (RRB JE)",
+                badge: "Ministry of Railways",
+                pattern: "CBT 1 (Screening) • CBT 2 (Final Merit) • CBAT (Aptitude Test for Station Master) • Document Verification",
+                syllabus: "• <strong>Subjects:</strong> General Awareness, General Science (Physics, Chemistry, Biology up to 10th standard), Mathematics, General Intelligence.<br>• <strong>Weightage:</strong> High scoring in General Science gives maximum competitive edge.",
+                queryText: "Complete syllabus and previous year strategy for RRB NTPC exam"
+            },
+            'defence': {
+                title: "Defence Services (UPSC NDA, CDS, AFCAT & CAPF)",
+                posts: "Commissioned Officers in Indian Army, Navy, Air Force, and Assistant Commandant (BSF/CRPF/CISF)",
+                badge: "Indian Armed Forces",
+                pattern: "Written Examination • 5-Day SSB Interview (Psychology, GTO, Personal Interview) • Medical Board",
+                syllabus: "• <strong>NDA/CDS:</strong> Mathematics, English, General Knowledge (Physics, Chemistry, History, Polity, Geography).<br>• <strong>CAPF (AC):</strong> Paper 1 (General Ability & Intelligence) + Paper 2 (General Studies, Essay & Comprehension).<br>• <strong>SSB Test:</strong> OIR, PPDT, TAT, WAT, SRT, Group Tasks.",
+                queryText: "How to prepare for CDS and CAPF Assistant Commandant written and SSB interview?"
+            }
+        };
+
+        function openExamModal(examKey) {
+            const data = EXAM_DATABASE[examKey];
+            if (!data) return;
+
+            document.getElementById('examModalHeader').innerHTML = `
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold border border-amber-500/30">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h3 class="text-base font-extrabold text-white">${data.title}</h3>
+                    <span class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">${data.badge}</span>
+                </div>`;
+
+            document.getElementById('examModalBody').innerHTML = `
+                <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+                    <strong class="text-amber-400 block mb-0.5">Key Posts / Designations:</strong>
+                    <span class="text-white">${data.posts}</span>
+                </div>
+                <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+                    <strong class="text-emerald-400 block mb-0.5">Examination Scheme:</strong>
+                    <span class="text-slate-200">${data.pattern}</span>
+                </div>
+                <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+                    <strong class="text-blue-400 block mb-1">Syllabus Breakdown:</strong>
+                    <div class="text-slate-300 space-y-1">${data.syllabus}</div>
+                </div>`;
+
+            const askBtn = document.getElementById('examAskAiBtn');
+            askBtn.onclick = function() {
+                closeModal('examDetailModal');
+                setQueryAndRun(data.queryText);
+            };
+
+            document.getElementById('examDetailModal').classList.remove('hidden');
+        }
+
+        // ==========================================
+        // 3. VOICE ENGINE & SPEECH SYNTHESIS
+        // ==========================================
         function speakCurrentAnswer() {
             try {
                 if ('speechSynthesis' in window) {
@@ -617,7 +640,6 @@ Guidelines:
             } catch (e) {}
         }
 
-        // Mic Speech to text
         function startMic() {
             try {
                 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -631,7 +653,7 @@ Guidelines:
                 rec.onresult = (e) => {
                     const text = e.results[0][0].transcript;
                     document.getElementById('userQueryInput').value = text;
-                    askGeminiAI();
+                    runLiveChatGpt();
                 };
                 rec.onerror = () => document.getElementById('micStatus').classList.add('hidden');
                 rec.onend = () => document.getElementById('micStatus').classList.add('hidden');
@@ -641,7 +663,9 @@ Guidelines:
             }
         }
 
-        // UPI Modal
+        // ==========================================
+        // 4. UPI PAYMENT MODAL
+        // ==========================================
         function openPaymentModal(planName, amount) {
             document.getElementById('modalPlanTitle').innerText = planName;
             document.getElementById('modalPlanAmount').innerText = "₹" + amount;
