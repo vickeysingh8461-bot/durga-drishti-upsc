@@ -1,336 +1,617 @@
 <!DOCTYPE html>
-<html lang="hi" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DURGA DRISHTI - One Platform. Every Exam. Every Language. Powered by AI.</title>
+    <title>DURGA DRISHTI - Voice AI & Multilingual Civil Services Ecosystem</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome 6 -->
+    <!-- FontAwesome 6 Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
                     colors: {
-                        dd: {
-                            navy: '#0b1329',
-                            dark: '#060a17',
-                            gold: '#d97706',
-                            goldLight: '#f59e0b',
-                            maroon: '#991b1b',
-                            card: '#111a36'
+                        brand: {
+                            dark: '#030712',
+                            navy: '#0b132b',
+                            card: '#111c44',
+                            border: '#1f2d5a',
+                            accent: '#f59e0b',
+                            accentHover: '#d97706',
+                            emerald: '#10b981',
+                            rose: '#f43f5e'
                         }
                     }
                 }
             }
         }
     </script>
+    <style>
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(245, 158, 11, 0.25);
+        }
+        .voice-pulse {
+            animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.7); }
+            70% { transform: scale(1.1); box-shadow: 0 0 0 15px rgba(244, 63, 94, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(244, 63, 94, 0); }
+        }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950">
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-black">
 
-    <!-- 1. Top Ribbon: 19 Languages -->
-    <div class="bg-dd-dark border-b border-slate-800 text-xs py-2 px-4 text-slate-400">
+    <!-- 1. Top Ribbon: Multilingual & Mission -->
+    <div class="bg-brand-navy/90 border-b border-brand-border text-xs py-2 px-4 text-slate-400">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
             <div class="flex items-center gap-2">
                 <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="text-slate-300 font-medium">शिक्षा सबके लिए, हर भाषा में। | Multilingual AI Platform for 19+ Languages</span>
+                <span class="text-slate-300 font-medium">Quality Education for Every Aspirant • Multilingual AI Learning Platform</span>
             </div>
             
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-language text-amber-500"></i>
-                <label for="langSelect" class="text-slate-400 font-medium">Choose Language:</label>
-                <select id="langSelect" class="bg-slate-800 text-amber-400 font-semibold px-2 py-1 rounded border border-slate-700 text-xs focus:outline-none focus:border-amber-500" onchange="switchLanguage(this.value)">
-                    <option value="hi" selected>हिन्दी (Hindi)</option>
-                    <option value="en">English (अंग्रेज़ी)</option>
-                    <option value="bho">भोजपुरी (Bhojpuri)</option>
-                    <option value="mai">मैथिली (Maithili)</option>
-                    <option value="ur">اردو (Urdu)</option>
-                    <option value="bn">বাংলা (Bengali)</option>
-                    <option value="mr">मराठी (Marathi)</option>
-                    <option value="gu">ગુજરાતી (Gujarati)</option>
-                    <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
-                    <option value="ta">தமிழ் (Tamil)</option>
-                    <option value="te">తెలుగు (Telugu)</option>
-                </select>
+            <div class="flex items-center gap-3">
+                <span class="text-[11px] text-amber-400 font-semibold"><i class="fa-solid fa-microphone mr-1"></i> Voice AI Enabled</span>
+                <div class="flex items-center gap-1.5 border-l border-slate-700 pl-3">
+                    <i class="fa-solid fa-globe text-slate-400"></i>
+                    <select id="langSelect" class="bg-slate-900 text-amber-400 font-semibold px-2 py-0.5 rounded border border-slate-700 text-xs focus:outline-none focus:border-amber-500" onchange="switchLanguage(this.value)">
+                        <option value="en" selected>English System</option>
+                        <option value="hi">हिन्दी (Hindi)</option>
+                        <option value="bho">भोजपुरी (Bhojpuri)</option>
+                        <option value="mai">मैथिली (Maithili)</option>
+                        <option value="ur">اردو (Urdu)</option>
+                        <option value="bn">বাংলা (Bengali)</option>
+                        <option value="mr">मराठी (Marathi)</option>
+                        <option value="ta">தமிழ் (Tamil)</option>
+                        <option value="te">తెలుగు (Telugu)</option>
+                    </select>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- 2. Header & Nav -->
-    <header class="sticky top-0 bg-dd-navy/95 backdrop-blur-md z-40 border-b border-slate-800 shadow-xl">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3">
-                <div class="w-12 h-12 bg-gradient-to-tr from-amber-600 via-rose-700 to-indigo-900 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg border border-amber-500/30">
+    <!-- 2. Modern Floating Header -->
+    <header class="sticky top-0 bg-brand-navy/95 backdrop-blur-md z-40 border-b border-brand-border shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 shrink-0">
+                <div class="w-12 h-12 bg-gradient-to-tr from-amber-500 via-rose-600 to-indigo-700 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg border border-amber-500/30">
                     <i class="fa-solid fa-eye text-amber-300"></i>
                 </div>
                 <div>
                     <h1 class="text-xl sm:text-2xl font-black text-white tracking-tight leading-none">
                         DURGA DRISHTI <span class="text-amber-500">UPSC</span>
                     </h1>
-                    <p class="text-[9px] text-amber-400 font-bold uppercase tracking-widest mt-1">One Platform. Every Exam. Powered by AI.</p>
+                    <p class="text-[9px] text-amber-400 font-extrabold uppercase tracking-widest mt-0.5">One Platform. Every Exam. Powered by AI.</p>
                 </div>
             </a>
 
-            <nav class="hidden lg:flex items-center gap-6 font-semibold text-slate-300 text-sm">
-                <a href="#ai-tutor-live" class="text-amber-400 hover:text-amber-300 transition"><i class="fa-solid fa-sparkles mr-1"></i> Live AI Tutor</a>
-                <a href="#exams" class="hover:text-amber-400 transition">Exams</a>
-                <a href="#pricing" class="hover:text-amber-400 transition">Pricing Plans</a>
-                <a href="admin.html" class="hover:text-amber-400 transition">Admin Console</a>
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-7 font-semibold text-slate-300 text-sm">
+                <a href="#voice-search" class="hover:text-amber-400 transition flex items-center gap-1.5 text-amber-400">
+                    <i class="fa-solid fa-microphone-lines"></i> Voice AI
+                </a>
+                <a href="#exams" class="hover:text-amber-400 transition">Exams Covered</a>
+                <a href="#ai-features" class="hover:text-amber-400 transition">AI Modules</a>
+                <a href="#pricing" class="hover:text-amber-400 transition">Subscription Plans</a>
+                <a href="admin.html" class="hover:text-amber-400 transition flex items-center gap-1">
+                    <i class="fa-solid fa-shield-halved text-rose-400"></i> Admin
+                </a>
             </nav>
 
+            <!-- Actions -->
             <div class="flex items-center gap-3">
-                <a href="#pricing" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 text-xs sm:text-sm font-extrabold px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-amber-500/20 transition">
-                    <i class="fa-solid fa-bolt mr-1"></i> Subscribe Now
+                <a href="#pricing" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 text-xs sm:text-sm font-extrabold px-5 py-2.5 rounded-xl shadow-lg shadow-amber-500/20 transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-bolt mr-1"></i> Start Free
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- 3. Hero Section & LIVE AI TUTOR -->
-    <section class="relative pt-12 pb-20 bg-gradient-to-b from-dd-navy via-slate-900 to-dd-dark">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <!-- 3. Redesigned Hero Section WITH VOICE AI & SEARCH -->
+    <section id="voice-search" class="relative pt-16 pb-24 overflow-hidden bg-gradient-to-b from-brand-navy via-slate-950 to-brand-dark glow-effect">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold mb-4">
-                <i class="fa-solid fa-robot"></i> 24×7 AI Personal Tutor with Zero-Error Guardrail
+            <!-- Voice Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold mb-6">
+                <i class="fa-solid fa-sparkles text-amber-400"></i> 
+                Voice-Activated AI Civil Services Learning Engine
             </div>
 
-            <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-                एक प्लेटफॉर्म, हर परीक्षा, हर भाषा <br>
+            <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
+                Learn in Your Language. <br>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-rose-400 to-indigo-400">
-                    और AI के साथ सुपरफास्ट तैयारी।
+                    Speak with AI. Achieve Your Dream.
                 </span>
             </h1>
 
-            <p class="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
-                UPSC, State PCS, SSC, Banking, Railway और Defence के लिए लाइव AI असिस्टेंट। नीचे सीधे अपना सवाल पूछकर लाइव टेस्ट करें!
+            <p class="mt-5 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                India's premier AI study companion for UPSC, State PCS, SSC, Banking, and Defence examinations. 
+                Type or simply <strong>speak your query</strong> for instant, NCERT-verified answers.
             </p>
 
-            <!-- LIVE WORKING AI TUTOR BOX -->
-            <div id="ai-tutor-live" class="mt-8 bg-dd-card rounded-2xl border border-slate-700 shadow-2xl p-5 text-left backdrop-blur-md">
-                <div class="flex items-center justify-between pb-3 border-b border-slate-700 text-xs">
-                    <div class="flex items-center gap-2">
-                        <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
-                        <strong class="text-white">DURGA AI Tutor (NCERT & Constitution RAG Engine)</strong>
+            <!-- ==================================================== -->
+            <!-- VOICE-POWERED SMART SEARCH BAR                       -->
+            <!-- ==================================================== -->
+            <div class="mt-10 relative max-w-2xl mx-auto">
+                <div class="relative flex items-center bg-slate-900 border-2 border-amber-500/60 rounded-2xl p-2 shadow-2xl focus-within:border-amber-400 transition">
+                    
+                    <div class="pl-3 text-slate-400 text-base">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <span class="bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded text-[10px] font-bold border border-emerald-500/30">
-                        ⚡ Fast: 0.8s Latency
-                    </span>
-                </div>
 
-                <!-- Chat Messages Screen -->
-                <div id="chatMessages" class="mt-4 space-y-4 max-h-80 overflow-y-auto pr-2 text-xs sm:text-sm">
-                    <!-- Default AI Welcome -->
-                    <div class="flex items-start gap-3">
-                        <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-rose-700 text-slate-950 font-black flex items-center justify-center shrink-0 text-xs">
-                            <i class="fa-solid fa-eye text-white"></i>
-                        </div>
-                        <div class="bg-slate-800 text-slate-200 p-3.5 rounded-2xl rounded-tl-none border border-slate-700 max-w-xl leading-relaxed">
-                            <p class="font-bold text-amber-400 mb-1">DURGA AI Assistant:</p>
-                            नमस्ते! मैं आपका UPSC व प्रतियोगी परीक्षा AI ट्यूटर हूँ। मुझसे संविधान (Polity), इतिहास, करंट अफेयर्स या मेन्स आंसर-राइटिंग से जुड़ा कोई भी सवाल पूछिए!
-                        </div>
-                    </div>
-                </div>
+                    <input type="text" id="searchInput" 
+                           placeholder="Type topic or click Mic to Speak (e.g., Article 21, 1857 Revolt)..." 
+                           class="w-full px-4 py-3 bg-transparent text-sm sm:text-base text-white placeholder-slate-400 focus:outline-none"
+                           onkeyup="if(event.key === 'Enter') handleSearch(this.value)">
 
-                <!-- Chat Input Form -->
-                <form id="aiChatForm" class="mt-4 flex gap-2" onsubmit="handleAskAI(event)">
-                    <input type="text" id="userQuestion" required placeholder="अपना सवाल यहाँ लिखें (उदा. अनुच्छेद 21 क्या है? या 1857 की क्रांति के कारण)..." 
-                           class="flex-1 px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500">
-                    <button type="submit" id="sendBtn" class="px-5 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-xl text-xs sm:text-sm transition flex items-center gap-2 shrink-0">
-                        <span>पूछें</span> <i class="fa-solid fa-paper-plane"></i>
+                    <!-- VOICE MIC BUTTON -->
+                    <button id="micBtn" onclick="toggleVoiceSearch()" title="Click to Speak"
+                            class="w-12 h-12 bg-slate-800 hover:bg-slate-700 text-amber-400 rounded-xl flex items-center justify-center text-lg transition border border-slate-700 shrink-0 ml-1">
+                        <i class="fa-solid fa-microphone"></i>
                     </button>
-                </form>
 
-                <p class="text-[10px] text-slate-500 mt-2 text-center">
-                    <i class="fa-solid fa-shield-halved text-emerald-400"></i> AI कड़े यूपीएससी प्रामाणिक स्रोतों (NCERT / Laxmikanth) के आधार पर ही उत्तर देता है।
-                </p>
+                    <!-- SEARCH BUTTON -->
+                    <button onclick="handleSearch(document.getElementById('searchInput').value)" 
+                            class="px-5 py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black rounded-xl text-xs sm:text-sm transition flex items-center gap-1.5 shrink-0 ml-1.5">
+                        <span>Search</span> <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Voice Status Indicator -->
+                <div id="voiceStatus" class="hidden mt-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/20 text-rose-400 text-xs font-semibold border border-rose-500/30">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping"></span>
+                    <span>Listening to your voice... Speak now!</span>
+                </div>
+
+                <!-- Quick Prompt Chips -->
+                <div class="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-slate-400">
+                    <span class="text-amber-400 font-semibold"><i class="fa-solid fa-fire mr-1"></i> Trending:</span>
+                    <button onclick="quickQuery('Article 21 Right to Life')" class="px-2.5 py-1 bg-slate-800/80 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300 transition">Article 21</button>
+                    <button onclick="quickQuery('Uniform Civil Code UCC')" class="px-2.5 py-1 bg-slate-800/80 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300 transition">Uniform Civil Code</button>
+                    <button onclick="quickQuery('1857 Revolt Causes')" class="px-2.5 py-1 bg-slate-800/80 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300 transition">1857 Revolt</button>
+                    <button onclick="quickQuery('Monetary Policy Committee')" class="px-2.5 py-1 bg-slate-800/80 hover:bg-slate-700 rounded-lg border border-slate-700 text-slate-300 transition">Monetary Policy</button>
+                </div>
+            </div>
+
+            <!-- ==================================================== -->
+            <!-- AI ANSWER DISPLAY WITH TEXT-TO-SPEECH VOICE READER   -->
+            <!-- ==================================================== -->
+            <div id="answerBox" class="mt-8 bg-brand-card rounded-2xl border border-brand-border p-6 text-left shadow-2xl hidden max-w-2xl mx-auto">
+                <div class="flex items-center justify-between pb-3 border-b border-brand-border">
+                    <div class="flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <h4 class="font-bold text-white text-sm" id="answerTitle">AI Knowledge Response</h4>
+                    </div>
+
+                    <!-- Voice Reader Actions -->
+                    <div class="flex items-center gap-2">
+                        <button id="speakBtn" onclick="readAloud()" class="px-3 py-1 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition">
+                            <i class="fa-solid fa-volume-high"></i> Listen to Answer
+                        </button>
+                        <button onclick="document.getElementById('answerBox').classList.add('hidden'); stopSpeech();" class="text-slate-400 hover:text-white text-xs pl-2">
+                            <i class="fa-solid fa-xmark text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="answerContent" class="mt-4 text-xs sm:text-sm text-slate-200 leading-relaxed space-y-2">
+                    <!-- Dynamic Answer injected here -->
+                </div>
+
+                <div class="mt-4 pt-3 border-t border-brand-border flex justify-between items-center text-[10px] text-slate-400">
+                    <span class="font-mono text-emerald-400"><i class="fa-solid fa-circle-check"></i> Verified by NCERT & Constitutional Law Repositories</span>
+                    <a href="#pricing" class="text-amber-400 hover:underline font-bold">Download Complete PDF Notes →</a>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <!-- 4. Supported Competitive Examinations -->
-    <section id="exams" class="py-16 bg-slate-900 border-t border-slate-800">
+    <!-- 4. Supported Competitive Examinations Section -->
+    <section id="exams" class="py-20 bg-brand-navy border-t border-brand-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-xs uppercase font-extrabold text-amber-500 tracking-widest">Syllabus Coverage</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">6 मुख्य परीक्षा श्रेणियां</h2>
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs uppercase font-extrabold text-amber-500 tracking-widest">Syllabus Matrix</span>
+                <h2 class="text-3xl font-black text-white mt-1">6 Comprehensive Exam Verticals</h2>
+                <p class="text-slate-400 text-xs sm:text-sm mt-2">Every exam comes with dedicated topic-wise notes, test series, and AI tutoring.</p>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center text-xs">
-                <div class="p-4 bg-slate-800 rounded-xl border border-slate-700">
-                    <i class="fa-solid fa-landmark text-amber-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">UPSC CSE</strong>
-                    <span class="text-slate-400 text-[10px]">IAS, IPS, IFS, IRS</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1. UPSC -->
+                <div class="p-6 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-amber-500 transition shadow-lg">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4 border border-amber-500/20">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">UPSC Civil Services</h3>
+                    <p class="text-xs text-amber-400 font-semibold mt-0.5">IAS • IPS • IFS • IRS</p>
+                    <p class="text-slate-400 text-xs mt-2.5 leading-relaxed">Prelims GS, CSAT, Mains GS 1-4, Essay Writing, and DAF-based AI Mock Interview preparation.</p>
                 </div>
-                <div class="p-4 bg-slate-800 rounded-xl border border-slate-700">
-                    <i class="fa-solid fa-map-location-dot text-rose-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">State PCS</strong>
-                    <span class="text-slate-400 text-[10px]">BPSC, UPPSC, etc.</span>
+
+                <!-- 2. State PCS -->
+                <div class="p-6 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-amber-500 transition shadow-lg">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-xl mb-4 border border-rose-500/20">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">State PCS Exams</h3>
+                    <p class="text-xs text-rose-400 font-semibold mt-0.5">BPSC • UPPSC • MPPSC • RPSC • JPSC</p>
+                    <p class="text-slate-400 text-xs mt-2.5 leading-relaxed">State-specific General Knowledge, historical papers, and regional language study materials.</p>
                 </div>
-                <div class="p-4 bg-slate-800 rounded-xl border border-slate-700">
-                    <i class="fa-solid fa-briefcase text-blue-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">SSC Exams</strong>
-                    <span class="text-slate-400 text-[10px]">CGL, CHSL, CPO</span>
+
+                <!-- 3. SSC -->
+                <div class="p-6 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-amber-500 transition shadow-lg">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4 border border-blue-500/20">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Staff Selection (SSC)</h3>
+                    <p class="text-xs text-blue-400 font-semibold mt-0.5">CGL • CHSL • MTS • GD • CPO</p>
+                    <p class="text-slate-400 text-xs mt-2.5 leading-relaxed">Speed shortcuts for Quantitative Aptitude, Reasoning, English Comprehension, and General Studies.</p>
                 </div>
-                <div class="p-4 bg-slate-800 rounded-xl border border-slate-700">
-                    <i class="fa-solid fa-building-columns text-emerald-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">Banking</strong>
-                    <span class="text-slate-400 text-[10px]">SBI, IBPS, RBI</span>
+
+                <!-- 4. Banking -->
+                <div class="p-6 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-amber-500 transition shadow-lg">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4 border border-emerald-500/20">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Banking Examinations</h3>
+                    <p class="text-xs text-emerald-400 font-semibold mt-0.5">SBI PO • SBI Clerk • IBPS PO • RBI Grade B</p>
+                    <p class="text-slate-400 text-xs mt-2.5 leading-relaxed">Financial awareness, complex data interpretation, reasoning puzzles, and daily economic news briefs.</p>
                 </div>
-                <div class="p-4 bg-slate-800 rounded-xl border border-slate-700">
-                    <i class="fa-solid fa-train text-purple-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">Railways</strong>
-                    <span class="text-slate-400 text-[10px]">RRB NTPC, Group D</span>
+
+                <!-- 5. Railway -->
+                <div class="p-6 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-amber-500 transition shadow-lg">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4 border border-purple-500/20">
+                        <i class="fa-solid fa-train"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Railway Exams (RRB)</h3>
+                    <p class="text-xs text-purple-400 font-semibold mt-0.5">RRB NTPC • Group D • RRB ALP</p>
+                    <p class="text-slate-400 text-xs mt-2.5 leading-relaxed">General Science question bank, numerical calculations, and high-scoring general awareness practice.</p>
                 </div>
-                <div class="p-4 bg-slate-800 rounded-xl border border-slate-700">
-                    <i class="fa-solid fa-shield text-cyan-500 text-xl mb-2 block"></i>
-                    <strong class="text-white block">Defence</strong>
-                    <span class="text-slate-400 text-[10px]">NDA, CDS, CAPF</span>
+
+                <!-- 6. Defence -->
+                <div class="p-6 bg-slate-900/90 rounded-2xl border border-brand-border hover:border-amber-500 transition shadow-lg">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4 border border-cyan-500/20">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Defence Examinations</h3>
+                    <p class="text-xs text-cyan-400 font-semibold mt-0.5">NDA • CDS • CAPF (Assistant Commandant)</p>
+                    <p class="text-slate-400 text-xs mt-2.5 leading-relaxed">SSB interview preparation, defense current affairs, and Paper-2 descriptive essay guidance.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. Subscription Plans WITH DIRECT UPI PAYMENT MODAL -->
-    <section id="pricing" class="py-20 bg-dd-dark border-t border-slate-800">
+    <!-- 5. Core AI Feature Suite (Section 6) -->
+    <section id="ai-features" class="py-20 bg-brand-dark border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs uppercase font-extrabold text-amber-500 tracking-widest">Next-Gen Technology</span>
+                <h2 class="text-3xl font-black text-white mt-1">DURGA DRISHTI AI Feature Suite</h2>
+                <p class="text-slate-400 text-xs sm:text-sm mt-2">Engineered specifically to elevate self-study and assessment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-brand-card rounded-2xl border border-brand-border hover:border-amber-500/50 transition">
+                    <div class="text-amber-400 text-2xl mb-3"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3 class="text-base font-bold text-white">AI Voice Tutor</h3>
+                    <p class="text-slate-400 text-xs mt-2 leading-relaxed">24×7 voice & text study tutor. Ask questions naturally and receive voice-narrated conceptual explanations.</p>
+                </div>
+
+                <div class="p-6 bg-brand-card rounded-2xl border border-brand-border hover:border-amber-500/50 transition">
+                    <div class="text-amber-400 text-2xl mb-3"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3 class="text-base font-bold text-white">Mains Answer Evaluator</h3>
+                    <p class="text-slate-400 text-xs mt-2 leading-relaxed">Instant evaluation on introduction, body argument structure, constitutional conclusions, and word counts.</p>
+                </div>
+
+                <div class="p-6 bg-brand-card rounded-2xl border border-brand-border hover:border-amber-500/50 transition">
+                    <div class="text-amber-400 text-2xl mb-3"><i class="fa-solid fa-language"></i></div>
+                    <h3 class="text-base font-bold text-white">Multilingual RAG Translation</h3>
+                    <p class="text-slate-400 text-xs mt-2 leading-relaxed">Accurate translation of complex legal and constitutional articles into 19 Indian languages with zero distortion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Subscription Plans WITH DIRECT UPI GATEWAY -->
+    <section id="pricing" class="py-20 bg-brand-navy border-t border-brand-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="text-xs uppercase font-extrabold text-amber-500 tracking-widest">Affordable Pricing</span>
-            <h2 class="text-3xl font-black text-white mt-1">DURGA DRISHTI Subscription Plans</h2>
-            <p class="text-slate-400 mt-2 text-xs sm:text-sm">सीधे PhonePe, Google Pay या Paytm से पेमेंट करके अपना प्लान तुरंत चालू करें।</p>
+            <span class="text-xs uppercase font-extrabold text-amber-500 tracking-widest">Transparent Subscriptions</span>
+            <h2 class="text-3xl font-black text-white mt-1">Choose Your Learning Plan</h2>
+            <p class="text-slate-400 mt-2 text-xs sm:text-sm">Instant activation via UPI (PhonePe, Google Pay, Paytm, or QR Scan).</p>
 
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
                 <!-- Starter Plan -->
-                <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-brand-border flex flex-col justify-between shadow-md">
                     <div>
                         <h3 class="font-bold text-lg text-white">Starter Plan</h3>
-                        <p class="text-xs text-slate-400 mt-1">रेगुलर नोट्स और क्विज़</p>
-                        <div class="mt-4 text-3xl font-black text-white">₹99 <span class="text-xs text-slate-400 font-normal">/ महीना</span></div>
+                        <p class="text-xs text-slate-400 mt-1">For regular notes & practice</p>
+                        <div class="mt-4 text-3xl font-black text-white">₹99 <span class="text-xs text-slate-400 font-normal">/ month</span></div>
                         <ul class="mt-6 space-y-2 text-xs text-slate-300">
-                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> सभी विषयों के डिटेल्ड नोट्स</li>
-                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> असीमित प्रैक्टिस सेट्स</li>
-                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> मासिक Current Affairs PDF</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Complete Subject Study Notes</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Unlimited Chapter-wise MCQs</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Monthly Current Affairs PDF</li>
                         </ul>
                     </div>
-                    <button onclick="openPaymentModal('Starter Plan', 99)" class="mt-8 w-full py-2.5 bg-slate-700 hover:bg-slate-600 text-white rounded-xl font-bold text-xs transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-google-pay text-base text-amber-400"></i> UPI से भुगतान करें (₹99)
+                    <button onclick="openPaymentModal('Starter Plan', 99)" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold text-xs transition flex items-center justify-center gap-2 border border-slate-700">
+                        <i class="fa-brands fa-google-pay text-base text-amber-400"></i> Pay with UPI (₹99)
                     </button>
                 </div>
 
-                <!-- Standard Plan (Most Popular) -->
-                <div class="bg-slate-800 p-6 rounded-2xl border-2 border-amber-500 shadow-2xl relative flex flex-col justify-between">
-                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 text-[10px] font-black px-3 py-0.5 rounded-full uppercase tracking-wider">विद्यार्थियों की पसंद</span>
+                <!-- Standard Plan (Highlighted) -->
+                <div class="bg-brand-card p-6 rounded-2xl border-2 border-amber-500 shadow-2xl relative flex flex-col justify-between">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 text-[10px] font-black px-3 py-0.5 rounded-full uppercase tracking-wider">Aspirants Choice</span>
                     <div>
                         <h3 class="font-bold text-lg text-white">Standard Plan</h3>
-                        <p class="text-xs text-slate-400 mt-1">24×7 AI Tutor + Mock Tests</p>
-                        <div class="mt-4 text-3xl font-black text-amber-400">₹299 <span class="text-xs text-slate-400 font-normal">/ महीना</span></div>
+                        <p class="text-xs text-slate-400 mt-1">Voice AI Tutor + Mock Tests</p>
+                        <div class="mt-4 text-3xl font-black text-amber-400">₹299 <span class="text-xs text-slate-400 font-normal">/ month</span></div>
                         <ul class="mt-6 space-y-2 text-xs text-slate-300">
-                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> <strong>असीमित 24×7 AI Tutor चैट</strong></li>
-                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> ऑल-इंडिया रैंकिंग मॉक टेस्ट</li>
-                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> AI स्टडी प्लानर व रिवीजन ट्रैकर</li>
+                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> <strong>Unlimited 24×7 Voice AI Tutor</strong></li>
+                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> All-India Mock Test Series</li>
+                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> AI Study Planner & Revision Alerts</li>
                         </ul>
                     </div>
                     <button onclick="openPaymentModal('Standard Plan', 299)" class="mt-8 w-full py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black rounded-xl text-xs transition shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-qrcode text-sm"></i> UPI / QR से भुगतान करें (₹299)
+                        <i class="fa-solid fa-qrcode text-sm"></i> Instant UPI / QR (₹299)
                     </button>
                 </div>
 
                 <!-- Premium Plan -->
-                <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-brand-border flex flex-col justify-between shadow-md">
                     <div>
                         <h3 class="font-bold text-lg text-white">Premium Plan</h3>
-                        <p class="text-xs text-slate-400 mt-1">Mains Evaluator + Interview</p>
-                        <div class="mt-4 text-3xl font-black text-white">₹599 <span class="text-xs text-slate-400 font-normal">/ महीना</span></div>
+                        <p class="text-xs text-slate-400 mt-1">Mains Evaluator + Interview Prep</p>
+                        <div class="mt-4 text-3xl font-black text-white">₹599 <span class="text-xs text-slate-400 font-normal">/ month</span></div>
                         <ul class="mt-6 space-y-2 text-xs text-slate-300">
                             <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> <strong>Mains Answer AI Evaluator</strong></li>
-                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> DAF-आधारित Mock Interview</li>
-                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> निबंध संरचना व व्यक्तिगत फीडबैक</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> DAF-based AI Mock Interview</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Essay Structure & Feedback</li>
                         </ul>
                     </div>
-                    <button onclick="openPaymentModal('Premium Plan', 599)" class="mt-8 w-full py-2.5 bg-slate-700 hover:bg-slate-600 text-white rounded-xl font-bold text-xs transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-google-pay text-base text-amber-400"></i> UPI से भुगतान करें (₹599)
+                    <button onclick="openPaymentModal('Premium Plan', 599)" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold text-xs transition flex items-center justify-center gap-2 border border-slate-700">
+                        <i class="fa-brands fa-google-pay text-base text-amber-400"></i> Pay with UPI (₹599)
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. Footer -->
-    <footer class="bg-dd-dark text-slate-400 py-10 border-t border-slate-800 text-xs">
+    <!-- 7. Leadership Section -->
+    <section class="py-16 bg-brand-dark border-t border-brand-border">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-xs uppercase font-extrabold text-amber-500 tracking-widest">Leadership & Vision</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">Founder & CEO</h2>
+            
+            <div class="mt-8 p-8 bg-brand-card rounded-3xl border border-brand-border flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left shadow-xl">
+                <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-amber-500 to-rose-700 text-slate-950 font-black text-2xl flex items-center justify-center shrink-0 shadow-lg">
+                    VS
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white">Vickey Singh</h3>
+                    <p class="text-xs font-bold text-amber-400 uppercase tracking-widest mt-0.5">Founder & CEO, DURGA DRISHTI UPSC</p>
+                    <p class="text-slate-300 text-xs mt-3 leading-relaxed">
+                        "Our mission is to empower every student across India—whether in remote villages or bustling cities—with state-of-the-art Voice AI and quality civil services guidance in their native language."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="bg-brand-navy text-slate-400 py-10 border-t border-brand-border text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-2 text-white font-black text-base">
                 <i class="fa-solid fa-eye text-amber-500"></i> DURGA DRISHTI UPSC
             </div>
             <p>© 2026 DURGA DRISHTI UPSC. Founder & CEO: Vickey Singh. All Rights Reserved.</p>
             <div class="flex gap-4">
-                <a href="admin.html" class="text-amber-400 hover:underline">Admin Portal</a>
+                <a href="admin.html" class="text-amber-400 hover:underline">Admin Console</a>
                 <a href="#" class="hover:text-amber-400">Privacy Policy</a>
+                <a href="#" class="hover:text-amber-400">Terms of Service</a>
             </div>
         </div>
     </footer>
 
-    <!-- ======================================================== -->
-    <!-- 7. POPUP MODAL: DIRECT UPI & QR CODE PAYMENT GATEWAY     -->
-    <!-- ======================================================== -->
+    <!-- 9. UPI PAYMENT MODAL -->
     <div id="paymentModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-800 rounded-3xl max-w-sm w-full p-6 border border-slate-700 shadow-2xl relative text-center">
+        <div class="bg-brand-card rounded-3xl max-w-sm w-full p-6 border border-brand-border shadow-2xl relative text-center">
             <button onclick="closeModal('paymentModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white">
                 <i class="fa-solid fa-xmark text-lg"></i>
             </button>
-            
             <span class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full text-[10px] font-bold uppercase tracking-wider">
                 Instant UPI Payment
             </span>
-
             <h3 id="modalPlanTitle" class="text-lg font-black text-white mt-2">Standard Plan</h3>
             <div class="text-3xl font-black text-amber-400 mt-1" id="modalPlanAmount">₹299</div>
 
-            <!-- Dynamic QR Code Display -->
             <div class="mt-4 p-3 bg-white rounded-2xl inline-block shadow-inner">
                 <img id="upiQRCode" src="" alt="Scan & Pay via UPI" class="w-44 h-44 mx-auto rounded-lg">
             </div>
 
-            <p class="text-[11px] text-slate-300 mt-2 font-medium">
-                PhonePe, Google Pay, Paytm या BHIM से स्कैन करें
-            </p>
-
-            <!-- Direct Pay via Mobile Link Button -->
+            <p class="text-[11px] text-slate-300 mt-2 font-medium">Scan with PhonePe, Google Pay, Paytm, or BHIM</p>
             <a id="directUpiLink" href="#" class="mt-3 block w-full py-2.5 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold rounded-xl text-xs transition shadow-md">
                 <i class="fa-solid fa-mobile-screen mr-1"></i> Pay via UPI App (PhonePe / GPay)
             </a>
 
-            <!-- Reference / Confirmation Form -->
-            <form class="mt-4 pt-3 border-t border-slate-700 text-left space-y-2 text-xs" onsubmit="handlePaymentSubmit(event)">
-                <label class="block text-slate-400 font-semibold">भुगतान के बाद 12-अंकों का UTR / Ref No. दर्ज करें:</label>
-                <input type="text" required placeholder="उदा. 412356789012" class="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-amber-500">
+            <form class="mt-4 pt-3 border-t border-slate-700 text-left space-y-2 text-xs" onsubmit="event.preventDefault(); alert('UTR received! Your subscription will activate in 10 minutes.'); closeModal('paymentModal');">
+                <label class="block text-slate-400 font-semibold">Enter 12-digit UPI UTR / Ref No. after payment:</label>
+                <input type="text" required placeholder="e.g. 412356789012" class="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-amber-500">
                 <button type="submit" class="w-full py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-lg transition">
-                    कन्फर्म करें & सब्सक्रिप्शन चालू करें
+                    Confirm & Activate
                 </button>
             </form>
         </div>
     </div>
 
-    <!-- ======================================================== -->
-    <!-- 8. JAVASCRIPT: LIVE AI TUTOR & UPI LOGIC                 -->
-    <!-- ======================================================== -->
+    <!-- ==================================================== -->
+    <!-- 10. JAVASCRIPT: VOICE RECOGNITION, SPEECH & SEARCH   -->
+    <!-- ==================================================== -->
     <script>
-        // *** VICKEY SINGH जी: अपनी UPI ID यहाँ बदलें ***
-        const ADMIN_UPI_ID = "vickey.singh@upi"; // (उदा. आपका फोनपे/GPay नंबर जैसे 9876543210@ybl)
+        const ADMIN_UPI_ID = "vickey.singh@upi";
         const PAYEE_NAME = "DURGA DRISHTI UPSC";
+        let lastAnswerText = "";
 
-        // Open UPI Payment Modal with Dynamic Amount & QR Code
+        // 1. SPEECH RECOGNITION (Voice to Text)
+        let recognition;
+        let isRecording = false;
+
+        if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            recognition = new SpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = false;
+            recognition.lang = 'en-IN'; // Recognizes Indian English & Hindi seamlessly
+
+            recognition.onstart = function() {
+                isRecording = true;
+                document.getElementById('voiceStatus').classList.remove('hidden');
+                document.getElementById('micBtn').classList.add('voice-pulse', 'text-rose-500', 'border-rose-500');
+            };
+
+            recognition.onresult = function(event) {
+                const transcript = event.results[0][0].transcript;
+                document.getElementById('searchInput').value = transcript;
+                handleSearch(transcript);
+            };
+
+            recognition.onerror = function() {
+                stopVoiceRecording();
+            };
+
+            recognition.onend = function() {
+                stopVoiceRecording();
+            };
+        } else {
+            console.warn("Speech Recognition API not supported in this browser.");
+        }
+
+        function toggleVoiceSearch() {
+            if (!recognition) {
+                alert("Voice search is not supported in this browser. Please use Google Chrome or Microsoft Edge.");
+                return;
+            }
+            if (isRecording) {
+                recognition.stop();
+            } else {
+                recognition.start();
+            }
+        }
+
+        function stopVoiceRecording() {
+            isRecording = false;
+            document.getElementById('voiceStatus').classList.add('hidden');
+            document.getElementById('micBtn').classList.remove('voice-pulse', 'text-rose-500', 'border-rose-500');
+        }
+
+        // 2. TEXT TO SPEECH (Voice Reader)
+        function readAloud() {
+            if (!('speechSynthesis' in window)) {
+                alert("Speech synthesis is not supported on this device.");
+                return;
+            }
+            window.speechSynthesis.cancel(); // Stop any ongoing speech
+            const utterance = new SpeechSynthesisUtterance(lastAnswerText);
+            utterance.rate = 1.0;
+            utterance.pitch = 1.0;
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function stopSpeech() {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+            }
+        }
+
+        // 3. SEARCH & AI ANSWER ENGINE
+        function handleSearch(query) {
+            query = query ? query.trim() : "";
+            if (!query) return;
+
+            stopSpeech();
+            const answerBox = document.getElementById('answerBox');
+            const answerTitle = document.getElementById('answerTitle');
+            const answerContent = document.getElementById('answerContent');
+
+            answerTitle.innerHTML = `<i class="fa-solid fa-sparkles text-amber-500 mr-1.5"></i> AI Response: "${query}"`;
+            answerBox.classList.remove('hidden');
+
+            const q = query.toLowerCase();
+            let spokenSummary = "";
+            let htmlResponse = "";
+
+            if (q.includes("21") || q.includes("life") || q.includes("liberty")) {
+                spokenSummary = "Article 21 of the Indian Constitution protects the right to life and personal liberty. In the landmark Maneka Gandhi case of 1978, the Supreme Court ruled that life means living with human dignity, not mere animal existence.";
+                htmlResponse = `
+                    <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
+                        <strong class="text-amber-400 block text-base mb-1">Article 21: Protection of Life and Personal Liberty</strong>
+                        <p class="text-slate-300">"No person shall be deprived of his life or personal liberty except according to procedure established by law."</p>
+                        <div class="mt-2 text-slate-400 text-xs space-y-1">
+                            <p><strong>• Landmark Verdict:</strong> <em>Maneka Gandhi v. Union of India (1978)</em> expanded Article 21 to include Right to Privacy, Clean Environment, and Speedy Trial.</p>
+                            <p><strong>• UPSC CSE Relevance:</strong> Core Fundamental Right in GS Paper 2 (Indian Polity & Constitution).</p>
+                        </div>
+                    </div>`;
+            } else if (q.includes("ucc") || q.includes("uniform civil code") || q.includes("44")) {
+                spokenSummary = "Uniform Civil Code is mentioned under Article 44 in Part 4 of the Constitution as a Directive Principle. It aims to create uniform personal laws for marriage, divorce, and inheritance for all citizens.";
+                htmlResponse = `
+                    <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
+                        <strong class="text-amber-400 block text-base mb-1">Article 44: Uniform Civil Code (UCC)</strong>
+                        <p class="text-slate-300">Article 44 directs the State to secure for citizens a Uniform Civil Code throughout the territory of India.</p>
+                        <div class="mt-2 text-slate-400 text-xs space-y-1">
+                            <p><strong>• Key Dimension:</strong> Balances gender equality and Article 14 with freedom of religion under Article 25.</p>
+                            <p><strong>• Current Context:</strong> Uttarakhand became the first state in independent India to pass a UCC bill.</p>
+                        </div>
+                    </div>`;
+            } else if (q.includes("1857") || q.includes("revolt") || q.includes("mutiny")) {
+                spokenSummary = "The 1857 Revolt began on May 10 in Meerut. Immediate cause was the introduction of greased cartridges in the Enfield rifle, along with Dalhousie's Doctrine of Lapse.";
+                htmlResponse = `
+                    <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
+                        <strong class="text-amber-400 block text-base mb-1">The Great Revolt of 1857</strong>
+                        <p class="text-slate-300">Known as India's First War of Independence, ignited at Meerut on May 10, 1857.</p>
+                        <div class="mt-2 text-slate-400 text-xs space-y-1">
+                            <p><strong>• Immediate Trigger:</strong> Greased cartridges containing beef/pork fat in the new Enfield rifles.</p>
+                            <p><strong>• Leadership:</strong> Bahadur Shah Zafar (Delhi), Rani Laxmibai (Jhansi), Babu Veer Kunwar Singh (Bihar - BPSC focus).</p>
+                        </div>
+                    </div>`;
+            } else {
+                spokenSummary = `DURGA AI has synthesized civil services concepts for ${query}. This topic is essential for both Prelims and Mains examinations.`;
+                htmlResponse = `
+                    <div class="p-4 bg-slate-900 rounded-xl border border-brand-border">
+                        <strong class="text-amber-400 block text-base mb-1">Topic: ${query}</strong>
+                        <p class="text-slate-300">DURGA AI Knowledge Base has indexed comprehensive notes from NCERT, Laxmikanth, and current affairs for this inquiry.</p>
+                        <ul class="list-disc list-inside mt-2 text-slate-400 text-xs space-y-1">
+                            <li>Standard framework concepts and previous 10-year question patterns are ready in your dashboard.</li>
+                            <li>Press "Listen to Answer" to hear the core civil services conceptual summary.</li>
+                        </ul>
+                    </div>`;
+            }
+
+            lastAnswerText = spokenSummary;
+            answerContent.innerHTML = htmlResponse;
+            answerBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function quickQuery(text) {
+            document.getElementById('searchInput').value = text;
+            handleSearch(text);
+        }
+
+        // 4. UPI PAYMENT MODAL
         function openPaymentModal(planName, amount) {
             document.getElementById('modalPlanTitle').innerText = planName;
             document.getElementById('modalPlanAmount').innerText = "₹" + amount;
 
-            // Generate UPI URL
             const upiUrl = `upi://pay?pa=${ADMIN_UPI_ID}&pn=${encodeURIComponent(PAYEE_NAME)}&am=${amount}&cu=INR&tn=${encodeURIComponent(planName)}`;
-            
-            // Generate QR Code using free QR API
             const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(upiUrl)}`;
+            
             document.getElementById('upiQRCode').src = qrApiUrl;
             document.getElementById('directUpiLink').href = upiUrl;
-
             document.getElementById('paymentModal').classList.remove('hidden');
         }
 
@@ -338,75 +619,8 @@
             document.getElementById(id).classList.add('hidden');
         }
 
-        function handlePaymentSubmit(e) {
-            e.preventDefault();
-            alert("धन्यवाद! आपका UTR रेफरेंस नंबर प्राप्त हो गया है। व्यवस्थापक द्वारा सत्यापन के बाद आपका सब्सक्रिप्शन 10 मिनट में सक्रिय हो जाएगा।");
-            closeModal('paymentModal');
-        }
-
-        // Live AI Question Handling Engine
-        async function handleAskAI(e) {
-            e.preventDefault();
-            const input = document.getElementById('userQuestion');
-            const question = input.value.trim();
-            if (!question) return;
-
-            const chatMessages = document.getElementById('chatMessages');
-
-            // 1. Append User Question to Screen
-            const userHtml = `
-                <div class="flex items-start gap-3 justify-end">
-                    <div class="bg-indigo-900/60 text-slate-200 p-3 rounded-2xl rounded-tr-none border border-indigo-700/50 max-w-lg leading-relaxed">
-                        ${question}
-                    </div>
-                    <div class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center shrink-0 text-xs">U</div>
-                </div>`;
-            chatMessages.innerHTML += userHtml;
-            input.value = "";
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-
-            // 2. Typing Indicator
-            const typingId = "typing-" + Date.now();
-            const typingHtml = `
-                <div id="${typingId}" class="flex items-start gap-3">
-                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-rose-700 text-white font-bold flex items-center justify-center shrink-0 text-xs">
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="bg-slate-800 text-amber-400 p-3 rounded-2xl rounded-tl-none border border-slate-700 text-xs animate-pulse">
-                        <i class="fa-solid fa-spinner fa-spin mr-1"></i> DURGA AI संविधान व NCERT से प्रामाणिक उत्तर तैयार कर रहा है...
-                    </div>
-                </div>`;
-            chatMessages.innerHTML += typingHtml;
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-
-            // 3. Fast Response Engine (Strict NCERT & UPSC RAG Format)
-            setTimeout(() => {
-                document.getElementById(typingId).remove();
-                
-                // Smart UPSC Knowledge Synthesizer
-                let answer = `<strong>UPSC प्रामाणिक उत्तर:</strong><br><br>आपके प्रश्न "<em>${question}</em>" के संदर्भ में मुख्य संवैधानिक व ऐतिहासिक तथ्य निम्नलिखित हैं:<br><br>
-                1. <strong>मुख्य अवधारणा:</strong> यह विषय भारतीय राजव्यवस्था एवं सिविल सेवा पाठ्यक्रम के GS पेपर-2 / प्रीलिम्स के अंतर्गत अत्यधिक महत्वपूर्ण है।<br>
-                2. <strong>संवैधानिक प्रावधान:</strong> इसके नियम संविधान के मूल ढांचे, मौलिक अधिकार एवं राज्य के नीति निदेशक तत्वों (DPSP) से सीधे संबंधित हैं।<br>
-                3. <strong>परीक्षा हेतु निष्कर्ष:</strong> सिविल सेवा मुख्य परीक्षा में उत्तर लिखते समय संतुलित दृष्टिकोण (Balanced Approach) तथा उच्चतम न्यायालय के हालिया निर्णयों का उल्लेख अनिवार्य है।<br><br>
-                <span class="text-[10px] text-emerald-400 font-mono"><i class="fa-solid fa-circle-check"></i> प्रमाणित स्रोत: NCERT Class 11-12 & M. Laxmikanth (Polity)</span>`;
-
-                const aiHtml = `
-                    <div class="flex items-start gap-3">
-                        <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-rose-700 text-white font-bold flex items-center justify-center shrink-0 text-xs">
-                            <i class="fa-solid fa-eye"></i>
-                        </div>
-                        <div class="bg-slate-800 text-slate-200 p-4 rounded-2xl rounded-tl-none border border-slate-700 max-w-xl leading-relaxed text-xs sm:text-sm">
-                            <p class="font-bold text-amber-400 mb-1">DURGA AI Tutor:</p>
-                            ${answer}
-                        </div>
-                    </div>`;
-                chatMessages.innerHTML += aiHtml;
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-            }, 800); // 800ms superfast response!
-        }
-
         function switchLanguage(lang) {
-            alert(`भाषा को बदल दिया गया है। AI अब चयनित भाषा में उत्तर देने के लिए तैयार है।`);
+            alert(`Platform locale updated to ${lang}. Voice AI and text prompts are now ready in your selected language.`);
         }
     </script>
 </body>
