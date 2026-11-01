@@ -3,14 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DURGA DRISHTI AI - All India Govt Exam Prep (UPSC, SSC, State PCS)</title>
-
-    <!-- WhatsApp & Social Media Preview Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vickeysingh8461-bot.github.io/durga-drishti-upsc/index.html">
-    <meta property="og:title" content="DURGA DRISHTI AI - 5-Day Free Trial for UPSC, SSC & State PCS">
-    <meta property="og:description" content="Prepare for UPSC CSE, SSC CGL, State PCS, and All Govt Exams with Drishti AI Assistant & Expert Mentorship. Claim 5-Day Free Access!">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&auto=format&fit=crop">
+    <title>DURGA DRISHTI - All India Govt Exam Learning Portal</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,9 +43,9 @@
 
     <!-- Top Alert -->
     <div class="bg-gradient-to-r from-amber-600 via-gold-500 to-amber-600 text-black py-2 px-4 text-center text-xs sm:text-sm font-bold flex items-center justify-center gap-2">
-        <span class="bg-black text-amber-300 px-2.5 py-0.5 rounded-full text-[10px] uppercase font-black animate-pulse">All India Offer</span>
-        🎉 5-Day Full Free Access: UPSC • SSC CGL • State PCS (BPSC, UPPSC) • All Govt Exams + AI Assistant!
-        <a href="#trial" class="underline hover:text-white transition ml-1">Claim Pass →</a>
+        <span class="bg-black text-amber-300 px-2.5 py-0.5 rounded-full text-[10px] uppercase font-black">Free Access</span>
+        🎉 5-Day Full Free Access: UPSC • SSC CGL • State PCS (BPSC, UPPSC) • Railway • Banking + AI Assistant!
+        <button onclick="openModal('trialModal')" class="underline hover:text-white transition ml-1 cursor-pointer">Activate Free Pass →</button>
     </div>
 
     <!-- Header -->
@@ -63,223 +56,289 @@
                     <i class="fa-solid fa-graduation-cap"></i>
                 </div>
                 <div>
-                    <span class="text-xl sm:text-2xl font-black text-white tracking-tight">DURGA<span class="text-gold-400"> DRISHTI</span> <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/30">AI</span></span>
-                    <span class="block text-[10px] tracking-widest text-slate-400 font-semibold uppercase">UPSC • SSC • State PCS • Govt Exams</span>
+                    <span class="text-xl sm:text-2xl font-black text-white tracking-tight">DURGA<span class="text-gold-400"> DRISHTI</span></span>
+                    <span class="block text-[10px] tracking-widest text-slate-400 font-semibold uppercase">All India Govt Exam Portal</span>
                 </div>
             </a>
 
             <nav class="hidden md:flex items-center gap-7 font-medium text-slate-300 text-sm">
+                <a href="#exam-hub" class="hover:text-gold-400 transition font-semibold text-white">All Exams Portal</a>
                 <a href="#ai-assistant" class="text-emerald-400 hover:text-emerald-300 transition font-bold flex items-center gap-1.5"><i class="fa-solid fa-robot"></i> AI Study Bot</a>
-                <a href="#exams" class="hover:text-gold-400 transition">Govt Exams</a>
-                <a href="#trial" class="hover:text-gold-400 transition">5-Day Trial</a>
+                <a href="#mock-test" class="hover:text-gold-400 transition">Live Practice Test</a>
                 <a href="#mentors" class="hover:text-gold-400 transition">Leadership</a>
             </nav>
 
             <div class="flex items-center gap-3">
-                <a href="https://wa.me/919905502242?text=Hello%20Durga%20Drishti!%20I%20want%20to%20inquire%20about%20UPSC/SSC/Govt%20Exam%20Prep." target="_blank" class="hidden sm:inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-2 rounded-xl hover:bg-emerald-500/20 transition">
-                    <i class="fa-brands fa-whatsapp text-sm"></i> +91 9905502242
-                </a>
-                <button onclick="openModal('trialModal')" class="bg-gradient-to-r from-gold-500 to-amber-500 text-black text-xs sm:text-sm font-extrabold px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-gold-500/20 hover:scale-105 transition">
-                    Start 5-Day Free Trial
+                <button onclick="openModal('trialModal')" class="bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 hover:to-amber-400 text-black text-xs sm:text-sm font-extrabold px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-gold-500/20 hover:scale-105 transition">
+                    <i class="fa-solid fa-id-card mr-1"></i> Get 5-Day Free Pass
                 </button>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-16 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center overflow-hidden">
+    <section class="relative pt-16 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center overflow-hidden">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[350px] bg-amber-500/15 rounded-full blur-[140px] pointer-events-none"></div>
 
         <div class="relative z-10">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-gold-500/30 text-gold-400 text-xs font-bold mb-6">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 UPSC • SSC CGL/CHSL • BPSC • UPPSC • Railway • Banking
             </div>
             
             <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto">
-                India's First AI-Powered <br>
+                One Portal for All <br>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-gold-400 to-amber-500">
-                    Govt Exam Preparation Platform
+                    Indian Government Examinations
                 </span>
             </h1>
 
-            <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                Crack UPSC CSE, SSC, State PSC and All India Competitive exams with our interactive <strong>Drishti AI Assistant</strong>, live classes, daily answer evaluation, and mock test series.
+            <p class="mt-5 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                Prepare with syllabus notes, daily practice questions, and an interactive <strong>Drishti AI Study Assistant</strong>. No external app required—start directly on your browser!
             </p>
 
             <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button onclick="openModal('trialModal')" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 hover:to-amber-400 text-black font-extrabold rounded-xl shadow-xl shadow-gold-500/30 hover:scale-105 transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-gift"></i> Start 5-Day Free Trial
+                <button onclick="openModal('trialModal')" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black font-extrabold rounded-xl shadow-xl shadow-gold-500/30 hover:scale-105 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-gift"></i> Activate 5-Day Free Access
                 </button>
-                <a href="#ai-assistant" class="w-full sm:w-auto px-8 py-4 bg-slate-900 border border-emerald-500/40 text-emerald-400 font-bold rounded-xl hover:bg-slate-800 transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-robot"></i> Open AI Study Buddy
+                <a href="#exam-hub" class="w-full sm:w-auto px-8 py-4 bg-slate-900 border border-slate-700 hover:border-gold-500 text-white font-bold rounded-xl hover:bg-slate-800 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-book-open"></i> Explore Exam Portals
                 </a>
             </div>
+        </div>
+    </section>
 
-            <!-- Stats -->
-            <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
-                <div class="p-5 bg-slate-900/60 rounded-2xl border border-slate-800">
-                    <p class="text-2xl font-black text-gold-400">5-Day Free</p>
-                    <p class="text-xs text-slate-400 mt-1">Full Access Trial</p>
+    <!-- ACTIVE ALL EXAMS HUB (FULLY WORKING TABS) -->
+    <section id="exam-hub" class="py-16 bg-slate-900/70 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-gold-400 text-xs font-bold tracking-widest uppercase bg-gold-500/10 border border-gold-500/20 px-3 py-1 rounded-full">
+                    Active Learning Modules
+                </span>
+                <h2 class="text-3xl font-extrabold text-white mt-3">Select Your Exam Portal</h2>
+                <p class="text-slate-400 text-sm mt-1">नीचे किसी भी परीक्षा पर क्लिक करें, उसका लाइव स्टडी मटेरियल और सिलेबस तुरंत खुल जाएगा:</p>
+            </div>
+
+            <!-- Exam Switcher Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button onclick="switchExam('upsc')" id="tab-upsc" class="exam-tab active px-5 py-3 rounded-xl font-bold text-sm border transition flex items-center gap-2 bg-gold-500 text-black border-gold-400 shadow-lg">
+                    <i class="fa-solid fa-landmark"></i> UPSC CSE (IAS/IPS)
+                </button>
+                <button onclick="switchExam('ssc')" id="tab-ssc" class="exam-tab px-5 py-3 rounded-xl font-bold text-sm border transition flex items-center gap-2 bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-600">
+                    <i class="fa-solid fa-calculator"></i> SSC (CGL / CHSL / MTS)
+                </button>
+                <button onclick="switchExam('pcs')" id="tab-pcs" class="exam-tab px-5 py-3 rounded-xl font-bold text-sm border transition flex items-center gap-2 bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-600">
+                    <i class="fa-solid fa-map-location-dot"></i> State PCS (BPSC / UPPSC)
+                </button>
+                <button onclick="switchExam('railway')" id="tab-railway" class="exam-tab px-5 py-3 rounded-xl font-bold text-sm border transition flex items-center gap-2 bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-600">
+                    <i class="fa-solid fa-train"></i> Railway & Banking
+                </button>
+            </div>
+
+            <!-- Dynamic Exam Display Box -->
+            <div id="examContentArea" class="bg-navy-950 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl transition-all">
+                <!-- UPSC Content (Default) -->
+                <div id="content-upsc" class="exam-panel">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+                        <div>
+                            <span class="text-xs text-gold-400 font-bold uppercase tracking-wider">Exam Track 01</span>
+                            <h3 class="text-2xl font-extrabold text-white mt-1">UPSC Civil Services Examination (CSE)</h3>
+                            <p class="text-sm text-slate-400 mt-1">Prelims GS-1, CSAT, Mains GS 1 to 4, Ethics, and Daily Answer Evaluation.</p>
+                        </div>
+                        <button onclick="openModal('trialModal')" class="bg-gold-500 text-black font-extrabold px-5 py-2.5 rounded-xl hover:bg-gold-400 text-sm whitespace-nowrap">
+                            Enroll in 5-Day Free Access
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-gold-400"><i class="fa-solid fa-book"></i> GS Foundation</h4>
+                            <p class="text-xs text-slate-400 mt-2">Indian Polity (M. Laxmikanth), Modern History (Spectrum), Geography (NCERT 11-12), and Environment (Shankar IAS).</p>
+                        </div>
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-emerald-400"><i class="fa-solid fa-pen-nib"></i> Daily Answer Writing</h4>
+                            <p class="text-xs text-slate-400 mt-2">Daily 2 Mains questions with model answers, structure guidelines, and 24-hr evaluation rubrics.</p>
+                        </div>
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-blue-400"><i class="fa-solid fa-newspaper"></i> Current Affairs</h4>
+                            <p class="text-xs text-slate-400 mt-2">Daily editorial summaries from The Hindu & Indian Express, mapped directly to GS syllabus.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-5 bg-slate-900/60 rounded-2xl border border-slate-800">
-                    <p class="text-2xl font-black text-emerald-400">AI Powered</p>
-                    <p class="text-xs text-slate-400 mt-1">24x7 Instant Doubt Solver</p>
+
+                <!-- SSC Content -->
+                <div id="content-ssc" class="exam-panel hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+                        <div>
+                            <span class="text-xs text-emerald-400 font-bold uppercase tracking-wider">Exam Track 02</span>
+                            <h3 class="text-2xl font-extrabold text-white mt-1">Staff Selection Commission (SSC CGL / CHSL / MTS)</h3>
+                            <p class="text-sm text-slate-400 mt-1">Speed Maths, Logical Reasoning, English Grammar & General Awareness Modules.</p>
+                        </div>
+                        <button onclick="openModal('trialModal')" class="bg-emerald-500 text-black font-extrabold px-5 py-2.5 rounded-xl hover:bg-emerald-400 text-sm whitespace-nowrap">
+                            Enroll in 5-Day Free Access
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-emerald-400"><i class="fa-solid fa-square-root-variable"></i> Quantitative Aptitude</h4>
+                            <p class="text-xs text-slate-400 mt-2">Shortcuts for Arithmetic (Percentage, CI/SI, Ratio, Time & Work) + Advanced Math (Geometry, Trigonometry, Algebra).</p>
+                        </div>
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-amber-400"><i class="fa-solid fa-brain"></i> General Intelligence</h4>
+                            <p class="text-xs text-slate-400 mt-2">Coding-Decoding, Blood Relations, Syllogism, Series, and Non-Verbal Reasoning speed drills.</p>
+                        </div>
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-blue-400"><i class="fa-solid fa-spell-check"></i> English Comprehension</h4>
+                            <p class="text-xs text-slate-400 mt-2">1,500 High-Frequency Vocab words, Idioms & Phrases, Error Spotting, and Cloze Test mastery.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-5 bg-slate-900/60 rounded-2xl border border-slate-800">
-                    <p class="text-2xl font-black text-white">All Govt Exams</p>
-                    <p class="text-xs text-slate-400 mt-1">UPSC, SSC, State PCS</p>
+
+                <!-- State PCS Content -->
+                <div id="content-pcs" class="exam-panel hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+                        <div>
+                            <span class="text-xs text-blue-400 font-bold uppercase tracking-wider">Exam Track 03</span>
+                            <h3 class="text-2xl font-extrabold text-white mt-1">State Public Service Commissions (BPSC, UPPSC, MPPSC)</h3>
+                            <p class="text-sm text-slate-400 mt-1">State Special History, Geography, State Budget, Census, and Prelims+Mains papers.</p>
+                        </div>
+                        <button onclick="openModal('trialModal')" class="bg-blue-500 text-black font-extrabold px-5 py-2.5 rounded-xl hover:bg-blue-400 text-sm whitespace-nowrap">
+                            Enroll in 5-Day Free Access
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-blue-400"><i class="fa-solid fa-monument"></i> State History & Culture</h4>
+                            <p class="text-xs text-slate-400 mt-2">Complete state-wise freedom movement notes, peasant struggles, tribal rebellions, and art architecture.</p>
+                        </div>
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-gold-400"><i class="fa-solid fa-chart-pie"></i> State Economy & Geography</h4>
+                            <p class="text-xs text-slate-400 mt-2">Latest Economic Survey, State Budget allocations, rivers, soil types, and industrial data.</p>
+                        </div>
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-emerald-400"><i class="fa-solid fa-file-signature"></i> PCS Mains Language & GS</h4>
+                            <p class="text-xs text-slate-400 mt-2">Hindi / English qualifying paper prep and point-wise Mains question bank with diagrams.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-5 bg-slate-900/60 rounded-2xl border border-slate-800">
-                    <p class="text-2xl font-black text-amber-400">Personal</p>
-                    <p class="text-xs text-slate-400 mt-1">1-on-1 Mentor Guidance</p>
+
+                <!-- Railway Content -->
+                <div id="content-railway" class="exam-panel hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+                        <div>
+                            <span class="text-xs text-purple-400 font-bold uppercase tracking-wider">Exam Track 04</span>
+                            <h3 class="text-2xl font-extrabold text-white mt-1">Railway (RRB NTPC, Group D) & Banking (IBPS, SBI)</h3>
+                            <p class="text-sm text-slate-400 mt-1">General Science, Speed Arithmetic, Static GK & Banking Awareness modules.</p>
+                        </div>
+                        <button onclick="openModal('trialModal')" class="bg-purple-500 text-white font-extrabold px-5 py-2.5 rounded-xl hover:bg-purple-400 text-sm whitespace-nowrap">
+                            Enroll in 5-Day Free Access
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-purple-400"><i class="fa-solid fa-flask"></i> General Science (Physics/Bio/Chem)</h4>
+                            <p class="text-xs text-slate-400 mt-2">NCERT Class 9-10 based 2,000 one-liner questions and formula sheets for Railway exams.</p>
+                        </div>
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-gold-400"><i class="fa-solid fa-building-columns"></i> Banking Awareness & DI</h4>
+                            <p class="text-xs text-slate-400 mt-2">RBI monetary policy, types of inflation, Banking terminology and high-speed Data Interpretation charts.</p>
+                        </div>
+                        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
+                            <h4 class="font-bold text-white text-base flex items-center gap-2 text-emerald-400"><i class="fa-solid fa-globe"></i> Static GK Compilations</h4>
+                            <p class="text-xs text-slate-400 mt-2">National parks, dance forms, festivals, sports trophies, and international organizations.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NEW SECTION: Interactive AI Exam Assistant -->
-    <section id="ai-assistant" class="py-20 bg-slate-900/60 border-y border-slate-800 relative">
+    <!-- LIVE INTERACTIVE MOCK TEST SECTION -->
+    <section id="mock-test" class="py-16 bg-navy-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-8">
+                <span class="text-gold-400 text-xs font-bold tracking-widest uppercase bg-gold-500/10 border border-gold-500/20 px-3 py-1 rounded-full">
+                    Instant Interactive Quiz
+                </span>
+                <h2 class="text-3xl font-extrabold text-white mt-3">Live Practice Question (Test Your Knowledge)</h2>
+                <p class="text-slate-400 text-sm mt-1">अपना सही उत्तर चुनें और तुरंत स्कोर देखें:</p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                <div class="flex items-center justify-between text-xs text-slate-400 pb-3 border-b border-slate-800 mb-4">
+                    <span class="text-gold-400 font-bold uppercase"><i class="fa-solid fa-circle-question mr-1"></i> Question 1 of 1</span>
+                    <span>All India Govt Exam Level</span>
+                </div>
+
+                <h3 class="text-lg font-bold text-white leading-relaxed">
+                    प्रश्न: भारतीय संविधान के किस अनुच्छेद को डॉ. बी.आर. अम्बेडकर ने 'संविधान का हृदय और आत्मा' (Heart and Soul of the Constitution) कहा था?
+                </h3>
+
+                <div class="space-y-3 mt-5" id="quizOptions">
+                    <button onclick="checkAnswer(this, false)" class="w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-600 text-sm text-slate-200 transition">
+                        (A) अनुच्छेद 14 (समानता का अधिकार)
+                    </button>
+                    <button onclick="checkAnswer(this, false)" class="w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-600 text-sm text-slate-200 transition">
+                        (B) अनुच्छेद 19 (स्वतंत्रता का अधिकार)
+                    </button>
+                    <button onclick="checkAnswer(this, true)" class="w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-600 text-sm text-slate-200 transition">
+                        (C) अनुच्छेद 32 (संवैधानिक उपचारों का अधिकार)
+                    </button>
+                    <button onclick="checkAnswer(this, false)" class="w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-600 text-sm text-slate-200 transition">
+                        (D) अनुच्छेद 21 (प्राण और दैहिक स्वतंत्रता)
+                    </button>
+                </div>
+
+                <div id="quizResult" class="hidden mt-5 p-4 rounded-xl text-sm leading-relaxed"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IN-BUILT DRISHTI AI ASSISTANT -->
+    <section id="ai-assistant" class="py-16 bg-slate-900/60 border-t border-slate-800">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-8">
                 <span class="text-emerald-400 text-xs font-bold tracking-widest uppercase bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
-                    Live Demo Feature
+                    24x7 In-Built AI System
                 </span>
-                <h2 class="text-3xl font-extrabold text-white mt-3">Drishti AI Exam Assistant</h2>
-                <p class="text-slate-400 text-sm mt-1">किसी भी परीक्षा का सवाल पूछें या नीचे दिए गए बटन दबाकर AI से तुरंत जवाब पाएं:</p>
+                <h2 class="text-3xl font-extrabold text-white mt-3">Drishti AI Study Assistant</h2>
+                <p class="text-slate-400 text-sm mt-1">UPSC, SSC या राज्य PCS का कोई भी टॉपिक पूछें, AI तुरंत नोट्स देगा:</p>
             </div>
 
-            <!-- AI Chat Box -->
-            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-2xl relative overflow-hidden">
-                <div class="flex items-center justify-between pb-4 border-b border-slate-800 text-xs text-slate-400">
-                    <div class="flex items-center gap-2">
-                        <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
-                        <span class="font-bold text-white">Drishti AI Study Engine v2.4</span>
-                    </div>
-                    <span>UPSC • SSC • PCS Knowledgebase</span>
-                </div>
-
-                <!-- Suggested Prompts -->
-                <div class="flex flex-wrap gap-2 my-4">
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-2xl">
+                <!-- Suggested Quick Prompts -->
+                <div class="flex flex-wrap gap-2 mb-4">
                     <button onclick="askAI('UPSC Polity: Fundamental Rights summary in 3 lines')" class="text-xs bg-slate-800 hover:bg-gold-500/20 hover:text-gold-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
-                        📘 UPSC Polity: Fundamental Rights
+                        📘 UPSC: Fundamental Rights
                     </button>
                     <button onclick="askAI('SSC CGL: Reasoning Trick for Blood Relation')" class="text-xs bg-slate-800 hover:bg-emerald-500/20 hover:text-emerald-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
-                        ⚡ SSC CGL: Reasoning Shortcut
+                        ⚡ SSC: Reasoning Shortcut
                     </button>
                     <button onclick="askAI('State PCS: Explain Champaran Satyagraha in Hindi')" class="text-xs bg-slate-800 hover:bg-blue-500/20 hover:text-blue-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
                         🇮🇳 BPSC/UPPSC: चंपारण सत्याग्रह
                     </button>
-                    <button onclick="askAI('Generate 1 Practice MCQ for UPSC Prelims')" class="text-xs bg-slate-800 hover:bg-purple-500/20 hover:text-purple-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
-                        🎯 Generate 1 Mock MCQ
+                    <button onclick="askAI('Explain Inflation and Repo Rate simply')" class="text-xs bg-slate-800 hover:bg-purple-500/20 hover:text-purple-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
+                        💰 Banking: Repo Rate & Inflation
                     </button>
                 </div>
 
-                <!-- Chat Display Area -->
-                <div id="aiResponseBox" class="min-h-[160px] max-h-[300px] overflow-y-auto p-4 bg-slate-950/80 rounded-2xl border border-slate-800 text-sm leading-relaxed text-slate-200">
+                <!-- Chat Display -->
+                <div id="aiResponseBox" class="min-h-[160px] max-h-[300px] overflow-y-auto p-4 bg-slate-950/90 rounded-2xl border border-slate-800 text-sm leading-relaxed text-slate-200">
                     <p class="text-slate-400 text-xs italic">
-                        👋 नमस्ते! मैं **Drishti AI** हूँ। आप UPSC (Pre/Mains), SSC CGL, State PCS (BPSC, UPPSC) या किसी भी सरकारी परीक्षा के नोट्स, करेंट अफेयर्स या MCQ यहाँ पूछ सकते हैं।
+                        👋 नमस्ते! मैं **Drishti AI** हूँ। आप UPSC, SSC, PCS या रेलवे के किसी भी विषय का सवाल नीचे टाइप करके पूछ सकते हैं।
                     </p>
                 </div>
 
-                <!-- Input Box -->
+                <!-- Input -->
                 <form onsubmit="handleAICustom(event)" class="mt-4 flex gap-2">
                     <input type="text" id="aiUserInput" placeholder="यहाँ कोई भी प्रश्न या टॉपिक लिखें..." class="flex-1 px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl text-sm text-white focus:outline-none focus:border-gold-500">
-                    <button type="submit" class="px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-bold rounded-xl text-sm transition flex items-center gap-1.5">
+                    <button type="submit" class="px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 text-white font-bold rounded-xl text-sm transition flex items-center gap-1.5">
                         <i class="fa-solid fa-paper-plane"></i> Ask AI
                     </button>
                 </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Supported Exams Section -->
-    <section id="exams" class="py-20 bg-navy-950">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-14">
-                <span class="text-gold-400 text-xs font-bold tracking-widest uppercase">Targeted Learning Modules</span>
-                <h2 class="text-3xl font-extrabold text-white mt-2">All India Govt Exams Covered</h2>
-                <p class="text-slate-400 text-sm mt-1">प्रत्येक परीक्षा के लिए समर्पित बैच, टेस्ट सीरीज़ और मेंटरशिप</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <!-- UPSC -->
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-gold-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-building-columns"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-white">UPSC CSE (IAS/IPS)</h3>
-                    <p class="text-slate-400 text-xs mt-2">Prelims GS + CSAT, Mains 4 Papers, Ethics Case Studies & Daily Answer Writing.</p>
-                </div>
-
-                <!-- SSC -->
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-emerald-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-calculator"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-white">SSC (CGL, CHSL, MTS)</h3>
-                    <p class="text-slate-400 text-xs mt-2">Quantitative Aptitude, Reasoning, English Comprehension & General Awareness Speed Tests.</p>
-                </div>
-
-                <!-- State PCS -->
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-white">State PCS (BPSC, UPPSC)</h3>
-                    <p class="text-slate-400 text-xs mt-2">State-specific Special History, Geography, Budget and Complete Prelims+Mains Course.</p>
-                </div>
-
-                <!-- Railway & Banking -->
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-purple-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-train"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-white">Railway & Banking</h3>
-                    <p class="text-slate-400 text-xs mt-2">RRB NTPC, Group D, IBPS PO, Clerk and Defence (NDA, CDS, AFCAT) Complete Prep.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5-Day Free Trial Details -->
-    <section id="trial" class="py-20 bg-slate-900/40 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="text-gold-400 text-xs font-bold tracking-widest uppercase bg-gold-500/10 px-3 py-1 rounded-full border border-gold-500/20">Zero Cost Pass</span>
-            <h2 class="text-3xl font-extrabold text-white mt-3">What You Get in 5-Day Free Access</h2>
-
-            <div class="mt-10 grid grid-cols-1 md:grid-cols-5 gap-4 text-left">
-                <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
-                    <span class="text-gold-400 font-bold text-xs">DAY 01</span>
-                    <h4 class="font-bold text-white text-sm mt-1">Syllabus Breakdown</h4>
-                    <p class="text-xs text-slate-400 mt-1">Complete booklist, NCERT planner & previous 10 years trend analysis.</p>
-                </div>
-                <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
-                    <span class="text-gold-400 font-bold text-xs">DAY 02</span>
-                    <h4 class="font-bold text-white text-sm mt-1">AI Video Lectures</h4>
-                    <p class="text-xs text-slate-400 mt-1">Access GS Foundation + SSC Math/Reasoning premium masterclasses.</p>
-                </div>
-                <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
-                    <span class="text-gold-400 font-bold text-xs">DAY 03</span>
-                    <h4 class="font-bold text-white text-sm mt-1">Live Answer Writing</h4>
-                    <p class="text-xs text-slate-400 mt-1">Write answers and get detailed feedback & score from senior mentors.</p>
-                </div>
-                <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl">
-                    <span class="text-gold-400 font-bold text-xs">DAY 04</span>
-                    <h4 class="font-bold text-white text-sm mt-1">All India Mock Test</h4>
-                    <p class="text-xs text-slate-400 mt-1">Full-length simulator exam with live rank, negative marking & analysis.</p>
-                </div>
-                <div class="p-5 bg-slate-900 border border-gold-500/40 rounded-2xl bg-amber-950/20">
-                    <span class="text-gold-400 font-bold text-xs">DAY 05</span>
-                    <h4 class="font-bold text-gold-300 text-sm mt-1">1-on-1 Mentorship</h4>
-                    <p class="text-xs text-slate-300 mt-1">Direct voice call / Zoom session with Vickey Singh & team to map strategy.</p>
-                </div>
-            </div>
-
-            <div class="mt-8">
-                <button onclick="openModal('trialModal')" class="px-8 py-3.5 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black font-extrabold rounded-xl shadow-lg transition">
-                    Claim 5-Day Free Access Now
-                </button>
             </div>
         </div>
     </section>
@@ -293,7 +352,7 @@
                     <div class="w-20 h-20 bg-gradient-to-tr from-gold-500 to-amber-600 text-black font-black text-2xl rounded-2xl flex items-center justify-center mx-auto mb-4">VS</div>
                     <h3 class="font-bold text-lg text-white">Vickey Singh</h3>
                     <p class="text-xs text-gold-400 font-bold uppercase tracking-wider mt-1">Founder & Chief Mentor</p>
-                    <p class="text-xs text-slate-400 mt-1">UPSC, SSC & State PCS Strategy Specialist</p>
+                    <p class="text-xs text-slate-400 mt-1">All India Govt Exams Strategy Lead</p>
                 </div>
             </div>
         </div>
@@ -303,59 +362,97 @@
     <footer class="bg-navy-950 text-slate-400 py-10 border-t border-slate-900 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-2 text-white font-bold text-base">
-                <i class="fa-solid fa-graduation-cap text-gold-400"></i> DURGA DRISHTI AI
+                <i class="fa-solid fa-graduation-cap text-gold-400"></i> DURGA DRISHTI
             </div>
-            <p>© 2026 DURGA DRISHTI AI. Dedicated to All Govt Aspirants of India.</p>
-            <a href="https://wa.me/919905502242" class="text-emerald-400 hover:underline">WhatsApp: +91 9905502242</a>
+            <p>© 2026 DURGA DRISHTI. All Rights Reserved. Complete Govt Exam Portal.</p>
+            <div class="flex gap-4">
+                <button onclick="openModal('trialModal')" class="text-gold-400 hover:underline">Student Registration</button>
+            </div>
         </div>
     </footer>
 
-    <!-- Fixed Floating WhatsApp Button -->
-    <a href="https://wa.me/919905502242?text=Hello%20Durga%20Drishti!%20I%20want%20to%20activate%20my%205-Day%20Free%20Trial%20Pass." 
-       target="_blank" 
-       class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center text-2xl hover:scale-110 transition duration-300 border-2 border-white/20"
-       title="Direct WhatsApp Support">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- Working 5-Day Free Trial Modal Form -->
+    <!-- MODAL 1: 5-Day Free Trial Direct Registration (NO WHATSAPP REQUIRED) -->
     <div id="trialModal" class="fixed inset-0 bg-navy-950/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
         <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-md w-full p-7 shadow-2xl relative text-left">
             <button onclick="closeModal('trialModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white transition">
                 <i class="fa-solid fa-xmark text-xl"></i>
             </button>
-            <div class="inline-block bg-gold-500/20 text-gold-400 text-[10px] font-black uppercase px-2.5 py-1 rounded-md mb-2">Instant WhatsApp Activation</div>
-            <h3 class="text-2xl font-extrabold text-white">5-Day Free Pass Activation</h3>
-            <p class="text-xs text-slate-400 mt-1">अपना विवरण भरें, आपका 5-दिवसीय फ्री ट्रायल आपके WhatsApp पर तुरंत शुरू हो जाएगा।</p>
+            <div class="inline-block bg-gold-500/20 text-gold-400 text-[10px] font-black uppercase px-2.5 py-1 rounded-md mb-2">Direct Online Pass</div>
+            <h3 class="text-2xl font-extrabold text-white">5-Day Full Free Access</h3>
+            <p class="text-xs text-slate-400 mt-1">अपना नाम और नंबर दर्ज करें, आपका डिजिटल स्टूडेंट पास स्क्रीन पर तुरंत बन जाएगा।</p>
 
-            <form class="mt-5 space-y-3.5" onsubmit="handleDirectWhatsApp(event)">
+            <form class="mt-5 space-y-3.5" onsubmit="handleDirectPass(event)">
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300">आपका नाम (Aspirant's Name)</label>
-                    <input type="text" id="aspirantName" required placeholder="उदा. Vickey Singh" class="mt-1 w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 text-white rounded-xl text-sm focus:outline-none focus:border-gold-500">
+                    <label class="block text-xs font-semibold text-slate-300">विद्यार्थी का नाम (Full Name)</label>
+                    <input type="text" id="passName" required placeholder="उदा. Vickey Singh" class="mt-1 w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 text-white rounded-xl text-sm focus:outline-none focus:border-gold-500">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300">WhatsApp नंबर (Phone Number)</label>
-                    <input type="tel" id="aspirantPhone" required placeholder="9905502242" class="mt-1 w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 text-white rounded-xl text-sm focus:outline-none focus:border-gold-500">
+                    <label class="block text-xs font-semibold text-slate-300">मोबाइल नंबर (Mobile Number)</label>
+                    <input type="tel" id="passPhone" required placeholder="9905502242" class="mt-1 w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 text-white rounded-xl text-sm focus:outline-none focus:border-gold-500">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300">लक्ष्य परीक्षा (Target Exam)</label>
-                    <select id="targetExam" class="mt-1 w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 text-white rounded-xl text-sm focus:outline-none focus:border-gold-500">
-                        <option value="UPSC CSE (IAS/IPS)">UPSC CSE (IAS / IPS)</option>
-                        <option value="SSC CGL / CHSL">SSC (CGL, CHSL, MTS, CPO)</option>
-                        <option value="State PCS (BPSC, UPPSC, MPPSC)">State PCS (BPSC, UPPSC, MPPSC)</option>
+                    <label class="block text-xs font-semibold text-slate-300">आप किस परीक्षा की तैयारी कर रहे हैं?</label>
+                    <select id="passExam" class="mt-1 w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 text-white rounded-xl text-sm focus:outline-none focus:border-gold-500">
+                        <option value="UPSC Civil Services (IAS/IPS)">UPSC CSE (IAS / IPS)</option>
+                        <option value="SSC Exams (CGL / CHSL)">SSC (CGL, CHSL, MTS, CPO)</option>
+                        <option value="State PCS (BPSC, UPPSC)">State PCS (BPSC, UPPSC, MPPSC)</option>
                         <option value="Railway & Banking Exams">Railway / Banking / Defence</option>
-                        <option value="All India Govt Exams Combined">All Govt Exams Combined</option>
                     </select>
                 </div>
-                <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 text-white font-extrabold rounded-xl text-sm transition mt-3 shadow-lg flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i> सीधे WhatsApp पर ट्रायल एक्टिवेट करें
+                <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black font-extrabold rounded-xl text-sm transition mt-3 shadow-lg flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-circle-check"></i> तुरंत फ्री एक्सेस पास बनाएं
                 </button>
             </form>
         </div>
     </div>
 
-    <!-- Interactive Scripts -->
+    <!-- MODAL 2: Instant Generated Digital Pass Card -->
+    <div id="passSuccessModal" class="fixed inset-0 bg-navy-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border-2 border-gold-500 rounded-3xl max-w-sm w-full p-6 shadow-2xl relative text-center">
+            <button onclick="closeModal('passSuccessModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            
+            <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-3 border border-emerald-500/30">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            
+            <h3 class="text-xl font-black text-white">5-Day Free Access Activated!</h3>
+            <p class="text-xs text-slate-400 mt-1">आपका डिजिटल पास सफलतापूर्वक सक्रिय हो गया है।</p>
+
+            <!-- Digital Pass Preview -->
+            <div class="mt-4 p-4 bg-slate-950 rounded-2xl border border-slate-800 text-left text-xs space-y-2">
+                <div class="flex justify-between border-b border-slate-800 pb-2">
+                    <span class="text-slate-400">Pass ID:</span>
+                    <span class="text-gold-400 font-bold font-mono">DD-2026-PASS</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Student:</span>
+                    <span class="text-white font-bold" id="cardName">Vickey Singh</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Mobile:</span>
+                    <span class="text-white" id="cardPhone">9905502242</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Target Track:</span>
+                    <span class="text-emerald-400 font-semibold" id="cardExam">UPSC CSE</span>
+                </div>
+                <div class="flex justify-between border-t border-slate-800 pt-2">
+                    <span class="text-slate-400">Status:</span>
+                    <span class="text-emerald-400 font-bold uppercase">● Active (5 Days Free)</span>
+                </div>
+            </div>
+
+            <button onclick="closeModal('passSuccessModal'); switchExam('upsc'); window.location.href='#exam-hub';" class="w-full mt-5 py-3 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black font-extrabold rounded-xl text-sm transition">
+                अभी पढ़ाई शुरू करें (Go to Courses) →
+            </button>
+        </div>
+    </div>
+
+    <!-- Interactive JavaScript -->
     <script>
+        // Modal Handlers
         function openModal(id) {
             document.getElementById(id).classList.remove('hidden');
         }
@@ -363,21 +460,58 @@
             document.getElementById(id).classList.add('hidden');
         }
 
-        // WhatsApp Form Submit Directly to Admin 9905502242
-        function handleDirectWhatsApp(e) {
+        // Direct Digital Pass Generator (Without WhatsApp)
+        function handleDirectPass(e) {
             e.preventDefault();
-            const name = document.getElementById('aspirantName').value.trim();
-            const phone = document.getElementById('aspirantPhone').value.trim();
-            const exam = document.getElementById('targetExam').value;
+            const name = document.getElementById('passName').value.trim();
+            const phone = document.getElementById('passPhone').value.trim();
+            const exam = document.getElementById('passExam').value;
 
-            const textMessage = `नमस्ते दुर्गा दृष्टि टीम!\n\nमेरा नाम: ${name}\nफ़ोन नंबर: ${phone}\nलक्ष्य परीक्षा: ${exam}\n\nमुझे 5-दिन का पूरा फ्री ट्रायल (AI Assistant + स्टडी मटेरियल) एक्टिवेट करना है। कृपया मेरा लॉगिन एक्सेस प्रदान करें।`;
-
-            const adminWhatsApp = "919905502242"; // Your WhatsApp number
-            const waUrl = `https://wa.me/${adminWhatsApp}?text=${encodeURIComponent(textMessage)}`;
+            // Fill card details
+            document.getElementById('cardName').innerText = name;
+            document.getElementById('cardPhone').innerText = phone;
+            document.getElementById('cardExam').innerText = exam;
 
             closeModal('trialModal');
-            // Direct redirect so browser never blocks it
-            window.location.href = waUrl;
+            openModal('passSuccessModal');
+        }
+
+        // Tab Switching for All Exams
+        function switchExam(examKey) {
+            // Update tabs styling
+            const tabs = ['upsc', 'ssc', 'pcs', 'railway'];
+            tabs.forEach(t => {
+                const tabBtn = document.getElementById('tab-' + t);
+                const contentPanel = document.getElementById('content-' + t);
+                if (t === examKey) {
+                    tabBtn.className = "exam-tab active px-5 py-3 rounded-xl font-bold text-sm border transition flex items-center gap-2 bg-gold-500 text-black border-gold-400 shadow-lg";
+                    contentPanel.classList.remove('hidden');
+                } else {
+                    tabBtn.className = "exam-tab px-5 py-3 rounded-xl font-bold text-sm border transition flex items-center gap-2 bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-600";
+                    contentPanel.classList.add('hidden');
+                }
+            });
+        }
+
+        // Live Mock Test Checking
+        function checkAnswer(btn, isCorrect) {
+            const resultBox = document.getElementById('quizResult');
+            const allButtons = document.querySelectorAll('#quizOptions button');
+            
+            allButtons.forEach(b => {
+                b.disabled = true;
+                b.classList.remove('hover:border-slate-600');
+            });
+
+            if (isCorrect) {
+                btn.classList.add('bg-emerald-950', 'border-emerald-500', 'text-emerald-200');
+                resultBox.className = "mt-5 p-4 rounded-xl text-sm leading-relaxed bg-emerald-950/60 border border-emerald-800 text-emerald-200 block";
+                resultBox.innerHTML = `<strong>✅ बिल्कुल सही उत्तर!</strong><br>डॉ. बी.आर. अम्बेडकर ने <strong>अनुच्छेद 32 (संवैधानिक उपचारों का अधिकार)</strong> को 'संविधान का हृदय और आत्मा' कहा था क्योंकि यह नागरिकों के मौलिक अधिकारों की रक्षा के लिए सुप्रीम कोर्ट में रिट (Writ) जारी करने का अधिकार देता है।`;
+            } else {
+                btn.classList.add('bg-rose-950', 'border-rose-500', 'text-rose-200');
+                resultBox.className = "mt-5 p-4 rounded-xl text-sm leading-relaxed bg-rose-950/60 border border-rose-800 text-rose-200 block";
+                resultBox.innerHTML = `<strong>❌ गलत उत्तर!</strong><br>सही उत्तर <strong>(C) अनुच्छेद 32</strong> है। डॉ. अम्बेडकर ने इसी अनुच्छेद को संविधान का हृदय और आत्मा कहा था।`;
+            }
         }
 
         // Drishti AI Assistant Engine
@@ -402,22 +536,22 @@
                 const q = query.toLowerCase();
 
                 if (q.includes("fundamental rights") || q.includes("polity")) {
-                    answer = `<strong>📘 UPSC/PCS Polity Quick Fact:</strong><br>• मौलिक अधिकार (Fundamental Rights) संविधान के <strong>भाग III (अनुच्छेद 12 से 35)</strong> में हैं।<br>• इन्हें <em>'भारत का मैग्ना कार्टा'</em> कहा जाता है।<br>• मुख्य 6 अधिकार: समानता (Art 14-18), स्वतंत्रता (Art 19-22), शोषण के विरुद्ध (Art 23-24), धर्म की स्वतंत्रता (Art 25-28), संस्कृति/शिक्षा (Art 29-30), और संवैधानिक उपचार (Art 32).`;
+                    answer = `<strong>📘 UPSC/PCS Polity Summary:</strong><br>• मौलिक अधिकार संविधान के <strong>भाग III (अनुच्छेद 12 से 35)</strong> में अमेरिका से प्रेरित हैं।<br>• मुख्य 6 अधिकार: समानता (14-18), स्वतंत्रता (19-22), शोषण के विरुद्ध (23-24), धर्म (25-28), शिक्षा/संस्कृति (29-30), और संवैधानिक उपचार (32).`;
                 } else if (q.includes("ssc") || q.includes("reasoning")) {
-                    answer = `<strong>⚡ SSC CGL Reasoning Shortcut (Blood Relation):</strong><br>• हमेशा स्वयं को बेस पर्सन (Center Point) मानकर ट्री बनाएं।<br>• पुरुष के लिए (+) और महिला के लिए (-) का चिन्ह लगाएं।<br>• भाई-बहन के लिए सीधी लाइन (=), और पति-पत्नी के लिए डबल एरो (↔) का प्रयोग करें। इससे 10 सेकंड में सवाल हल होगा!`;
+                    answer = `<strong>⚡ SSC CGL Reasoning Shortcut (Blood Relation):</strong><br>• हमेशा स्वयं को बेस पर्सन (Center Point) मानकर ट्री बनाएं।<br>• पुरुष के लिए (+) और महिला के लिए (-) का चिन्ह लगाएं।<br>• भाई-बहन के लिए सीधी लाइन (=), और पति-पत्नी के लिए डबल एरो (↔) का प्रयोग करें। 10 सेकंड में सवाल हल होगा!`;
                 } else if (q.includes("चंपारण") || q.includes("bpsc") || q.includes("history")) {
-                    answer = `<strong>🇮🇳 BPSC/State PCS History Note:</strong><br>• <strong>चंपारण सत्याग्रह (1917)</strong>: महात्मा गांधी का भारत में पहला सविनय अवज्ञा आंदोलन।<br>• राजकुमार शुक्ल के आग्रह पर गांधी जी बिहार के चंपारण पहुंचे।<br>• तीनकठिया प्रणाली (3/20 भाग पर नील की खेती) के विरुद्ध यह सफल आंदोलन था।`;
-                } else if (q.includes("mcq") || q.includes("mock")) {
-                    answer = `<strong>🎯 Practice MCQ:</strong><br><strong>Q:</strong> नीति आयोग (NITI Aayog) का गठन कब हुआ था?<br>(A) 15 अगस्त 2014 &nbsp;&nbsp; (B) 1 जनवरी 2015<br>(C) 26 जनवरी 2015 &nbsp;&nbsp; (D) 1 अप्रैल 2015<br><br><strong>सही उत्तर: (B) 1 जनवरी 2015</strong> (योजना आयोग के स्थान पर)।`;
+                    answer = `<strong>🇮🇳 BPSC/State PCS History Note:</strong><br>• <strong>चंपारण सत्याग्रह (1917)</strong>: गांधी जी का भारत में पहला सत्याग्रह।<br>• राजकुमार शुक्ल के निमंत्रण पर गांधी जी पहुंचे।<br>• तिनकठिया प्रथा (3/20 भाग पर नील की खेती) समाप्त हुई।`;
+                } else if (q.includes("inflation") || q.includes("repo") || q.includes("banking")) {
+                    answer = `<strong>💰 Banking & Economy Concept:</strong><br>• <strong>रेपो रेट (Repo Rate):</strong> वह दर जिस पर RBI वाणिज्यिक बैंकों को अल्पकालिक ऋण देता है।<br>• जब महंगाई (Inflation) बढ़ती है, तो RBI रेपो रेट बढ़ा देता है ताकि बाजार में नकदी कम हो और कीमतें गिरें।`;
                 } else {
-                    answer = `<strong>🤖 Drishti AI Analysis for: "${query}"</strong><br>• यह टॉपिक UPSC, SSC और राज्य PCS परीक्षा की दृष्टि से अति महत्वपूर्ण है।<br>• पूर्ण नोट्स और 50 अभ्यास प्रश्नों के लिए <strong>"5-Day Free Trial"</strong> एक्टिवेट करें। हमारे मेंटर्स आपके साथ पूरी पीडीएफ साझा करेंगे!`;
+                    answer = `<strong>🤖 Drishti AI Analysis for: "${query}"</strong><br>• यह विषय सरकारी परीक्षा के पाठ्यक्रम में बहुत महत्वपूर्ण है।<br>• अपनी तैयारी को तेज़ करने के लिए ऊपर दिए गए <strong>"5-Day Free Pass"</strong> को सक्रिय करें और सभी विस्तृत चैप्टर टेस्ट हल करें!`;
                 }
 
                 box.innerHTML = `
                     <div class="mb-2 text-xs text-emerald-400 font-bold">Query: "${query}"</div>
                     <div class="text-slate-100">${answer}</div>
                 `;
-            }, 800);
+            }, 600);
         }
     </script>
 </body>
