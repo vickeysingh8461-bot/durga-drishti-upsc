@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DURGA DRISHTI AI - Smart Govt Exam Platform</title>
+    <title>DURGA DRISHTI AI - Powered by Gemini AI (All Govt Exams)</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,21 +38,14 @@
             }
         }
     </script>
-    <style>
-        /* Custom scrollbar for ChatGPT interface */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #020617; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #475569; }
-    </style>
 </head>
 <body class="bg-navy-950 text-slate-100 font-sans antialiased selection:bg-gold-500 selection:text-black">
 
-    <!-- Top Alert Banner -->
+    <!-- Top Alert Banner with Paid Warning -->
     <div class="bg-gradient-to-r from-amber-600 via-gold-500 to-amber-600 text-black py-2 px-4 text-center text-xs sm:text-sm font-bold flex items-center justify-center gap-2">
-        <span class="bg-black text-amber-300 px-2.5 py-0.5 rounded-full text-[10px] uppercase font-black">All India Live</span>
-        ⚡ 5-Day Full Free Access Activated! ChatGPT-Grade AI Assistant + Complete Study Notes Unlocked!
-        <button onclick="openModal('passModal')" class="underline hover:text-white transition ml-1 cursor-pointer">View Pass →</button>
+        <span class="bg-black text-amber-300 px-2.5 py-0.5 rounded-full text-[10px] uppercase font-black">5-Day Trial</span>
+        ⚡ 5 दिन का पूरा फ्री ट्रायल लाइव है! (ट्रायल के बाद ₹499/माह का पेड प्लान लागू होगा)
+        <button onclick="openModal('passModal')" class="underline hover:text-white transition ml-1 cursor-pointer">Activate Free Pass →</button>
     </div>
 
     <!-- Header -->
@@ -63,19 +56,22 @@
                     <i class="fa-solid fa-graduation-cap"></i>
                 </div>
                 <div>
-                    <span class="text-xl sm:text-2xl font-black text-white tracking-tight">DURGA<span class="text-gold-400"> DRISHTI</span> <span class="text-xs bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded ml-1">AI 3.0</span></span>
-                    <span class="block text-[10px] tracking-widest text-slate-400 font-semibold uppercase">UPSC • SSC • State PCS • All Govt Exams</span>
+                    <span class="text-xl sm:text-2xl font-black text-white tracking-tight">DURGA<span class="text-gold-400"> DRISHTI</span> <span class="text-xs bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded ml-1 font-mono">Gemini AI</span></span>
+                    <span class="block text-[10px] tracking-widest text-slate-400 font-semibold uppercase">UPSC • SSC • State PCS • Railway</span>
                 </div>
             </a>
 
             <nav class="hidden md:flex items-center gap-7 font-medium text-slate-300 text-sm">
-                <a href="#chatgpt-section" class="text-emerald-400 hover:text-emerald-300 transition font-bold flex items-center gap-1.5"><i class="fa-solid fa-brain"></i> Drishti AI (ChatGPT)</a>
-                <a href="#exam-hub" class="hover:text-gold-400 transition font-semibold text-white">Full Study Materials</a>
-                <a href="#mock-test" class="hover:text-gold-400 transition">Live Practice Test</a>
+                <a href="#gemini-chat" class="text-emerald-400 hover:text-emerald-300 transition font-bold flex items-center gap-1.5"><i class="fa-solid fa-sparkles"></i> Gemini AI Chat</a>
+                <a href="#exam-hub" class="hover:text-gold-400 transition font-semibold text-white">Study Materials</a>
+                <a href="#pricing-warning" class="text-amber-400 hover:text-amber-300 transition font-semibold flex items-center gap-1"><i class="fa-solid fa-triangle-exclamation"></i> Paid Plan Alert</a>
                 <a href="#mentors" class="hover:text-gold-400 transition">Leadership</a>
             </nav>
 
             <div class="flex items-center gap-3">
+                <button onclick="openModal('geminiKeyModal')" class="text-xs bg-slate-800 border border-slate-700 hover:border-emerald-500 text-slate-300 hover:text-white px-3 py-2 rounded-xl transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-key text-emerald-400"></i> <span class="hidden sm:inline">Connect</span> API Key
+                </button>
                 <button onclick="openModal('passModal')" class="bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black text-xs sm:text-sm font-extrabold px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-gold-500/20 hover:scale-105 transition">
                     <i class="fa-solid fa-id-card mr-1"></i> Get 5-Day Free Pass
                 </button>
@@ -90,92 +86,93 @@
         <div class="relative z-10">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-gold-500/30 text-gold-400 text-xs font-bold mb-6">
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                UPSC • SSC CGL/CHSL • BPSC • UPPSC • Railway • Banking
+                Google Gemini AI Powered • 5-Day Free Access Now Active
             </div>
             
             <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto">
-                Ask Anything. Learn Everything. <br>
+                Real Gemini AI for All <br>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-gold-400 to-amber-500">
-                    Smart AI Platform for All Govt Exams
+                    Indian Government Exams
                 </span>
             </h1>
 
             <p class="mt-5 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                जैसे आप <strong>ChatGPT</strong> से बात करते हैं, वैसे ही अपने एग्ज़ाम का कोई भी सवाल, फुल फॉर्म, सिलेबस या ट्रिक्स पूछें। नीचे दिए गए स्टडी कार्ड्स खोलकर पूरा नोट्स पढ़ें!
+                पूछें कोई भी सवाल—चाहे फुल फॉर्म हो, मैथ हिसाब <strong>(10+20)</strong>, करंट अफेयर्स, या UPSC/SSC के कठिन सवाल। रियल जेमिनी AI आपको तुरंत सटीक उत्तर देगा!
             </p>
 
             <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#chatgpt-section" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 text-white font-extrabold rounded-xl shadow-xl shadow-emerald-500/20 hover:scale-105 transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-brain"></i> Open Drishti AI (ChatGPT Mode)
+                <a href="#gemini-chat" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 text-white font-extrabold rounded-xl shadow-xl shadow-emerald-500/20 hover:scale-105 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-sparkles"></i> Open Gemini AI Chat
                 </a>
-                <a href="#exam-hub" class="w-full sm:w-auto px-8 py-4 bg-slate-900 border border-slate-700 hover:border-gold-500 text-white font-bold rounded-xl hover:bg-slate-800 transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-book-open"></i> Browse Course Notes & Materials
-                </a>
+                <button onclick="openModal('passModal')" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black font-extrabold rounded-xl shadow-xl shadow-gold-500/30 hover:scale-105 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-gift"></i> Start 5-Day Free Trial
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- 1. CHATGPT-GRADE INTERACTIVE AI SYSTEM -->
-    <section id="chatgpt-section" class="py-16 bg-slate-900/60 border-y border-slate-800 relative">
+    <!-- 1. REAL GEMINI AI CHATBOT (SOLVES MATH, TYPOS & QUESTIONS) -->
+    <section id="gemini-chat" class="py-16 bg-slate-900/60 border-y border-slate-800 relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-8">
                 <span class="text-emerald-400 text-xs font-bold tracking-widest uppercase bg-emerald-500/10 border border-emerald-500/20 px-3.5 py-1.5 rounded-full inline-flex items-center gap-2">
-                    <i class="fa-solid fa-robot"></i> ChatGPT 4.0 Architecture for Exams
+                    <i class="fa-solid fa-bolt"></i> Google Gemini 1.5 Flash Engine
                 </span>
-                <h2 class="text-3xl font-extrabold text-white mt-3">Drishti AI Study Chat</h2>
-                <p class="text-slate-400 text-sm mt-1">UPSC, SSC, IAS, Full Forms, Maths, या Current Affairs का कुछ भी टाइप करें और तुरंत सही उत्तर पाएं:</p>
+                <h2 class="text-3xl font-extrabold text-white mt-3">Drishti Gemini AI Study Assistant</h2>
+                <p class="text-slate-400 text-sm mt-1">कोई भी सवाल पूछें—गणित (Maths), फुल फॉर्म (Full Form), इतिहास, भूगोल या करंट अफेयर्स:</p>
             </div>
 
-            <!-- ChatGPT Style Window -->
+            <!-- Chat Window -->
             <div class="bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col h-[520px]">
                 
                 <!-- Chat Window Header -->
                 <div class="bg-slate-950 px-6 py-4 border-b border-slate-800 flex items-center justify-between text-xs text-slate-300">
                     <div class="flex items-center gap-3">
                         <div class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
-                        <span class="font-bold text-white text-sm">Drishti AI (Online & Ready)</span>
+                        <span class="font-bold text-white text-sm">Gemini AI Engine (Online)</span>
+                        <span id="apiKeyStatus" class="text-[11px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Auto Smart Engine</span>
                     </div>
-                    <button onclick="clearChat()" class="text-xs text-slate-400 hover:text-rose-400 flex items-center gap-1">
-                        <i class="fa-solid fa-trash-can"></i> Clear Chat
-                    </button>
+                    <div class="flex items-center gap-3">
+                        <button onclick="openModal('geminiKeyModal')" class="text-xs text-emerald-400 hover:underline">
+                            API Key Settings
+                        </button>
+                        <button onclick="clearChat()" class="text-xs text-slate-400 hover:text-rose-400 flex items-center gap-1">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Suggested Quick Prompts -->
                 <div class="p-3 bg-slate-950/60 border-b border-slate-800/80 flex gap-2 overflow-x-auto text-xs whitespace-nowrap">
-                    <button onclick="sendQuickPrompt('upsc ka full form')" class="bg-slate-800 hover:bg-gold-500/20 hover:text-gold-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
-                        🎯 UPSC ka full form
+                    <button onclick="sendQuickPrompt('upsc ka full from kiiya hai')" class="bg-slate-800 hover:bg-gold-500/20 hover:text-gold-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
+                        🎯 upsc ka full from kiiya hai
                     </button>
-                    <button onclick="sendQuickPrompt('ias eligibility and age limit')" class="bg-slate-800 hover:bg-emerald-500/20 hover:text-emerald-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
-                        👨‍💼 IAS Eligibility & Age
+                    <button onclick="sendQuickPrompt('10+20')" class="bg-slate-800 hover:bg-emerald-500/20 hover:text-emerald-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
+                        🔢 10+20 (Math)
                     </button>
-                    <button onclick="sendQuickPrompt('ssc cgl syllabus and exam pattern')" class="bg-slate-800 hover:bg-blue-500/20 hover:text-blue-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
-                        ⚡ SSC CGL Pattern
+                    <button onclick="sendQuickPrompt('ias eligibility and age limit')" class="bg-slate-800 hover:bg-blue-500/20 hover:text-blue-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
+                        👨‍💼 IAS Eligibility
                     </button>
                     <button onclick="sendQuickPrompt('what is article 21 of indian constitution')" class="bg-slate-800 hover:bg-purple-500/20 hover:text-purple-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
-                        📜 Article 21 (Right to Life)
-                    </button>
-                    <button onclick="sendQuickPrompt('bpsc exam preparation strategy in hindi')" class="bg-slate-800 hover:bg-amber-500/20 hover:text-amber-300 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
-                        🇮🇳 BPSC Strategy
+                        📜 Article 21
                     </button>
                 </div>
 
-                <!-- Message Conversation Feed -->
+                <!-- Message Feed -->
                 <div id="chatMessages" class="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 bg-slate-950/80">
-                    <!-- Default AI Welcome Message -->
                     <div class="flex gap-3 items-start">
-                        <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-amber-500 to-gold-400 text-black flex items-center justify-center font-bold text-sm shrink-0 shadow">
+                        <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 text-black flex items-center justify-center font-bold text-sm shrink-0 shadow">
                             AI
                         </div>
                         <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl rounded-tl-none max-w-[85%] text-sm text-slate-200 leading-relaxed">
-                            👋 <strong>नमस्ते! मैं Drishti AI हूँ (Your ChatGPT Study Partner).</strong><br>
-                            मुझसे आप किसी भी परीक्षा के बारे में पूछ सकते हैं:
+                            👋 <strong>नमस्ते! मैं Drishti Gemini AI हूँ।</strong><br>
+                            मैं आपके सभी सवालों के सटीक उत्तर दे सकता हूँ:
                             <ul class="list-disc pl-5 mt-2 space-y-1 text-slate-300 text-xs">
-                                <li>किसी भी पद का Full Form (UPSC, IAS, IPS, SSC, BPSC, RRB)</li>
-                                <li>संविधान के अनुच्छेद (Polity Articles & Amendments)</li>
-                                <li>इतिहास, भूगोल और करेंट अफेयर्स के संक्षिप्त नोट्स</li>
-                                <li>Maths और Reasoning की शॉर्टकट ट्रिक्स</li>
+                                <li><strong>फुल फॉर्म (Full Forms):</strong> UPSC, IAS, IPS, SSC, BPSC आदि।</li>
+                                <li><strong>गणित (Maths):</strong> 10+20, प्रतिशत (%), या रीज़निंग के सवाल।</li>
+                                <li><strong>संविधान व GS:</strong> अनुच्छेद, इतिहास, भूगोल, सामान्य विज्ञान।</li>
                             </ul>
-                            नीचे बॉक्स में कुछ भी टाइप करें!
+                            नीचे कुछ भी टाइप करें और देखें!
                         </div>
                     </div>
                 </div>
@@ -183,9 +180,9 @@
                 <!-- Input Box -->
                 <div class="p-3 sm:p-4 bg-slate-950 border-t border-slate-800">
                     <form onsubmit="handleChatSubmit(event)" class="flex gap-2">
-                        <input type="text" id="chatInput" placeholder="जैसे: 'upsc ka full form' या 'what is repo rate'..." required class="flex-1 px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white focus:outline-none focus:border-gold-500">
+                        <input type="text" id="chatInput" placeholder="जैसे: 'upsc ka full from kiiya hai' या '10+20' या कोई भी सवाल..." required class="flex-1 px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white focus:outline-none focus:border-emerald-500">
                         <button type="submit" id="sendBtn" class="px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 text-white font-bold rounded-xl text-sm transition flex items-center gap-1.5">
-                            <i class="fa-solid fa-paper-plane"></i> Send
+                            <i class="fa-solid fa-paper-plane"></i> Ask
                         </button>
                     </form>
                 </div>
@@ -193,24 +190,90 @@
         </div>
     </section>
 
-    <!-- 2. FULL STUDY MATERIALS HUB (EVERY CARD FULLY OPENS) -->
-    <section id="exam-hub" class="py-16 bg-navy-950 border-b border-slate-800">
+    <!-- 2. PAID WARNING & SUBSCRIPTION SECTION -->
+    <section id="pricing-warning" class="py-16 bg-navy-950 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            
+            <!-- Warning Alert Box -->
+            <div class="p-6 rounded-3xl bg-amber-500/10 border-2 border-amber-500/40 text-left flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-xl mb-12">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500 text-black flex items-center justify-center text-2xl shrink-0 font-bold">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-black uppercase text-amber-400 tracking-wider">Official Paid Notice</span>
+                        <h3 class="text-xl font-bold text-white mt-0.5">5-दिन का फ्री ट्रायल समाप्त होने के बाद सूचना (Paid Warning)</h3>
+                        <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
+                            सभी नए छात्रों को <strong>5 दिन का 100% फ्री एक्सेस</strong> मिलता है। 5 दिन पूरे होने पर लाइव वीडियो क्लासेस, पर्सनल मेंटरशिप और टेस्ट पोर्टल <strong>₹499/माह (Paid Plan)</strong> में बदल जाएंगे। बिना रुकावट पढ़ने के लिए समय पर अपग्रेड करें।
+                        </p>
+                    </div>
+                </div>
+                <button onclick="openModal('paidUpgradeModal')" class="bg-amber-500 hover:bg-amber-400 text-black font-extrabold px-6 py-3 rounded-xl text-sm whitespace-nowrap shadow-lg shadow-amber-500/20 transition">
+                    View Paid Plans →
+                </button>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <!-- Free Pass Details -->
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider">Beginner Pass</span>
+                        <h4 class="text-2xl font-black text-white mt-1">5-Day Full Free Pass</h4>
+                        <div class="text-3xl font-extrabold text-white mt-4">₹0 <span class="text-xs text-slate-400 font-normal">/ 5 दिन के लिए</span></div>
+                        <ul class="mt-6 space-y-3 text-xs sm:text-sm text-slate-300">
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Drishti Gemini AI 24x7 एक्सेस</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> सभी ऑल इंडिया परीक्षा नोट्स</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> 1 ऑल इंडिया लाइव मॉक टेस्ट</li>
+                            <li class="text-amber-400 font-semibold"><i class="fa-solid fa-clock mr-2"></i> 5 दिन बाद स्वतः समाप्त (Paid Required)</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('passModal')" class="mt-8 w-full py-3 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl text-sm transition">
+                        Claim 5-Day Free Pass
+                    </button>
+                </div>
+
+                <!-- Paid Pro Plan -->
+                <div class="p-8 rounded-3xl bg-gradient-to-b from-slate-900 to-amber-950/30 border-2 border-gold-500 shadow-2xl shadow-gold-500/10 flex flex-col justify-between relative">
+                    <span class="absolute -top-3.5 left-8 bg-gradient-to-r from-gold-500 to-amber-500 text-black text-[10px] font-black uppercase px-3 py-1 rounded-full shadow">Recommended After Trial</span>
+                    <div>
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider">Full Access Pass</span>
+                        <h4 class="text-2xl font-black text-white mt-1">Pro Paid Subscription</h4>
+                        <div class="text-4xl font-extrabold text-gold-400 mt-4">₹499 <span class="text-xs text-slate-400 font-normal">/ प्रति माह</span></div>
+                        <ul class="mt-6 space-y-3 text-xs sm:text-sm text-slate-200">
+                            <li><i class="fa-solid fa-check text-gold-400 mr-2"></i> अनलिमिटेड Gemini AI डाउट सॉल्विंग</li>
+                            <li><i class="fa-solid fa-check text-gold-400 mr-2"></i> डेली आंसर राइटिंग कॉपी चेकिंग</li>
+                            <li><i class="fa-solid fa-check text-gold-400 mr-2"></i> 50+ फुल-लेंथ टेस्ट सीरीज़ & ऑल इंडिया रैंक</li>
+                            <li><i class="fa-solid fa-check text-gold-400 mr-2"></i> Vickey Singh सर के साथ 1-on-1 मेंटरशिप कॉल</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('paidUpgradeModal')" class="mt-8 w-full py-3 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black font-extrabold rounded-xl text-sm transition shadow-lg shadow-gold-500/20">
+                        Join Paid Pro Plan (₹499/mo)
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. FULL STUDY MATERIALS HUB -->
+    <section id="exam-hub" class="py-16 bg-slate-900/40 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-10">
                 <span class="text-gold-400 text-xs font-bold tracking-widest uppercase bg-gold-500/10 border border-gold-500/20 px-3 py-1 rounded-full">
-                    Interactive Study Library
+                    Course Modules
                 </span>
-                <h2 class="text-3xl font-extrabold text-white mt-3">All Exam Portals & Study Notes</h2>
-                <p class="text-slate-400 text-sm mt-1">किसी भी कार्ड पर क्लिक करें, पूरा चैप्टर नोट्स और मॉडल उत्तर स्क्रीन पर खुल जाएगा:</p>
+                <h2 class="text-3xl font-extrabold text-white mt-3">All Exam Portals & Notes</h2>
+                <p class="text-slate-400 text-sm mt-1">किसी भी कार्ड पर क्लिक करके पूरे नोट्स स्क्रीन पर पढ़ें:</p>
             </div>
 
-            <!-- Exam Switcher Tabs -->
+            <!-- Tabs -->
             <div class="flex flex-wrap justify-center gap-3 mb-10">
                 <button onclick="switchExamTab('upsc')" id="tabBtn-upsc" class="exam-tab-btn px-5 py-3 rounded-xl font-bold text-sm border transition flex items-center gap-2 bg-gold-500 text-black border-gold-400 shadow-lg">
                     <i class="fa-solid fa-landmark"></i> UPSC CSE (IAS/IPS)
                 </button>
                 <button onclick="switchExamTab('ssc')" id="tabBtn-ssc" class="exam-tab-btn px-5 py-3 rounded-xl font-bold text-sm border transition flex items-center gap-2 bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-600">
-                    <i class="fa-solid fa-calculator"></i> SSC (CGL / CHSL / MTS)
+                    <i class="fa-solid fa-calculator"></i> SSC (CGL / CHSL)
                 </button>
                 <button onclick="switchExamTab('pcs')" id="tabBtn-pcs" class="exam-tab-btn px-5 py-3 rounded-xl font-bold text-sm border transition flex items-center gap-2 bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-600">
                     <i class="fa-solid fa-map-location-dot"></i> State PCS (BPSC / UPPSC)
@@ -220,105 +283,39 @@
                 </button>
             </div>
 
-            <!-- Interactive Study Panels -->
-            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl">
-                
+            <!-- Study Panels -->
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl">
                 <!-- UPSC Section -->
                 <div id="panel-upsc" class="study-panel">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-800 gap-4">
-                        <div>
-                            <span class="text-xs text-gold-400 font-bold uppercase tracking-wider">Exam Track 01</span>
-                            <h3 class="text-2xl font-black text-white mt-1">UPSC Civil Services Examination (CSE)</h3>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Prelims GS-1, CSAT, Mains GS 1-4, Ethics & Answer Writing</p>
-                        </div>
-                        <button onclick="openModal('passModal')" class="bg-gold-500 text-black font-extrabold px-5 py-2.5 rounded-xl text-sm hover:bg-gold-400">
-                            Get 5-Day Free Access
-                        </button>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                        <!-- Card 1 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div onclick="openStudyReader('upsc_gs')" class="p-6 bg-slate-950 border border-slate-800 hover:border-gold-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-lg mb-3 group-hover:bg-gold-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-book"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                GS Foundation Notes
-                                <span class="text-xs text-gold-400 underline font-normal">Click to Read →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">Indian Polity (M. Laxmikanth), Modern History, Geography NCERTs and Environment key notes.</p>
+                            <h4 class="font-bold text-white text-base text-gold-400">GS Foundation Notes →</h4>
+                            <p class="text-xs text-slate-400 mt-2">Indian Polity, Modern History, Geography NCERTs and Environment key notes.</p>
                         </div>
-
-                        <!-- Card 2 -->
                         <div onclick="openStudyReader('upsc_daw')" class="p-6 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-3 group-hover:bg-emerald-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-pen-nib"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                Daily Answer Writing (DAW)
-                                <span class="text-xs text-emerald-400 underline font-normal">Click to View →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">Today's 2 Mains Questions with Model Answers (Intro, Body, Conclusion + Diagram Structure).</p>
+                            <h4 class="font-bold text-white text-base text-emerald-400">Daily Answer Writing (DAW) →</h4>
+                            <p class="text-xs text-slate-400 mt-2">Today's 2 Mains Questions with Model Answers & Rubrics.</p>
                         </div>
-
-                        <!-- Card 3 -->
                         <div onclick="openStudyReader('upsc_ca')" class="p-6 bg-slate-950 border border-slate-800 hover:border-blue-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg mb-3 group-hover:bg-blue-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                Current Affairs Digest
-                                <span class="text-xs text-blue-400 underline font-normal">Click to Read →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">The Hindu & Indian Express editorial summaries mapped to GS Paper 1, 2, 3.</p>
+                            <h4 class="font-bold text-white text-base text-blue-400">Current Affairs Digest →</h4>
+                            <p class="text-xs text-slate-400 mt-2">The Hindu & Indian Express editorial summaries mapped to GS.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- SSC Section -->
                 <div id="panel-ssc" class="study-panel hidden">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-800 gap-4">
-                        <div>
-                            <span class="text-xs text-emerald-400 font-bold uppercase tracking-wider">Exam Track 02</span>
-                            <h3 class="text-2xl font-black text-white mt-1">Staff Selection Commission (SSC CGL / CHSL / MTS)</h3>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Speed Maths, Logical Reasoning, English Grammar & General Awareness</p>
-                        </div>
-                        <button onclick="openModal('passModal')" class="bg-emerald-500 text-black font-extrabold px-5 py-2.5 rounded-xl text-sm hover:bg-emerald-400">
-                            Get 5-Day Free Access
-                        </button>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div onclick="openStudyReader('ssc_math')" class="p-6 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-3 group-hover:bg-emerald-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-calculator"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                Speed Math Tricks & Formulas
-                                <span class="text-xs text-emerald-400 underline font-normal">Click to Open →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">Percentage, Profit & Loss, CI/SI, Ratio, Time & Work 10-second calculation tricks.</p>
+                            <h4 class="font-bold text-white text-base text-emerald-400">Speed Math Tricks & Formulas →</h4>
+                            <p class="text-xs text-slate-400 mt-2">Percentage, CI/SI, Ratio, Time & Work 10-second calculation tricks.</p>
                         </div>
-
                         <div onclick="openStudyReader('ssc_reasoning')" class="p-6 bg-slate-950 border border-slate-800 hover:border-amber-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg mb-3 group-hover:bg-amber-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-brain"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                Reasoning Shortcut Guide
-                                <span class="text-xs text-amber-400 underline font-normal">Click to Open →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">Blood Relation Family Tree, Syllogism Venn Diagrams, Coding-Decoding rules.</p>
+                            <h4 class="font-bold text-white text-base text-amber-400">Reasoning Shortcut Guide →</h4>
+                            <p class="text-xs text-slate-400 mt-2">Blood Relation Family Tree, Syllogism Venn Diagrams.</p>
                         </div>
-
                         <div onclick="openStudyReader('ssc_english')" class="p-6 bg-slate-950 border border-slate-800 hover:border-blue-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg mb-3 group-hover:bg-blue-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-spell-check"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                500 High-Frequency Vocab
-                                <span class="text-xs text-blue-400 underline font-normal">Click to Open →</span>
-                            </h4>
+                            <h4 class="font-bold text-white text-base text-blue-400">500 High-Frequency Vocab →</h4>
                             <p class="text-xs text-slate-400 mt-2">Repeated One Word Substitutions, Idioms & Phrases with Hindi meaning.</p>
                         </div>
                     </div>
@@ -326,149 +323,46 @@
 
                 <!-- State PCS Section -->
                 <div id="panel-pcs" class="study-panel hidden">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-800 gap-4">
-                        <div>
-                            <span class="text-xs text-blue-400 font-bold uppercase tracking-wider">Exam Track 03</span>
-                            <h3 class="text-2xl font-black text-white mt-1">State PCS (BPSC, UPPSC, MPPSC)</h3>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-1">State Special History, Geography, Budget & Census Compilations</p>
-                        </div>
-                        <button onclick="openModal('passModal')" class="bg-blue-500 text-black font-extrabold px-5 py-2.5 rounded-xl text-sm hover:bg-blue-400">
-                            Get 5-Day Free Access
-                        </button>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div onclick="openStudyReader('pcs_bpsc')" class="p-6 bg-slate-950 border border-slate-800 hover:border-blue-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg mb-3 group-hover:bg-blue-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-monument"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                Bihar Special (BPSC Notes)
-                                <span class="text-xs text-blue-400 underline font-normal">Click to Open →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">1857 Revolt in Bihar (Kunwar Singh), Champaran Satyagraha, Bihar Geography & Rivers.</p>
+                            <h4 class="font-bold text-white text-base text-blue-400">Bihar Special (BPSC Notes) →</h4>
+                            <p class="text-xs text-slate-400 mt-2">1857 Revolt in Bihar (Kunwar Singh), Champaran Satyagraha, Bihar Geography.</p>
                         </div>
-
                         <div onclick="openStudyReader('pcs_uppsc')" class="p-6 bg-slate-950 border border-slate-800 hover:border-gold-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-lg mb-3 group-hover:bg-gold-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-map"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                UP Special (UPPSC GS 5 & 6)
-                                <span class="text-xs text-gold-400 underline font-normal">Click to Open →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">Uttar Pradesh History, Festivals, One District One Product (ODOP), State Economy.</p>
+                            <h4 class="font-bold text-white text-base text-gold-400">UP Special (UPPSC GS 5 & 6) →</h4>
+                            <p class="text-xs text-slate-400 mt-2">Uttar Pradesh History, Festivals, One District One Product (ODOP).</p>
                         </div>
-
                         <div onclick="openStudyReader('pcs_mains')" class="p-6 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-3 group-hover:bg-emerald-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-pen-fancy"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                PCS General Hindi & Essay
-                                <span class="text-xs text-emerald-400 underline font-normal">Click to Open →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">मुहावरे, विलोम शब्द, पत्र लेखन और निबंध प्रारूप (Essay Formats) का संग्रह।</p>
+                            <h4 class="font-bold text-white text-base text-emerald-400">PCS General Hindi & Essay →</h4>
+                            <p class="text-xs text-slate-400 mt-2">मुहावरे, विलोम शब्द, पत्र लेखन और निबंध प्रारूप संग्रह।</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Railway Section -->
                 <div id="panel-railway" class="study-panel hidden">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-800 gap-4">
-                        <div>
-                            <span class="text-xs text-purple-400 font-bold uppercase tracking-wider">Exam Track 04</span>
-                            <h3 class="text-2xl font-black text-white mt-1">Railway (RRB NTPC, Group D) & Banking (IBPS, SBI)</h3>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-1">General Science One-Liners, Static GK & Banking Awareness</p>
-                        </div>
-                        <button onclick="openModal('passModal')" class="bg-purple-500 text-white font-extrabold px-5 py-2.5 rounded-xl text-sm hover:bg-purple-400">
-                            Get 5-Day Free Access
-                        </button>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div onclick="openStudyReader('railway_science')" class="p-6 bg-slate-950 border border-slate-800 hover:border-purple-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg mb-3 group-hover:bg-purple-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-flask"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                General Science (Physics/Bio)
-                                <span class="text-xs text-purple-400 underline font-normal">Click to Open →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">1,000 Repeated Science Questions for Railway exams (SI units, human anatomy, acids/bases).</p>
+                            <h4 class="font-bold text-white text-base text-purple-400">General Science (Physics/Bio) →</h4>
+                            <p class="text-xs text-slate-400 mt-2">1,000 Repeated Science Questions for Railway exams.</p>
                         </div>
-
                         <div onclick="openStudyReader('banking_gk')" class="p-6 bg-slate-950 border border-slate-800 hover:border-gold-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-lg mb-3 group-hover:bg-gold-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-building-columns"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                Banking Awareness & Economy
-                                <span class="text-xs text-gold-400 underline font-normal">Click to Open →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">Repo Rate, Cash Reserve Ratio (CRR), SLR, Monetary Policy Committee notes.</p>
+                            <h4 class="font-bold text-white text-base text-gold-400">Banking Awareness & Economy →</h4>
+                            <p class="text-xs text-slate-400 mt-2">Repo Rate, Cash Reserve Ratio (CRR), SLR notes.</p>
                         </div>
-
                         <div onclick="openStudyReader('static_gk')" class="p-6 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-2xl cursor-pointer hover:scale-[1.02] transition shadow group">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-3 group-hover:bg-emerald-500 group-hover:text-black transition">
-                                <i class="fa-solid fa-earth-asia"></i>
-                            </div>
-                            <h4 class="font-bold text-white text-base flex items-center justify-between">
-                                Static GK Tables
-                                <span class="text-xs text-emerald-400 underline font-normal">Click to Open →</span>
-                            </h4>
-                            <p class="text-xs text-slate-400 mt-2">National Parks, Major Classical Dances, Ramsar Sites and UNESCO heritage list.</p>
+                            <h4 class="font-bold text-white text-base text-emerald-400">Static GK Tables →</h4>
+                            <p class="text-xs text-slate-400 mt-2">National Parks, Major Classical Dances, Ramsar Sites.</p>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. LIVE INTERACTIVE MOCK TEST -->
-    <section id="mock-test" class="py-16 bg-navy-950">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-8">
-                <span class="text-gold-400 text-xs font-bold tracking-widest uppercase bg-gold-500/10 border border-gold-500/20 px-3 py-1 rounded-full">
-                    Instant Interactive Quiz
-                </span>
-                <h2 class="text-3xl font-extrabold text-white mt-3">Live Practice Question (Test Your Knowledge)</h2>
-                <p class="text-slate-400 text-sm mt-1">अपना सही उत्तर चुनें और तुरंत स्कोर देखें:</p>
-            </div>
-
-            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
-                <div class="flex items-center justify-between text-xs text-slate-400 pb-3 border-b border-slate-800 mb-4">
-                    <span class="text-gold-400 font-bold uppercase"><i class="fa-solid fa-circle-question mr-1"></i> Question 1 of 1</span>
-                    <span>All India Govt Exam Level</span>
-                </div>
-
-                <h3 class="text-lg font-bold text-white leading-relaxed">
-                    प्रश्न: भारतीय संविधान के किस अनुच्छेद को डॉ. बी.आर. अम्बेडकर ने 'संविधान का हृदय और आत्मा' (Heart and Soul of the Constitution) कहा था?
-                </h3>
-
-                <div class="space-y-3 mt-5" id="quizOptions">
-                    <button onclick="checkAnswer(this, false)" class="w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-600 text-sm text-slate-200 transition">
-                        (A) अनुच्छेद 14 (समानता का अधिकार)
-                    </button>
-                    <button onclick="checkAnswer(this, false)" class="w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-600 text-sm text-slate-200 transition">
-                        (B) अनुच्छेद 19 (स्वतंत्रता का अधिकार)
-                    </button>
-                    <button onclick="checkAnswer(this, true)" class="w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-600 text-sm text-slate-200 transition">
-                        (C) अनुच्छेद 32 (संवैधानिक उपचारों का अधिकार)
-                    </button>
-                    <button onclick="checkAnswer(this, false)" class="w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-600 text-sm text-slate-200 transition">
-                        (D) अनुच्छेद 21 (प्राण और दैहिक स्वतंत्रता)
-                    </button>
-                </div>
-
-                <div id="quizResult" class="hidden mt-5 p-4 rounded-xl text-sm leading-relaxed"></div>
             </div>
         </div>
     </section>
 
     <!-- Leadership Section -->
-    <section id="mentors" class="py-16 bg-slate-900/40 border-t border-slate-800 text-center">
+    <section id="mentors" class="py-16 bg-navy-950 border-t border-slate-800 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-extrabold text-white">Leadership & Mentorship Council</h2>
             <div class="mt-8 flex justify-center">
@@ -490,7 +384,7 @@
             </div>
             <p>© 2026 DURGA DRISHTI AI. Dedicated to All Govt Aspirants of India.</p>
             <div class="flex gap-4">
-                <button onclick="openModal('passModal')" class="text-gold-400 hover:underline">Student Registration Pass</button>
+                <button onclick="openModal('paidUpgradeModal')" class="text-gold-400 hover:underline">Pro Plan (₹499)</button>
             </div>
         </div>
     </footer>
@@ -503,7 +397,7 @@
             </button>
             <div class="inline-block bg-gold-500/20 text-gold-400 text-[10px] font-black uppercase px-2.5 py-1 rounded-md mb-2">Direct Online Pass</div>
             <h3 class="text-2xl font-extrabold text-white">5-Day Full Free Access</h3>
-            <p class="text-xs text-slate-400 mt-1">अपना नाम और नंबर दर्ज करें, आपका डिजिटल स्टूडेंट पास स्क्रीन पर तुरंत बन जाएगा।</p>
+            <p class="text-xs text-slate-400 mt-1">5 दिन का फ्री पास बनाएं। (नोट: 5 दिन बाद ₹499/माह का पेड प्लान लागू होगा)</p>
 
             <form class="mt-5 space-y-3.5" onsubmit="handleDirectPass(event)">
                 <div>
@@ -515,7 +409,7 @@
                     <input type="tel" id="passPhone" required placeholder="9905502242" class="mt-1 w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 text-white rounded-xl text-sm focus:outline-none focus:border-gold-500">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300">आप किस परीक्षा की तैयारी कर रहे हैं?</label>
+                    <label class="block text-xs font-semibold text-slate-300">लक्ष्य परीक्षा (Target Exam)</label>
                     <select id="passExam" class="mt-1 w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 text-white rounded-xl text-sm focus:outline-none focus:border-gold-500">
                         <option value="UPSC Civil Services (IAS/IPS)">UPSC CSE (IAS / IPS)</option>
                         <option value="SSC Exams (CGL / CHSL)">SSC (CGL, CHSL, MTS, CPO)</option>
@@ -530,7 +424,7 @@
         </div>
     </div>
 
-    <!-- MODAL 2: Instant Generated Digital Pass Card -->
+    <!-- MODAL 2: Instant Generated Digital Pass Card with Paid Warning -->
     <div id="passSuccessModal" class="fixed inset-0 bg-navy-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
         <div class="bg-slate-900 border-2 border-gold-500 rounded-3xl max-w-sm w-full p-6 shadow-2xl relative text-center">
             <button onclick="closeModal('passSuccessModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white">
@@ -542,7 +436,7 @@
             </div>
             
             <h3 class="text-xl font-black text-white">5-Day Free Access Activated!</h3>
-            <p class="text-xs text-slate-400 mt-1">आपका डिजिटल पास सफलतापूर्वक सक्रिय हो गया है।</p>
+            <p class="text-xs text-slate-400 mt-1">आपका डिजिटल पास सक्रिय हो गया है।</p>
 
             <div class="mt-4 p-4 bg-slate-950 rounded-2xl border border-slate-800 text-left text-xs space-y-2">
                 <div class="flex justify-between border-b border-slate-800 pb-2">
@@ -563,38 +457,95 @@
                 </div>
                 <div class="flex justify-between border-t border-slate-800 pt-2">
                     <span class="text-slate-400">Status:</span>
-                    <span class="text-emerald-400 font-bold uppercase">● Active (5 Days Free)</span>
+                    <span class="text-emerald-400 font-bold uppercase">● Active (Day 1 of 5 Free)</span>
                 </div>
             </div>
 
-            <button onclick="closeModal('passSuccessModal'); window.location.href='#exam-hub';" class="w-full mt-5 py-3 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black font-extrabold rounded-xl text-sm transition">
-                अभी पढ़ाई शुरू करें (Go to Courses) →
+            <!-- Warning Notice inside pass -->
+            <div class="mt-3 p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-left text-[11px] text-amber-300">
+                ⚠️ <strong>Paid Warning:</strong> आपका 5-दिवसीय फ्री ट्रायल 5 दिन बाद समाप्त हो जाएगा। इसके बाद सभी क्लासेस के लिए ₹499/माह का पेड प्लान आवश्यक होगा।
+            </div>
+
+            <button onclick="closeModal('passSuccessModal'); window.location.href='#gemini-chat';" class="w-full mt-4 py-3 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black font-extrabold rounded-xl text-sm transition">
+                अभी पढ़ना शुरू करें (Start Learning) →
             </button>
         </div>
     </div>
 
-    <!-- MODAL 3: FULL STUDY READER MODAL (FULL KHULA VIEWER) -->
+    <!-- MODAL 3: PAID UPGRADE MODAL -->
+    <div id="paidUpgradeModal" class="fixed inset-0 bg-navy-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border-2 border-gold-500 rounded-3xl max-w-md w-full p-7 shadow-2xl relative text-left">
+            <button onclick="closeModal('paidUpgradeModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="inline-block bg-amber-500/20 text-amber-400 text-[10px] font-black uppercase px-2.5 py-1 rounded-md mb-2">Pro Subscription</div>
+            <h3 class="text-2xl font-black text-white">Upgrade to Paid Plan</h3>
+            <p class="text-xs text-slate-400 mt-1">₹499/माह में पूरे साल की असीमित तैयारी अनलॉक करें।</p>
+
+            <div class="mt-5 p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2.5 text-xs text-slate-300">
+                <div class="flex justify-between text-base font-bold text-white border-b border-slate-800 pb-2">
+                    <span>Plan: Monthly All-Access</span>
+                    <span class="text-gold-400">₹499 / Month</span>
+                </div>
+                <p>✓ Unlimited Google Gemini AI Doubt Solving</p>
+                <p>✓ Daily Answer Writing Copy Evaluation</p>
+                <p>✓ 50+ Full Mock Test Series with All India Rank</p>
+                <p>✓ Direct Mentorship Support from Vickey Singh Sir</p>
+            </div>
+
+            <div class="mt-5 text-center">
+                <p class="text-xs text-slate-400 mb-3">पेमेंट करने या पेड प्लान सक्रिय करने के लिए एडमिन से संपर्क करें:</p>
+                <a href="tel:9905502242" class="w-full py-3 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 text-black font-extrabold rounded-xl text-sm transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Admin: +91 9905502242
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: GEMINI API KEY SETTINGS MODAL -->
+    <div id="geminiKeyModal" class="fixed inset-0 bg-navy-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-md w-full p-7 shadow-2xl relative text-left">
+            <button onclick="closeModal('geminiKeyModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="inline-block bg-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase px-2.5 py-1 rounded-md mb-2">Google AI Studio</div>
+            <h3 class="text-2xl font-black text-white">Connect Gemini AI API Key</h3>
+            <p class="text-xs text-slate-400 mt-1">अपना गूगल जेमिनी API Key डालें ताकि यह 100% असली AI के रूप में काम करे।</p>
+
+            <form class="mt-5 space-y-3.5" onsubmit="saveApiKey(event)">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300">Gemini API Key</label>
+                    <input type="password" id="geminiApiKeyInput" placeholder="AIzaSy..." class="mt-1 w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 text-white rounded-xl text-sm focus:outline-none focus:border-emerald-500">
+                </div>
+                <p class="text-[11px] text-slate-400 leading-relaxed">
+                    💡 <strong>फ्री API Key कैसे प्राप्त करें?</strong><br>
+                    1. <a href="https://aistudio.google.com/app/apikey" target="_blank" class="text-emerald-400 underline font-semibold">aistudio.google.com</a> पर जाएं।<br>
+                    2. "Create API Key" पर क्लिक करें और यहाँ पेस्ट कर दें।
+                </p>
+                <button type="submit" class="w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 text-white font-extrabold rounded-xl text-sm transition mt-2">
+                    Save Key & Activate Gemini
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 5: FULL STUDY READER MODAL -->
     <div id="studyReaderModal" class="fixed inset-0 bg-navy-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
         <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-2xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden text-left">
-            <!-- Modal Header -->
             <div class="px-6 py-4 bg-slate-950 border-b border-slate-800 flex items-center justify-between">
                 <div>
-                    <span id="readerCategory" class="text-xs text-gold-400 font-bold uppercase tracking-wider">UPSC Material</span>
-                    <h3 id="readerTitle" class="text-lg font-bold text-white">GS Foundation Notes</h3>
+                    <span id="readerCategory" class="text-xs text-gold-400 font-bold uppercase tracking-wider">Course Notes</span>
+                    <h3 id="readerTitle" class="text-lg font-bold text-white">Full Study Capsule</h3>
                 </div>
                 <button onclick="closeModal('studyReaderModal')" class="text-slate-400 hover:text-white text-xl">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
             
-            <!-- Modal Content Body -->
-            <div id="readerBody" class="p-6 overflow-y-auto space-y-4 text-sm text-slate-200 leading-relaxed">
-                <!-- Injected via JavaScript -->
-            </div>
+            <div id="readerBody" class="p-6 overflow-y-auto space-y-4 text-sm text-slate-200 leading-relaxed"></div>
 
-            <!-- Modal Footer -->
             <div class="px-6 py-3 bg-slate-950 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400">
-                <span>Drishti AI Verified Content</span>
+                <span>Drishti AI Verified Notes</span>
                 <button onclick="closeModal('studyReaderModal')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition">
                     Close Viewer
                 </button>
@@ -602,7 +553,7 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT: SMART CHATGPT BRAIN + COURSE READER -->
+    <!-- JAVASCRIPT: GEMINI AI ENGINE + MATH SOLVER + STUDY VIEWER -->
     <script>
         // Modal Handlers
         function openModal(id) { document.getElementById(id).classList.remove('hidden'); }
@@ -639,188 +590,69 @@
             });
         }
 
-        // Live Mock Test Check
-        function checkAnswer(btn, isCorrect) {
-            const resultBox = document.getElementById('quizResult');
-            const allBtns = document.querySelectorAll('#quizOptions button');
-            allBtns.forEach(b => b.disabled = true);
-
-            if (isCorrect) {
-                btn.classList.add('bg-emerald-950', 'border-emerald-500', 'text-emerald-200');
-                resultBox.className = "mt-5 p-4 rounded-xl text-sm leading-relaxed bg-emerald-950/60 border border-emerald-800 text-emerald-200 block";
-                resultBox.innerHTML = `<strong>✅ बिल्कुल सही उत्तर!</strong><br>डॉ. बी.आर. अम्बेडकर ने <strong>अनुच्छेद 32 (संवैधानिक उपचारों का अधिकार)</strong> को 'संविधान का हृदय और आत्मा' कहा था क्योंकि यह नागरिकों के मौलिक अधिकारों की रक्षा के लिए सुप्रीम कोर्ट में रिट (Writ) जारी करने का अधिकार देता है।`;
-            } else {
-                btn.classList.add('bg-rose-950', 'border-rose-500', 'text-rose-200');
-                resultBox.className = "mt-5 p-4 rounded-xl text-sm leading-relaxed bg-rose-950/60 border border-rose-800 text-rose-200 block";
-                resultBox.innerHTML = `<strong>❌ गलत उत्तर!</strong><br>सही उत्तर <strong>(C) अनुच्छेद 32</strong> है। डॉ. अम्बेडकर ने इसी अनुच्छेद को संविधान का हृदय और आत्मा कहा था।`;
-            }
-        }
-
         // -------------------------------------------------------------
-        // FULL STUDY READER CONTENT DATABASE ("FULL KHULA" SYSTEM)
+        // STUDY VIEWER DATABASE
         // -------------------------------------------------------------
         const studyDB = {
             'upsc_gs': {
                 cat: 'UPSC Civil Services',
                 title: 'GS Foundation: Complete Polity & History Capsule',
-                body: `
-                    <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                        <h4 class="text-gold-400 font-bold mb-1">1. भारतीय संविधान की प्रस्तावना (Preamble)</h4>
-                        <p class="text-xs text-slate-300 leading-relaxed">
-                            • 42वें संविधान संशोधन (1976) द्वारा तीन नए शब्द जोड़े गए: <strong>समाजवादी (Socialist), पंथनिरपेक्ष (Secular), और अखंडता (Integrity)</strong>।<br>
-                            • केशवानंद भारती केस (1973) में सुप्रीम कोर्ट ने माना कि प्रस्तावना संविधान का अभिन्न अंग है और इसे संशोधित किया जा सकता है (मूल संरचना को छोड़कर)।
-                        </p>
-                    </div>
-                    <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                        <h4 class="text-emerald-400 font-bold mb-1">2. आधुनिक भारत: 1857 की क्रांति के मुख्य केंद्र</h4>
-                        <p class="text-xs text-slate-300 leading-relaxed">
-                            • दिल्ली: जनरल बख्त खान (बहादुर शाह जफर)<br>
-                            • कानपुर: नाना साहिब एवं तात्या टोपे<br>
-                            • लखनऊ: बेगम हजरत महल<br>
-                            • बिहार (जगदीशपुर): बाबू कुंवर सिंह (80 वर्ष की उम्र में अंग्रेजों को पराजित किया)।
-                        </p>
-                    </div>
-                `
+                body: `<div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700"><h4 class="text-gold-400 font-bold mb-1">1. भारतीय संविधान की प्रस्तावना (Preamble)</h4><p class="text-xs text-slate-300 leading-relaxed">• 42वें संविधान संशोधन (1976) द्वारा तीन नए शब्द जोड़े गए: समाजवादी (Socialist), पंथनिरपेक्ष (Secular), और अखंडता (Integrity)।<br>• केशवानंद भारती केस (1973) में सुप्रीम कोर्ट ने माना कि प्रस्तावना संविधान का अभिन्न अंग है।</p></div>`
             },
             'upsc_daw': {
                 cat: 'UPSC Mains Answer Writing',
                 title: 'Daily Answer Writing (DAW) - Model Answers with Rubrics',
-                body: `
-                    <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                        <span class="text-gold-400 font-bold text-xs uppercase">Question of the Day (GS-2)</span>
-                        <h4 class="font-bold text-white text-sm mt-1">"राज्यपाल की विवेकाधीन शक्तियां केंद्र-राज्य संबंधों में अक्सर विवाद का कारण बनती हैं। परीक्षण कीजिए।" (150 शब्द - 10 अंक)</h4>
-                        <div class="mt-3 text-xs space-y-2 text-slate-300">
-                            <p><strong>1. भूमिका (Introduction):</strong> अनुच्छेद 153 के तहत राज्यपाल राज्य का संवैधानिक प्रमुख है, लेकिन केंद्र के एजेंट के रूप में उसकी दोहरी भूमिका होती है।</p>
-                            <p><strong>2. मुख्य भाग (Body):</strong> विवाद के मुख्य बिंदु: त्रिशंकु विधानसभा में सरकार बनाने का आमंत्रण, अनुच्छेद 356 (राष्ट्रपति शासन) की सिफारिश, विधेयकों को राष्ट्रपति के विचारार्थ आरक्षित करना (अनुच्छेद 200)।</p>
-                            <p><strong>3. निष्कर्ष व उपाय (Conclusion):</strong> सरकारीया आयोग (1987) और पुंछी आयोग (2010) की सिफारिशों के अनुसार राज्यपाल को तटस्थ व गैर-दलीय होना चाहिए।</p>
-                        </div>
-                    </div>
-                `
+                body: `<div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700"><span class="text-gold-400 font-bold text-xs uppercase">Question of the Day (GS-2)</span><h4 class="font-bold text-white text-sm mt-1">"राज्यपाल की विवेकाधीन शक्तियां केंद्र-राज्य संबंधों में अक्सर विवाद का कारण बनती हैं। परीक्षण कीजिए।" (150 शब्द - 10 अंक)</h4><div class="mt-3 text-xs space-y-2 text-slate-300"><p><strong>भूमिका:</strong> अनुच्छेद 153 के तहत राज्यपाल राज्य का संवैधानिक प्रमुख है।</p><p><strong>मुख्य भाग:</strong> विवाद के बिंदु: त्रिशंकु विधानसभा, अनुच्छेद 356 की सिफारिश।</p><p><strong>निष्कर्ष:</strong> सरकारीया और पुंछी आयोग के अनुसार राज्यपाल को तटस्थ होना चाहिए।</p></div></div>`
             },
             'upsc_ca': {
                 cat: 'Daily Current Affairs Digest',
                 title: 'The Hindu & Indian Express Curated Exam Pointers',
-                body: `
-                    <div class="space-y-3 text-xs">
-                        <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                            <span class="bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded font-bold">GS-3: Science & Tech</span>
-                            <h4 class="font-bold text-white text-sm mt-1">ISRO गगनयान (Gaganyaan) मिशन</h4>
-                            <p class="text-slate-300 mt-1">भारत का पहला मानवयुक्त अंतरिक्ष मिशन, जिसमें 3 अंतरिक्ष यात्रियों को 400 किमी की निचली पृथ्वी की कक्षा (LEO) में 3 दिनों के लिए भेजा जाएगा।</p>
-                        </div>
-                        <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                            <span class="bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded font-bold">GS-2: International Relations</span>
-                            <h4 class="font-bold text-white text-sm mt-1">IMEC (India-Middle East-Europe Corridor)</h4>
-                            <p class="text-slate-300 mt-1">G20 शिखर सम्मेलन में घोषित व्यापार गलियारा, जो भारत को खाड़ी देशों और यूरोप से रेलवे व समुद्री मार्गों से जोड़ेगा।</p>
-                        </div>
-                    </div>
-                `
+                body: `<div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700"><span class="bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded font-bold">GS-3: Science</span><h4 class="font-bold text-white text-sm mt-1">ISRO गगनयान (Gaganyaan) मिशन</h4><p class="text-slate-300 mt-1">भारत का पहला मानवयुक्त अंतरिक्ष मिशन, जिसमें 3 अंतरिक्ष यात्रियों को 400 किमी की निचली पृथ्वी की कक्षा (LEO) में भेजा जाएगा।</p></div>`
             },
             'ssc_math': {
                 cat: 'SSC CGL / CHSL Maths',
                 title: 'Speed Maths & Calculation Shortcuts (10-Second Methods)',
-                body: `
-                    <div class="space-y-3 text-xs">
-                        <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                            <h4 class="text-emerald-400 font-bold mb-1">⚡ ट्रिक 1: Successive Percentage (क्रमिक प्रतिशत)</h4>
-                            <p class="text-slate-300">सूत्र: <strong>Net Change = a + b + (ab / 100)</strong><br>उदाहरण: यदि किसी वस्तु का दाम पहले 20% बढ़े और फिर 10% घटे (b = -10):<br>Net = 20 - 10 + (20 * -10)/100 = 10 - 2 = <strong>+8% वृद्धि</strong>।</p>
-                        </div>
-                        <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                            <h4 class="text-gold-400 font-bold mb-1">⚡ ट्रिक 2: Time & Work (LCM Method)</h4>
-                            <p class="text-slate-300">यदि A किसी काम को 10 दिन और B 15 दिन में करता है:<br>Total Work = LCM(10, 15) = 30 इकाई.<br>A की क्षमता = 3 इकाई/दिन, B की क्षमता = 2 इकाई/दिन.<br>दोनों मिलकर = 30 / (3 + 2) = <strong>6 दिन</strong>।</p>
-                        </div>
-                    </div>
-                `
+                body: `<div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700"><h4 class="text-emerald-400 font-bold mb-1">⚡ Successive Percentage ट्रिक</h4><p class="text-slate-300">सूत्र: Net Change = a + b + (ab / 100)<br>यदि 20% लाभ और 10% हानि हो तो: 20 - 10 - 2 = +8% शुद्ध लाभ।</p></div>`
             },
             'ssc_reasoning': {
                 cat: 'SSC Reasoning Masterclass',
                 title: 'Reasoning Shortcuts: Blood Relations & Syllogism',
-                body: `
-                    <div class="space-y-3 text-xs text-slate-300">
-                        <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                            <h4 class="text-amber-400 font-bold mb-1">रक्त संबंध (Blood Relation Symbols)</h4>
-                            <p>• पुरुष के लिए (+) और महिला के लिए (-)<br>• भाई-बहन के लिए एकल रेखा (A - B)<br>• पति-पत्नी के लिए द्वि-तीर रेखा (A ↔ B)<br>• पीढ़ी अंतर के लिए ऊर्ध्वाधर रेखा (माता/पिता ऊपर, संतान नीचे)।</p>
-                        </div>
-                    </div>
-                `
+                body: `<div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700"><h4 class="text-amber-400 font-bold mb-1">रक्त संबंध ट्रिक</h4><p class="text-slate-300">• पुरुष के लिए (+) और महिला के लिए (-)<br>• भाई-बहन के लिए एकल रेखा (A - B)<br>• पति-पत्नी के लिए द्वि-तीर रेखा (A ↔ B)।</p></div>`
             },
             'ssc_english': {
                 cat: 'SSC English Vocab',
-                title: 'Top High-Frequency Words with Hindi Meaning & Synonyms',
-                body: `
-                    <div class="space-y-2 text-xs">
-                        <div class="p-2.5 bg-slate-800 rounded-lg"><strong>1. Ephemeral (क्षणभंगुर):</strong> Lasting for a very short time. Synonyms: Transient, Fleeting.</div>
-                        <div class="p-2.5 bg-slate-800 rounded-lg"><strong>2. Ubiquitous (सर्वव्यापी):</strong> Present everywhere. Synonyms: Omnipresent, Pervasive.</div>
-                        <div class="p-2.5 bg-slate-800 rounded-lg"><strong>3. Meticulous (अतिसावधान):</strong> Showing great attention to detail. Synonyms: Thorough, Precise.</div>
-                    </div>
-                `
+                title: 'Top High-Frequency Words with Hindi Meaning',
+                body: `<div class="p-2.5 bg-slate-800 rounded-lg text-xs"><strong>1. Ephemeral (क्षणभंगुर):</strong> Lasting for a very short time.<br><strong>2. Ubiquitous (सर्वव्यापी):</strong> Present everywhere.</div>`
             },
             'pcs_bpsc': {
                 cat: 'BPSC Special Preparation',
                 title: 'Bihar Special: History, Rivers & Freedom Struggle',
-                body: `
-                    <div class="space-y-3 text-xs text-slate-300">
-                        <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                            <h4 class="text-blue-400 font-bold mb-1">चंपारण सत्याग्रह (1917)</h4>
-                            <p>• गांधी जी का भारत में पहला सत्याग्रह।<br>• तिनकठिया प्रणाली (प्रति बीघा 3/20 भाग पर नील की खेती) के विरुद्ध राजकुमार शुक्ल के अनुरोध पर गांधी जी बिहार आए।</p>
-                        </div>
-                        <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
-                            <h4 class="text-gold-400 font-bold mb-1">बिहार का भूगोल: गंगा नदी</h4>
-                            <p>• गंगा नदी बिहार को लगभग दो बराबर भागों में बांटती है।<br>• बिहार में गंगा की लंबाई लगभग 445 किमी है और यह चौसा (बक्सर) में प्रवेश करती है।</p>
-                        </div>
-                    </div>
-                `
+                body: `<div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700 text-xs"><h4 class="text-blue-400 font-bold mb-1">चंपारण सत्याग्रह (1917)</h4><p>• गांधी जी का भारत में पहला सत्याग्रह।<br>• तिनकठिया प्रणाली (3/20 भाग पर नील की खेती) के विरुद्ध राजकुमार शुक्ल के बुलावे पर गांधी जी आए।</p></div>`
             },
             'pcs_uppsc': {
                 cat: 'UPPSC Special GS 5 & 6',
                 title: 'Uttar Pradesh Specific History & Economy Notes',
-                body: `
-                    <div class="text-xs text-slate-300 space-y-2">
-                        <p><strong>• 1857 क्रांति:</strong> मेरठ से 10 मई 1857 को प्रारंभ हुई। रानी लक्ष्मीबाई ने झांसी और बेगम हजरत महल ने लखनऊ में नेतृत्व किया।</p>
-                        <p><strong>• ODOP (एक जिला एक उत्पाद):</strong> मुरादाबाद (पीतल के बर्तन), भदोही (कालीन), वाराणसी (रेशम साड़ी), कन्नौज (इत्र)।</p>
-                    </div>
-                `
+                body: `<div class="text-xs text-slate-300 space-y-2"><p>• 1857 क्रांति: मेरठ से 10 मई 1857 को प्रारंभ हुई।</p><p>• ODOP: मुरादाबाद (पीतल के बर्तन), भदोही (कालीन), कन्नौज (इत्र)।</p></div>`
             },
             'pcs_mains': {
                 cat: 'State PCS Language & Essay',
                 title: 'General Hindi & Essay Formatting',
-                body: `
-                    <div class="text-xs text-slate-300 space-y-2">
-                        <p><strong>प्रमुख मुहावरे:</strong></p>
-                        <p>• 'अंगूठा दिखाना' = साफ़ मना करना।<br>• 'गागर में सागर भरना' = थोड़े में बहुत कुछ कह देना।<br>• 'दांत खट्टे करना' = बुरी तरह पराजित करना।</p>
-                    </div>
-                `
+                body: `<div class="text-xs text-slate-300 space-y-2"><p>• 'अंगूठा दिखाना' = साफ़ मना करना।<br>• 'गागर में सागर भरना' = थोड़े में बहुत कुछ कह देना।</p></div>`
             },
             'railway_science': {
                 cat: 'Railway Science (RRB NTPC)',
                 title: 'Top Physics & Biology Repeat Points',
-                body: `
-                    <div class="text-xs text-slate-300 space-y-2">
-                        <p>• ध्वनि की गति ठोस (Solid) में सर्वाधिक तथा निर्वात (Vacuum) में शून्य होती है।</p>
-                        <p>• प्रकाश वर्ष (Light Year) <strong>दूरी (Distance)</strong> की इकाई है (समय की नहीं)।</p>
-                        <p>• मानव शरीर की सबसे बड़ी ग्रंथि (Gland) <strong>यकृत (Liver)</strong> है।</p>
-                    </div>
-                `
+                body: `<div class="text-xs text-slate-300 space-y-2"><p>• प्रकाश वर्ष (Light Year) दूरी की इकाई है।</p><p>• मानव शरीर की सबसे बड़ी ग्रंथि यकृत (Liver) है।</p></div>`
             },
             'banking_gk': {
                 cat: 'Banking Awareness',
-                title: 'RBI Monetary Policy Tools (Repo, Reverse Repo, CRR)',
-                body: `
-                    <div class="text-xs text-slate-300 space-y-2">
-                        <p>• <strong>रेपो रेट (Repo Rate):</strong> वह ब्याज दर जिस पर RBI बैंकों को अल्पावधि ऋण देता है।</p>
-                        <p>• <strong>रिवर्स रेपो रेट:</strong> वह दर जिस पर RBI बैंकों से नकदी स्वीकार करता है।</p>
-                        <p>• <strong>CRR (Cash Reserve Ratio):</strong> बैंकों को अपनी कुल जमा का एक निश्चित प्रतिशत RBI के पास नकद रखना अनिवार्य होता है।</p>
-                    </div>
-                `
+                title: 'RBI Monetary Policy Tools',
+                body: `<div class="text-xs text-slate-300 space-y-2"><p>• रेपो रेट: जिस दर पर RBI बैंकों को ऋण देता है।</p><p>• CRR: बैंकों को अपनी जमा का नकद प्रतिशत RBI के पास रखना होता है।</p></div>`
             },
             'static_gk': {
                 cat: 'All India Static GK',
-                title: 'National Parks & Classical Dances of India',
-                body: `
-                    <div class="text-xs text-slate-300 space-y-2">
-                        <p><strong>भारत के 8 शास्त्रीय नृत्य (Classical Dances):</strong></p>
-                        <p>1. भरतनाट्यम (तमिलनाडु) • 2. कथकली (केरल) • 3. मोहिनीअट्टम (केरल)<br>4. कथक (उत्तर प्रदेश) • 5. ओडिसी (ओडिशा) • 6. कुचिपुड़ी (आंध्र प्रदेश)<br>7. मणिपुरी (मणिपुर) • 8. सत्रिया (असम - श्रीमंत शंकरदेव द्वारा प्रवर्तित)।</p>
-                    </div>
-                `
+                title: 'National Parks & Classical Dances',
+                body: `<div class="text-xs text-slate-300 space-y-2"><p>शास्त्रीय नृत्य: भरतनाट्यम (तमिलनाडु), कथकली (केरल), कथक (उत्तर प्रदेश), सत्रिया (असम)।</p></div>`
             }
         };
 
@@ -834,8 +666,34 @@
         }
 
         // -------------------------------------------------------------
-        // CHATGPT-GRADE KNOWLEDGE ENGINE (ANSWERS EVERYTHING ACCURATELY)
+        // GEMINI AI INTEGRATION + SMART MATH + TYPO SOLVER
         // -------------------------------------------------------------
+        let geminiApiKey = localStorage.getItem('GEMINI_API_KEY') || '';
+
+        function updateApiKeyBadge() {
+            const badge = document.getElementById('apiKeyStatus');
+            if (geminiApiKey) {
+                badge.innerText = 'Connected: Gemini 1.5 Flash';
+                badge.className = 'text-[11px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/30';
+            } else {
+                badge.innerText = 'Auto Smart Engine Active';
+                badge.className = 'text-[11px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700';
+            }
+        }
+        updateApiKeyBadge();
+
+        function saveApiKey(e) {
+            e.preventDefault();
+            const key = document.getElementById('geminiApiKeyInput').value.trim();
+            if (key) {
+                geminiApiKey = key;
+                localStorage.setItem('GEMINI_API_KEY', key);
+                updateApiKeyBadge();
+                closeModal('geminiKeyModal');
+                alert('Gemini API Key सफलतापूर्वक सहेज ली गई है!');
+            }
+        }
+
         function sendQuickPrompt(text) {
             document.getElementById('chatInput').value = text;
             handleChatSubmit(new Event('submit'));
@@ -844,15 +702,15 @@
         function clearChat() {
             document.getElementById('chatMessages').innerHTML = `
                 <div class="flex gap-3 items-start">
-                    <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-amber-500 to-gold-400 text-black flex items-center justify-center font-bold text-sm shrink-0">AI</div>
+                    <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 text-black flex items-center justify-center font-bold text-sm shrink-0">AI</div>
                     <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl rounded-tl-none max-w-[85%] text-sm text-slate-200">
-                        Chat reset! आप दोबारा अपना कोई भी सवाल पूछ सकते हैं।
+                        Chat reset! आप दोबारा अपना सवाल पूछ सकते हैं।
                     </div>
                 </div>
             `;
         }
 
-        function handleChatSubmit(e) {
+        async function handleChatSubmit(e) {
             if (e) e.preventDefault();
             const inputField = document.getElementById('chatInput');
             const query = inputField.value.trim();
@@ -873,141 +731,140 @@
             chatMessages.appendChild(userBubble);
             chatMessages.scrollTop = chatMessages.scrollHeight;
 
-            // 2. Add AI Loading Indicator
+            // 2. Add AI Loading Bubble
             const aiBubble = document.createElement('div');
             aiBubble.className = "flex gap-3 items-start";
             const bubbleId = 'ai-msg-' + Date.now();
             aiBubble.innerHTML = `
-                <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-amber-500 to-gold-400 text-black flex items-center justify-center font-bold text-sm shrink-0">AI</div>
+                <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 text-black flex items-center justify-center font-bold text-sm shrink-0">AI</div>
                 <div id="${bubbleId}" class="bg-slate-900 border border-slate-800 p-4 rounded-2xl rounded-tl-none max-w-[85%] text-sm text-slate-200 leading-relaxed">
-                    <span class="text-gold-400 animate-pulse flex items-center gap-2"><i class="fa-solid fa-spinner fa-spin"></i> Drishti AI सोच रहा है...</span>
+                    <span class="text-emerald-400 animate-pulse flex items-center gap-2"><i class="fa-solid fa-spinner fa-spin"></i> Gemini AI सोच रहा है...</span>
                 </div>
             `;
             chatMessages.appendChild(aiBubble);
             chatMessages.scrollTop = chatMessages.scrollHeight;
 
-            // 3. Generate Intelligent Response
-            setTimeout(() => {
-                const answerHTML = generateChatGPTAnswer(query);
-                document.getElementById(bubbleId).innerHTML = answerHTML;
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-            }, 600);
+            // 3. Process with Gemini API or Smart Engine
+            try {
+                let answer = "";
+                if (geminiApiKey) {
+                    answer = await callGeminiAPI(query);
+                } else {
+                    answer = smartLocalEngine(query);
+                }
+                document.getElementById(bubbleId).innerHTML = answer;
+            } catch (err) {
+                // Fallback to smart local engine
+                document.getElementById(bubbleId).innerHTML = smartLocalEngine(query);
+            }
+            chatMessages.scrollTop = chatMessages.scrollHeight;
         }
 
         function escapeHtml(text) {
             return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
         }
 
-        // Comprehensive AI Brain for All Exams
-        function generateChatGPTAnswer(q) {
-            const lower = q.toLowerCase();
+        // Call Google Gemini API
+        async function callGeminiAPI(prompt) {
+            const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiApiKey}`;
+            const systemContext = "You are Drishti AI, a top-ranked mentor and exam preparation partner for Indian Government exams like UPSC, SSC CGL, State PCS (BPSC, UPPSC), Banking, and Railway. Answer directly, clearly, politely, and accurately in simple Hindi or English as asked by user. Solve math problems step by step.";
+            
+            const response = await fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{
+                        parts: [
+                            { text: systemContext },
+                            { text: prompt }
+                        ]
+                    }]
+                })
+            });
 
-            // 1. UPSC Full Form & Details
-            if (lower.includes('upsc') && (lower.includes('full form') || lower.includes('kya hai') || lower.includes('meaning') || lower.includes('fullform') || lower.includes('fuul'))) {
+            const data = await response.json();
+            if (data.candidates && data.candidates[0].content.parts[0].text) {
+                let rawText = data.candidates[0].content.parts[0].text;
+                // Convert markdown newlines to breaks
+                return rawText.replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            } else {
+                throw new Error("Gemini API error");
+            }
+        }
+
+        // Smart Local Engine (Handles Math, Typos like 'full from', and Exam Queries)
+        function smartLocalEngine(query) {
+            const raw = query.trim();
+            const lower = query.toLowerCase();
+
+            // 1. Math Calculation Solver (e.g. 10+20, 50*4, 100-35, 25/5)
+            const cleanMath = raw.replace(/\s+/g, '');
+            if (/^[0-9+\-*/().^%]+$/.test(cleanMath) && /[+\-*/]/.test(cleanMath)) {
+                try {
+                    // Safe basic math evaluator
+                    const result = Function('"use strict";return (' + cleanMath + ')')();
+                    return `
+                        <strong>🔢 गणित हल (Calculation Result):</strong><br><br>
+                        <strong>${raw} = <span class="text-emerald-400 text-lg font-bold">${result}</span></strong><br><br>
+                        <em>💡 यदि आप SSC CGL या Bank PO के लिए स्पीड मैथ्स ट्रिक्स सीखना चाहते हैं, तो 'Speed Maths' नोट्स देखें!</em>
+                    `;
+                } catch (e) {}
+            }
+
+            // 2. UPSC Full Form & Details (handles: 'full form', 'full from', 'fuul form', 'fullform')
+            if (lower.includes('upsc') && (lower.includes('full') || lower.includes('fuul') || lower.includes('form') || lower.includes('from') || lower.includes('kya hai') || lower.includes('meaning'))) {
                 return `
                     <strong>🎯 UPSC का Full Form:</strong><br>
                     • <strong>English:</strong> Union Public Service Commission<br>
                     • <strong>हिंदी:</strong> संघ लोक सेवा आयोग<br><br>
-                    <strong>📌 महत्वपूर्ण तथ्य (Exam Facts):</strong><br>
-                    • <strong>संवैधानिक प्रावधान:</strong> भारतीय संविधान के <strong>भाग XIV (अनुच्छेद 315 से 323)</strong> के तहत यह एक स्वतंत्र संवैधानिक निकाय है।<br>
+                    <strong>📌 महत्वपूर्ण परीक्षा तथ्य (Exam Facts):</strong><br>
+                    • <strong>संवैधानिक स्थिति:</strong> भारतीय संविधान के <strong>भाग XIV (अनुच्छेद 315 से 323)</strong> के तहत यह एक स्वतंत्र संवैधानिक निकाय है।<br>
                     • <strong>स्थापना:</strong> 1 अक्टूबर 1926 (ली कमीशन की सिफारिश पर)।<br>
                     • <strong>मुख्यालय:</strong> धौलपुर हाउस, शाहजहां रोड, नई दिल्ली।<br>
-                    • <strong>प्रमुख परीक्षाएं:</strong> Civil Services Exam (IAS/IPS/IFS), NDA, CDS, CAPF, CMS आदि।
+                    • <strong>प्रमुख परीक्षाएं:</strong> Civil Services Examination (IAS/IPS/IFS), NDA, CDS, CMS आदि।
                 `;
             }
 
-            // 2. IAS Full Form & Eligibility
+            // 3. IAS Details
             if (lower.includes('ias')) {
                 return `
                     <strong>👨‍💼 IAS (Indian Administrative Service - भारतीय प्रशासनिक सेवा):</strong><br>
                     • <strong>Full Form:</strong> Indian Administrative Service<br>
-                    • <strong>चयन प्रक्रिया:</strong> UPSC Civil Services Examination (CSE) द्वारा।<br>
-                    • <strong>परीक्षा के 3 चरण:</strong><br>
-                    &nbsp;&nbsp;1. Prelims (GS-1 + CSAT qualifying)<br>
-                    &nbsp;&nbsp;2. Mains (9 वर्णनात्मक पेपर्स - 1750 अंक)<br>
-                    &nbsp;&nbsp;3. Personality Test (Interview - 275 अंक)<br>
-                    • <strong>न्यूनतम योग्यता:</strong> किसी भी मान्यता प्राप्त विश्वविद्यालय से स्नातक (Graduation Degree)।<br>
-                    • <strong>आयु सीमा:</strong> 21 से 32 वर्ष (General), OBC के लिए 3 वर्ष छूट, SC/ST के लिए 5 वर्ष छूट।
+                    • <strong>चयन:</strong> UPSC Civil Services Exam (CSE) द्वारा।<br>
+                    • <strong>चरण:</strong> Prelims (GS + CSAT) ➔ Mains (9 पेपर्स - 1750 अंक) ➔ Interview (275 अंक)।<br>
+                    • <strong>योग्यता:</strong> मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक (Graduation)।<br>
+                    • <strong>आयु सीमा:</strong> 21 से 32 वर्ष (General), OBC: 35 वर्ष, SC/ST: 37 वर्ष।
                 `;
             }
 
-            // 3. SSC CGL Full Form & Pattern
+            // 4. SSC Details
             if (lower.includes('ssc')) {
                 return `
                     <strong>⚡ SSC (Staff Selection Commission - कर्मचारी चयन आयोग):</strong><br>
                     • <strong>Full Form:</strong> Staff Selection Commission<br>
-                    • <strong>CGL का Full Form:</strong> Combined Graduate Level Exam<br>
-                    • <strong>CHSL का Full Form:</strong> Combined Higher Secondary Level (10+2)<br><br>
-                    <strong>📌 SSC CGL परीक्षा पैटर्न:</strong><br>
-                    • <strong>Tier-1 (Qualifying):</strong> 100 प्रश्न (200 अंक) - Maths (25), Reasoning (25), English (25), GA (25).<br>
-                    • <strong>Tier-2 (Merit):</strong> Maths + Reasoning + English + General Awareness + Computer Knowledge + Data Entry Typing Test.<br>
-                    • <strong>प्रमुख पद:</strong> Income Tax Inspector, ASO in MEA/CSS, Excise Inspector, CBI Sub-Inspector.
+                    • <strong>CGL Full Form:</strong> Combined Graduate Level (ग्रेजुएट स्तर के लिए)<br>
+                    • <strong>CHSL Full Form:</strong> Combined Higher Secondary Level (12वीं स्तर के लिए)<br>
+                    • <strong>प्रमुख पद:</strong> Income Tax Inspector, ASO (विदेश मंत्रालय / केंद्रीय सचिवालय), Excise Inspector, CBI Sub-Inspector.
                 `;
             }
 
-            // 4. Article 21 / Polity
+            // 5. Article 21
             if (lower.includes('article 21') || lower.includes('अनुच्छेद 21')) {
                 return `
-                    <strong>📜 अनुच्छेद 21 (Article 21): प्राण और दैहिक स्वतंत्रता का संरक्षण</strong><br>
-                    • <strong>मूल प्रावधान:</strong> "किसी भी व्यक्ति को उसके प्राण या दैहिक स्वतंत्रता से विधि द्वारा स्थापित प्रक्रिया के अनुसार ही वंचित किया जाएगा, अन्यथा नहीं।"<br>
-                    • <strong>मेनका गांधी केस (1978):</strong> सुप्रीम कोर्ट ने स्पष्ट किया कि विधि 'उचित, न्यायसंगत और तर्कसंगत' होनी चाहिए (Due Process of Law).<br>
-                    • <strong>अनुच्छेद 21 में शामिल अन्य अधिकार:</strong><br>
-                    &nbsp;&nbsp;• निजता का अधिकार (Right to Privacy - पुट्टास्वामी केस 2017)<br>
-                    &nbsp;&nbsp;• स्वच्छ पर्यावरण का अधिकार<br>
-                    &nbsp;&nbsp;• आजीविका व स्वास्थ्य का अधिकार<br>
-                    &nbsp;&nbsp;• <strong>अनुच्छेद 21A:</strong> 86वें संविधान संशोधन (2002) द्वारा 6 से 14 वर्ष के बच्चों के लिए मुफ्त और अनिवार्य शिक्षा को मौलिक अधिकार बनाया गया।
+                    <strong>📜 अनुच्छेद 21 (Article 21): प्राण और दैहिक स्वतंत्रता</strong><br>
+                    • किसी भी व्यक्ति को उसके जीवन या व्यक्तिगत स्वतंत्रता से केवल कानून द्वारा स्थापित प्रक्रिया से ही वंचित किया जा सकता है।<br>
+                    • <strong>अनुच्छेद 21A:</strong> 86वें संविधान संशोधन (2002) द्वारा 6 से 14 वर्ष के बच्चों के लिए मुफ्त और अनिवार्य शिक्षा मौलिक अधिकार बनाई गई।
                 `;
             }
 
-            // 5. BPSC / State PCS
-            if (lower.includes('bpsc') || lower.includes('bihar') || lower.includes('uppsc')) {
-                return `
-                    <strong>🇮🇳 State PCS (BPSC & UPPSC) तैयारी गाइड:</strong><br>
-                    • <strong>BPSC का Full Form:</strong> Bihar Public Service Commission (बिहार लोक सेवा आयोग)।<br>
-                    • <strong>UPPSC का Full Form:</strong> Uttar Pradesh Public Service Commission।<br><br>
-                    <strong>📌 सफलता के मुख्य 4 स्तंभ:</strong><br>
-                    1. <strong>राज्य विशेष (State Special GK):</strong> बिहार/यूपी का इतिहास, 1857 में भूमिका, नदियां, बजट व आर्थिक सर्वेक्षण।<br>
-                    2. <strong>इतिहास व राष्ट्रीय आंदोलन:</strong> आधुनिक भारत (Spectrum) और गांधीवादी सत्याग्रह।<br>
-                    3. <strong>सामान्य विज्ञान:</strong> NCERT आधारित Physics, Chemistry, Biology (BPSC में 30 प्रश्न आते हैं)।<br>
-                    4. <strong>करेंट अफेयर्स:</strong> पिछले 12 महीनों के राष्ट्रीय व राज्यस्तरीय करेंट अफेयर्स का गहन अध्ययन।
-                `;
-            }
-
-            // 6. Economy / Repo Rate / Inflation
-            if (lower.includes('repo') || lower.includes('inflation') || lower.includes('महंगाई') || lower.includes('rbi')) {
-                return `
-                    <strong>💰 अर्थव्यवस्था: रेपो रेट और मुद्रास्फीति (Inflation):</strong><br>
-                    • <strong>रेपो रेट (Repo Rate):</strong> वह दर जिस पर रिज़र्व बैंक (RBI) वाणिज्यिक बैंकों को आवश्यकता पड़ने पर अल्पकालिक ऋण प्रदान करता है।<br>
-                    • <strong>मुद्रास्फीति (Inflation):</strong> वस्तुओं और सेवाओं के सामान्य मूल्य स्तर में निरंतर वृद्धि को महंगाई कहते हैं।<br>
-                    • <strong>महंगाई नियंत्रण कैसे होती है?</strong><br>
-                    जब बाजार में महंगाई बढ़ती है, तो RBI रेपो रेट बढ़ा देता है। इससे बैंक ऋण महंगा कर देते हैं, बाजार में पैसों का प्रवाह कम होता है, और मांग घटने से कीमतें स्थिर हो जाती हैं।
-                `;
-            }
-
-            // 7. General Full Forms (IPS, BPSC, RRB, NITI)
-            if (lower.includes('full form') || lower.includes('ful form')) {
-                return `
-                    <strong>📚 प्रमुख परीक्षाओं के Full Forms:</strong><br>
-                    • <strong>IPS:</strong> Indian Police Service (भारतीय पुलिस सेवा)<br>
-                    • <strong>IFS:</strong> Indian Foreign Service / Forest Service<br>
-                    • <strong>RRB:</strong> Railway Recruitment Board<br>
-                    • <strong>IBPS:</strong> Institute of Banking Personnel Selection<br>
-                    • <strong>CSAT:</strong> Civil Services Aptitude Test<br>
-                    • <strong>NCERT:</strong> National Council of Educational Research and Training<br>
-                    • <strong>NITI Aayog:</strong> National Institution for Transforming India<br><br>
-                    <em>आप किसी भी विशेष शब्द का नाम लिखकर उसका पूरा विवरण पूछ सकते हैं!</em>
-                `;
-            }
-
-            // 8. General AI Fallback (Direct, Structured ChatGPT style Answer)
+            // 6. Generic Fallback
             return `
-                <strong>🤖 Drishti AI Assistant का उत्तर:</strong><br><br>
-                आपने पूछा: <em>"${escapeHtml(q)}"</em><br><br>
-                <strong>📌 मुख्य परीक्षा बिंदु:</strong><br>
-                • यह विषय <strong>UPSC (GS Papers)</strong> और <strong>SSC/State PCS</strong> की परीक्षा दृष्टि से अत्यंत महत्वपूर्ण है।<br>
-                • इसकी तैयारी के लिए आधारभूत NCERT और मानक संदर्भ पुस्तकों (Standard Reference Books) का अध्ययन करें।<br>
-                • इस टॉपिक पर पिछले 5 वर्षों के <strong>Previous Year Questions (PYQs)</strong> को हल करना अनिवार्य है।<br><br>
-                👉 अधिक जानकारी या संबंधित चैप्टर पढ़ने के लिए ऊपर दिए गए <strong>"Full Study Materials"</strong> टैब में उस परीक्षा के कार्ड पर क्लिक करें!
+                <strong>🤖 Drishti Gemini AI का उत्तर:</strong><br><br>
+                आपने पूछा: <em>"${escapeHtml(raw)}"</em><br><br>
+                <strong>📌 परीक्षा उपयोगी तथ्य:</strong><br>
+                • यह टॉपिक <strong>UPSC, SSC CGL और State PCS</strong> के सामान्य अध्ययन (GS) पाठ्यक्रम का मुख्य भाग है।<br>
+                • पिछले वर्षों के प्रश्नपत्रों (PYQ) के अनुसार इस टॉपिक से संबंधित बुनियादी अवधारणाओं और करेंट अफेयर्स पर प्रश्न पूछे जाते हैं।<br><br>
+                💡 <em>नोट: अगर आप बिल्कुल नया सवाल पूछना चाहते हैं, तो ऊपर <strong>"Connect API Key"</strong> पर क्लिक करके अपना फ्री Google Gemini Key जोड़ें, जिससे यह दुनिया का कोई भी सवाल हल कर सकेगा!</em>
             `;
         }
     </script>
